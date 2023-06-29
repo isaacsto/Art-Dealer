@@ -4,19 +4,11 @@
   "description": "A full MERN stack boilerplate",
   "main": "server/index.js",
   "scripts": {
-    "build": "./scripts/build-prd.sh",
-    "build:prd": "./scripts/build-prd.sh",
-    "build:dev": "./scripts/build-dev.sh",
-    "start": "concurrently \"npm run start:server\" \"npm run start:client\"",
-    "start:server": "nodemon server/index.js",
-    "start:client": "./scripts/watch-dev.sh",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "./scripts/test.sh",
-    "test:verbose": "./scripts/test-verbose.sh",
-    "test:coverage": "./scripts/test-coverage.sh",
-    "test:watch-client": "./scripts/test-watch-client.sh",
-    "test:watch-server": "./scripts/test-watch-server.sh"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "pre-commit": [
     "lint",
