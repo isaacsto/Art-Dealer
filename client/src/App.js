@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/* import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -21,5 +21,15 @@ function App() {
     </div>
   );
 }
+
+export default App; */
+
+import React from 'react';
+
+
+import AppContainer from "./components/AppContainer";
+
+
+const App = () => <AppContainer />;
 
 export default App;

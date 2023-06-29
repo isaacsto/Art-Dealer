@@ -1,0 +1,58 @@
+
+[
+    {
+        "title": "4 ducks",
+        "year": "2023",
+        "description": "Acrylic on canvas",
+        "imageUrl": "https://i.imgur.com/wcjTCam.jpg"
+    },
+    {
+        "title": "i'll get there when i get there",
+        "year": "2022",
+        "description": "Acrylic on wood panel",
+        "imageUrl": "https://i.imgur.com/dQBHoOZ.jpg"
+    },
+    {
+        "title": "Untitled 00",
+        "year": "2021",
+        "description": "Acrylic on canvas",
+        "imageUrl": "https://i.imgur.com/wuiSQs9.jpg"
+    },
+    {
+        "title": "California 1996",
+        "year": "2022",
+        "description": "Acrylic on panel",
+        "imageUrl": "https://i.imgur.com/u90zFUU.jpg"
+    },
+    {
+        "title": "Untitled 001",
+        "year": "2018",
+        "description": "Ink on paper",
+        "imageUrl": "https://i.imgur.com/kM21Jr9.png"
+    },
+    {
+        "title": "Untitled 002",
+        "year": "2018",
+        "description": "Ink on paper",
+        "imageUrl": "https://i.imgur.com/Q8SgxL1.png"
+    },
+    {
+        "title": "Untitled 003",
+        "year": "2017",
+        "description": "Acrylic on paper",
+        "imageUrl": "https://i.imgur.com/YbkUk7x.jpg"
+    },
+    {
+        "title": "I want my mother but i don't need her",
+        "year": "2017",
+        "description": "Acrylic on wood",
+        "imageUrl": "https://i.imgur.com/GhtRqdd.jpg"
+    },
+    {
+        "title": "Detail",
+        "year": "2017",
+        "description": "Acrylic on canvas",
+        "imageUrl": "https://i.imgur.com/ER8lmu8.jpg"
+    }
+    
+]
