@@ -15,16 +15,16 @@ const DropdownMenu = () => {
       </button>
       {isOpen && (
         <ul className="dropdown-menu-items">
-          <Link to="./IsabellaSaracini">
+          <Link to="/IasbellaSaracini">
             Isabella Saracini
           </Link>
-          <Link to="./KrisDegirolamo">
+          <Link to="/KrisDegirolamo">
             Kris Degirolamo
           </Link>
-          <Link to="./KamrynHarmeling">
+          <Link to="/KamrynHarmeling">
             Kamryn Harmeling
           </Link>
-          <Link to="./NicholasRiley">
+          <Link to="/NicholasRiley">
             Nicholas Riley
           </Link>
         </ul>

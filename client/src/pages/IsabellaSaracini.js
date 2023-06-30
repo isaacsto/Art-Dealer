@@ -5,6 +5,7 @@ import DisplayCard from './DisplayCard'
 function IsabellaSaracini() {
     return (
         <div>
+            hello im Isabella
         <card>
     <DisplayCard />
         </card>
