@@ -27,12 +27,7 @@ const userSchema = new Schema({
   //   },
     
   // ],
-  purchasedArt: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Art',
-    },
-  ],
+  purchasedArt: [artSchema],
   firstName:{
     type: String,
     required: true,
@@ -43,7 +38,7 @@ const userSchema = new Schema({
     required: true,
     trim: true,
   },
-  artDetails: [artSchema],
+  // artDetails: [artSchema],
 });
 
 userSchema.pre('save', async function (next) {
