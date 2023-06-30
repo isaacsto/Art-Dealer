@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DropdownMenu from './DropdownMenu';
-
 
 
 function Header({currentPage, handlePageChange}) {
@@ -11,7 +9,6 @@ function Header({currentPage, handlePageChange}) {
             <li>
         <Link to="/Home">Artly</Link>
         </li>
-       {/*  <DropdownMenu /> */}
         </div>
         </header>
 
