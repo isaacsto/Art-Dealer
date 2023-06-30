@@ -1,5 +1,6 @@
 import React from 'react';
 import ArtCard from './ArtCard';
+/* const artSeeds = require('../../../../server/seeders/artseeds/isabellasart.json') */;
 
 /* 
 replace the following with dynamic data */
@@ -14,9 +15,15 @@ const artwork = {
 export default function DisplayCard() {
   return (
     <div>
-        <ArtCard title={artwork.title} 
-        size={artwork.size}
-        description={artwork.description} year={artwork.year} price={artwork.price}/>
+      {/* {artSeeds.map((artwork) => ( */}
+        <ArtCard
+          key={artwork.id}
+          title={artwork.title}
+          year={artwork.year}
+          description={artwork.description}
+          size={artwork.size}
+          price={artwork.price}
+        />
     </div>
-  );
+  ); 
 }
