@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 const { artSchema } = require('./Art')
 
 const artistSchema = new Schema({
-  artist: {
+  artistName: {
     type: String,
     required: true,
     trim: true,

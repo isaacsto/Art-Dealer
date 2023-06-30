@@ -1,39 +1,43 @@
-const { Thought } = require('../models');
+const { Art, Artist } = require('../models');
 
 const resolvers = {
   Query: {
-    thoughts: async () => {
-      return Thought.find();
+    artists: async () => {
+      return Artist.find();
     },
-
-    thought: async (parent, { thoughtId }) => {
-      return Thought.findOne({ _id: thoughtId });
+    art: async () => {
+      return Art.find();
+    },
+    artist: async (parent, { artistId }) => {
+      return Artist.findOne({ _id: artistId });
+    },
+    singleArtwork: async (parent, { artId }) => {
+      return Art.findOne({ _id: artId });
     },
   },
 
   Mutation: {
-    addThought: async (parent, { thoughtText, thoughtAuthor }) => {
-      return Thought.create({ thoughtText, thoughtAuthor });
+    addArtist: async (parent, { artistName }) => {
+      return Thought.create({ artistName });
     },
-    addComment: async (parent, { thoughtId, commentText }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
+    addArt: async (parent, { artistId, artist, year, description, imageUrl, price }) => {
+      return Artist.findOneAndUpdate(
+        { _id: artistId },
         {
-          $addToSet: { comments: { commentText } },
+          $addToSet: { art: {artist, year, description, imageUrl} },
         },
         {
           new: true,
-          runValidators: true,
         }
       );
     },
-    removeThought: async (parent, { thoughtId }) => {
-      return Thought.findOneAndDelete({ _id: thoughtId });
+    removeArtist: async (parent, { artistId }) => {
+      return Artist.findOneAndDelete({ _id: artistId });
     },
-    removeComment: async (parent, { thoughtId, commentId }) => {
-      return Thought.findOneAndUpdate(
-        { _id: thoughtId },
-        { $pull: { comments: { _id: commentId } } },
+    removeArt: async (parent, { artistId, artId }) => {
+      return Artist.findOneAndUpdate(
+        { _id: artistId },
+        { $pull: { art: { _id: artId } } },
         { new: true }
       );
     },
