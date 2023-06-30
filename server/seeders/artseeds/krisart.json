@@ -1,5 +1,6 @@
 [
     {
+        "id": 27,
         "title": "Untitled",
         "year": "2020",
         "description": "Digital artwork featuring mannequins",
@@ -7,6 +8,7 @@
         "imageUrl": "https://i.imgur.com/WD8D1ZI.png"
     },
     {
+        "id": 28,
         "title": "House of Lard",
         "year": "2021",
         "description": "Digital art",
@@ -14,6 +16,7 @@
         "imageUrl": "https://i.imgur.com/K1EWaSI.png"
     },
     {
+        "id": 29,
         "title": "Woodcuts",
         "year": "2021",
         "description": "Digital art",
@@ -21,6 +24,7 @@
         "imageUrl": "https://i.imgur.com/PiRSTPH.png"
     },
     {
+        "id": 30,
         "title": "Untitled 01",
         "year": "2021",
         "description": "Digital art",
@@ -28,6 +32,7 @@
         "imageUrl": "https://i.imgur.com/FGpqxdL.png"
     },
     {
+        "id": 31,
         "title": "Untitled 02",
         "year": "2021",
         "description": "Digital art",
@@ -35,6 +40,7 @@
         "imageUrl": "https://i.imgur.com/ya45Vsn.png"
     },
     {
+        "id": 32,
         "title": "Untitled 03",
         "year": "2021",
         "description": "Digital art",
@@ -42,6 +48,7 @@
         "imageUrl": "https://i.imgur.com/tT8gopb.png"
     },
     {
+        "id": 33,
         "title": "Untitled 04",
         "year": "2021",
         "description": "Digital art",
@@ -49,6 +56,7 @@
         "imageUrl": "https://i.imgur.com/ya45Vsn.png"
     },
     {
+        "id": 34,
         "title": "Untitled 05",
         "year": "2022",
         "description": "Digital art",
@@ -56,6 +64,7 @@
         "imageUrl": "https://i.imgur.com/tT8gopb.png"
     },
     {
+        "id": 35,
         "title": "Untitled 06",
         "year": "2022",
         "description": "Digital art",
@@ -63,6 +72,7 @@
         "imageUrl": "https://i.imgur.com/eEBTZmk.png"
     },
     {
+        "id": 36,
         "title": "Untitled 07",
         "year": "2022",
         "description": "Digital art",
@@ -70,6 +80,7 @@
         "imageUrl": "https://i.imgur.com/eEBTZmk.png"
     },
     {
+        "id": 37,
         "title": "Untitled 08",
         "year": "2022",
         "description": "Photography",
@@ -77,6 +88,7 @@
         "imageUrl": "https://i.imgur.com/6V9NxlM.png"
     },
     {
+        "id": 38,
         "title": "Untitled 09",
         "year": "2022",
         "description": "Digital art",
@@ -84,6 +96,7 @@
         "imageUrl": "https://i.imgur.com/AjyuS7G.png"
     },
     {
+        "id": 39,
         "title": "Untitled 1",
         "year": "2022",
         "description": "Digital art",
@@ -91,6 +104,7 @@
         "imageUrl": "https://i.imgur.com/62jjyL3.png"
     },
     {
+        "id": 40,
         "title": "Untitled 1.1",
         "year": "2022",
         "description": "Digital art",

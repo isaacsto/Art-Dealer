@@ -1,5 +1,6 @@
 [
 {
+    "id": 1,
     "title": "Pathways",
     "year": "2022",
     "description": "Acrylic and Soil on Wood Panel",
@@ -8,6 +9,7 @@
     "imageUrl": "https://i.imgur.com/AaZfrNc.png"
 },
 {
+    "id": 2,
     "title": "Understory",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -16,6 +18,7 @@
     "imageUrl": "https://i.imgur.com/Qr48WxQ.png"
 },
 {
+    "id": 3,
     "title": "Untitled",
     "year": "2022",
     "description": "Acrylic on Wood Panel",
@@ -24,6 +27,7 @@
     "imageUrl": "https://i.imgur.com/eDRit0q.png"
 },
 {
+    "id": 4,
     "title": "Daybreak",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -32,6 +36,7 @@
     "imageUrl": "https://i.imgur.com/QZqbCW8.png"
 },
 {
+    "id": 5,
     "title": "Switchback",
     "year": "2022",
     "description": "Acrylic, Shellac, Soil and Paper on Wood Panel",
@@ -40,6 +45,7 @@
     "imageUrl": "https://i.imgur.com/JywjrUh.png"
 },
 {
+    "id": 6,
     "title": "Understory 2",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -48,6 +54,7 @@
     "imageUrl": "https://i.imgur.com/4rsvggX.png"
 },
 {
+    "id": 7,
     "title": "Interruption",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -56,6 +63,7 @@
     "imageUrl": "https://i.imgur.com/qk7NYFj.png"
 },
 {
+    "id": 8,
     "title": "Murmur",
     "year": "2022",
     "description": "Acrylic, Soil, and Shellac on Wood Panel",
@@ -64,6 +72,7 @@
     "imageUrl": "https://i.imgur.com/ocBapdT.png"
 },
 {
+    "id": 9,
     "title": "Trust",
     "year": "2020",
     "description": "mixed media on wood panel",
@@ -72,6 +81,7 @@
     "imageUrl": "https://i.imgur.com/GcV6SKV.png"
 },
 {
+    "id": 10,
     "title": "recieving time",
     "year": "2020",
     "description": "mixed media on wood panel",
@@ -80,6 +90,7 @@
     "imageUrl": "https://i.imgur.com/VmH5soa.jpg"
 },
 {
+    "id": 11,
     "title": "coming home",
     "year": "2020",
     "size": "9x12",
@@ -88,6 +99,7 @@
     "imageUrl": "https://i.imgur.com/Wu39WsY.png"
 },
 {
+    "id": 12,
     "title": "pull",
     "year": "2020",
     "description": "mixed media on wood panel",
@@ -96,6 +108,7 @@
     "imageUrl": "https://i.imgur.com/r0BsznM.png"
 },
 {
+    "id": 13,
     "title": "the right edge",
     "year": "2020",
     "description": "mixed media on wood panel",
@@ -104,6 +117,7 @@
     "imageUrl": "https://i.imgur.com/ye5tgYR.png"
 },
 {
+    "id": 14,
     "title": "the right edge",
     "year": "2020",
     "description": "mixed media on wood panel",
@@ -112,6 +126,7 @@
     "imageUrl": "https://i.imgur.com/ye5tgYR.png"
 },
 {
+    "id": 15,
     "title": "Sifting",
     "year": "2020",
     "description": "Acrylic and Paper on Wood Panel",
@@ -120,6 +135,7 @@
     "imageUrl": "https://i.imgur.com/pWmuxOA.png"
 },
 {
+    "id": 16,
     "title": "The Edge of Becoming",
     "year": "2020",
     "description": "oil and acrylic on canvas",
@@ -128,6 +144,7 @@
     "imageUrl": "https://i.imgur.com/FJq8tuK.png"
 },
 {
+    "id": 17,
     "title": "home to life",
     "year": "2020",
     "description": "oil and acrylic on canvas",
