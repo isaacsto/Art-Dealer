@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DropdownLink from './DropdownLink';
+import { Link } from 'react-router-dom';
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,18 +15,18 @@ const DropdownMenu = () => {
       </button>
       {isOpen && (
         <ul className="dropdown-menu-items">
-          <DropdownLink to="/ArtistPages/isabellasaracini">
+          <Link to="./IsabellaSaracini">
             Isabella Saracini
-          </DropdownLink>
-          <DropdownLink to="/ArtistPages/krisdegirolamo">
+          </Link>
+          <Link to="./KrisDegirolamo">
             Kris Degirolamo
-          </DropdownLink>
-          <DropdownLink to="/ArtistPages/kamrynharmeling">
+          </Link>
+          <Link to="./KamrynHarmeling">
             Kamryn Harmeling
-          </DropdownLink>
-          <DropdownLink to="/ArtistPages/nicholasriley">
+          </Link>
+          <Link to="./NicholasRiley">
             Nicholas Riley
-          </DropdownLink>
+          </Link>
         </ul>
       )}
     </div>
