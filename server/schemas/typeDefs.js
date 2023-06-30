@@ -30,7 +30,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    artists: [Artists]!
+    artists: [Artist]!
     artist(artistId: ID!): Artist
     art: [Art]!
     singleArtwork(artId: ID!): Artist
