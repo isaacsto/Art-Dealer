@@ -3,65 +3,87 @@
     "title": "Pathways",
     "year": "2022",
     "description": "Acrylic and Soil on Wood Panel",
+    "size": "8x10",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/AaZfrNc.png"
 },
 {
     "title": "Understory",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
+    "size": "8x10",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/Qr48WxQ.png"
 },
 {
     "title": "Untitled",
     "year": "2022",
     "description": "Acrylic on Wood Panel",
+    "size": "8x10",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/eDRit0q.png"
 },
 {
     "title": "Daybreak",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
+    "size": "8x10",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/QZqbCW8.png"
 },
 {
     "title": "Switchback",
     "year": "2022",
     "description": "Acrylic, Shellac, Soil and Paper on Wood Panel",
+    "size": "9x12",
+    "price": "450.00",
     "imageUrl": "https://i.imgur.com/JywjrUh.png"
 },
 {
     "title": "Understory 2",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
+    "size": "8x10",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/4rsvggX.png"
 },
 {
     "title": "Interruption",
     "year": "2022",
     "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
+    "size": "8x10",
+    "price": "450.00",
     "imageUrl": "https://i.imgur.com/qk7NYFj.png"
 },
 {
     "title": "Murmur",
     "year": "2022",
     "description": "Acrylic, Soil, and Shellac on Wood Panel",
+    "size": "9x12",
+    "price": "450.00",
     "imageUrl": "https://i.imgur.com/ocBapdT.png"
 },
 {
-    "title": "trust",
+    "title": "Trust",
     "year": "2020",
     "description": "mixed media on wood panel",
+    "size": "9x12",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/GcV6SKV.png"
 },
 {
     "title": "recieving time",
     "year": "2020",
     "description": "mixed media on wood panel",
+    "size": "9x12",
+    "price": "400.00",
     "imageUrl": "https://i.imgur.com/VmH5soa.jpg"
 },
 {
     "title": "coming home",
     "year": "2020",
+    "size": "9x12",
+    "price": "400.00",
     "description": "mixed media on wood panel",
     "imageUrl": "https://i.imgur.com/Wu39WsY.png"
 },
@@ -69,36 +91,48 @@
     "title": "pull",
     "year": "2020",
     "description": "mixed media on wood panel",
+    "size": "11x14",
+    "price": "450.00",
     "imageUrl": "https://i.imgur.com/r0BsznM.png"
 },
 {
     "title": "the right edge",
     "year": "2020",
     "description": "mixed media on wood panel",
+    "size": "8x10",
+    "price": "350.00",
     "imageUrl": "https://i.imgur.com/ye5tgYR.png"
 },
 {
     "title": "the right edge",
     "year": "2020",
     "description": "mixed media on wood panel",
+    "size": "8x10",
+    "price": "350.00",
     "imageUrl": "https://i.imgur.com/ye5tgYR.png"
 },
 {
     "title": "Sifting",
     "year": "2020",
     "description": "Acrylic and Paper on Wood Panel",
+    "size": "8x10",
+    "price": "350.00",
     "imageUrl": "https://i.imgur.com/pWmuxOA.png"
 },
 {
     "title": "The Edge of Becoming",
     "year": "2020",
     "description": "oil and acrylic on canvas",
+    "size": "30x36",
+    "price": "900.00",
     "imageUrl": "https://i.imgur.com/FJq8tuK.png"
 },
 {
     "title": "home to life",
     "year": "2020",
     "description": "oil and acrylic on canvas",
+    "size": "39x50",
+    "price": "1050.00",
     "imageUrl": "https://i.imgur.com/eWI3d5Q.png"
 }
 ]

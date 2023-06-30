@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-import Home from "./pages/Home"
-import Header from "./pages/Header"
-import Footer from "./pages/Footer"
+import Home from "./Home"
+import Header from "./Header"
+import Footer from "./Footer"
 import DropdownMenu from './pages/DropdownMenu';
+
 
 
 
@@ -19,7 +20,7 @@ function AppContainer() {
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        <DropdownMenu />
+        <DropdownMenu /> 
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -31,4 +32,4 @@ function AppContainer() {
   );
 }
 
-  export default AppContainer;
+  export default AppContainer; 
