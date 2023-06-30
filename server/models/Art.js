@@ -4,6 +4,10 @@ const dateFormat = require('../utils/dateFormat');
 
 const artSchema = new Schema({
     artist: [Artist],
+    id: {
+        type: Number,
+        required: true
+    },
     title: {
         type: String,
         required: true,
@@ -23,6 +27,10 @@ const artSchema = new Schema({
         type: String,
         required: true,
         trim: true,
+    },
+    size: {
+        type: String,
+        required: false, 
     },
     price: {
         type: Number,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -14,16 +14,16 @@ import Nicholas from '../pages/NicholasRiley'
 
 
 
-
 function AppContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <div>
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        <DropdownMenu />
+        <DropdownMenu /> 
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,8 +35,11 @@ function AppContainer() {
         </div>
         <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
       </div>
+     
     </Router>
+  
+     </div>
   );
 }
 
-  export default AppContainer;
+  export default AppContainer; 
