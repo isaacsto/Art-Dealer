@@ -2,10 +2,15 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from "./Home"
-import Header from "./Header"
-import Footer from "./Footer"
-import DropdownMenu from './pages/DropdownMenu';
+
+import Home from "../components/Home"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import DropdownMenu from '../pages/DropdownMenu';
+import Isabella from '../pages/IsabellaSaracini'
+import Kamryn from '../pages/KamrynHarmeling'
+import Kris from '../pages/KrisDegirolamo'
+import Nicholas from '../pages/NicholasRiley'
 
 
 
@@ -22,6 +27,10 @@ function AppContainer() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/IsabellaSaracini" element={<Isabella />} />
+            <Route path="/KamrynHarmeling" element={<Kamryn />} />
+            <Route path="/KrisDegirolamo" element={<Kris />} />
+            <Route path="/NicholasRiley" element={<Nicholas />} />
           </Routes>
         </div>
         <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
