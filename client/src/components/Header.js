@@ -6,9 +6,7 @@ function Header({ currentPage, handlePageChange }) {
     return (
         <header>
             <div>
-                <li>
-                    <Link to="/Home">Artly</Link>
-                </li>
+                <Link to="/Home">Artly</Link>
             </div>
         </header>
 

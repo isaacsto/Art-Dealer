@@ -1,9 +1,14 @@
 import React from 'react';
+import DisplayCard from './DisplayCard'
 
 function KrisDegirolamo() {
- <div>
-    hello i am Kris
- </div>
+   return (
+      <div>
+          <card>
+              <DisplayCard />
+          </card>
+      </div>
+  )
 }
 
 export default KrisDegirolamo; 

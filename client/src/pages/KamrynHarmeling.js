@@ -1,9 +1,14 @@
 import React from 'react';
+import DisplayCard from './DisplayCard'
 
 function KamrynHarmeling() {
- <div>
-    hello im Kamryn
- </div>
+   return (
+      <div>
+          <card>
+              <DisplayCard />
+          </card>
+      </div>
+  )
 }
 
 export default KamrynHarmeling; 
