@@ -23,8 +23,9 @@ function AppContainer() {
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        <DropdownMenu />
+
         <div className="container">
+          <DropdownMenu />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/IsabellaSaracini" element={<Isabella />} />
@@ -39,4 +40,4 @@ function AppContainer() {
   );
 }
 
-  export default AppContainer;
+export default AppContainer;

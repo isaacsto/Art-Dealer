@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../Styles/Login.css'
+import '../Styles/Login.css'
 
 
 const switchers = [...document.querySelectorAll('.switcher')]

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../Styles/Dropdown.css'
 
 const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,26 +10,28 @@ const DropdownMenu = () => {
   };
 
   return (
-    <div className="dropdown-menu">
+    <div className="dropdown">
       <button className="dropdown-toggle" onClick={toggleDropdown}>
         Artists
       </button>
-      {isOpen && (
-        <ul className="dropdown-menu-items">
-          <Link to="/IasbellaSaracini">
-            Isabella Saracini
-          </Link>
-          <Link to="/KrisDegirolamo">
-            Kris Degirolamo
-          </Link>
-          <Link to="/KamrynHarmeling">
-            Kamryn Harmeling
-          </Link>
-          <Link to="/NicholasRiley">
-            Nicholas Riley
-          </Link>
-        </ul>
-      )}
+      <div className='dropdown-menu'>
+        {isOpen && (
+          <ul>
+            <Link to="/IasbellaSaracini">
+             <li>Isabella Saracini </li>
+            </Link>
+            <Link to="/KrisDegirolamo">
+            <li>Kris Degirolamo </li>
+            </Link>
+            <Link to="/KamrynHarmeling">
+            <li>Kamryn Harmeling </li>
+            </Link>
+            <Link to="/NicholasRiley">
+            <li>Nicholas Riley </li>
+            </Link>
+          </ul>
+        )}
+      </div>
     </div>
   );
 };
