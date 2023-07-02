@@ -1,0 +1,27 @@
+.card-img-top {
+    max-width: 300px;
+    align-items: center; 
+}
+
+.extra-container {
+    display: flex; 
+    flex-direction: column;
+    border: solid 1.5px; 
+    max-width: fit-content; 
+    padding: 10px;  
+    
+}
+
+.container {
+    margin: 10px; 
+}
+
+.card-title {
+    font-size: 20px;
+    line-height: .25;
+}
+.card-text {
+    font-size: 15px;
+    display: flex; 
+    flex-direction: flex-start;
+}
