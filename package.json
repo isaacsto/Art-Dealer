@@ -1,5 +1,5 @@
 {
-  "name": "mern-boilerplate",
+  "name": "art-dealer",
   "version": "1.0.0",
   "description": "A full MERN stack boilerplate",
   "main": "server/index.js",
