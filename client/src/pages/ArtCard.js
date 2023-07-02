@@ -1,5 +1,8 @@
 import React from 'react';
-import '../Styles/ArtCard.css';
+
+import "../ArtCard.css";  
+
+
 
 export default function ArtCard(props) {
 

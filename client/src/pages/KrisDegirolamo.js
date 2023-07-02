@@ -2,6 +2,7 @@ import React from 'react';
 import DisplayCard from './DisplayCard'
 
 function KrisDegirolamo() {
+ 
    return (
       <div>
           <card>
@@ -9,6 +10,7 @@ function KrisDegirolamo() {
           </card>
       </div>
   )
+
 }
 
 export default KrisDegirolamo; 

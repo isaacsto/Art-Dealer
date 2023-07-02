@@ -35,6 +35,7 @@ function AppContainer() {
           </Routes>
         </div>
         <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+        
       </div>
      
     </Router>
