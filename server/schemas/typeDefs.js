@@ -34,6 +34,8 @@ const typeDefs = gql`
     artist(artistId: ID!): Artist
     art: [Art]!
     singleArtwork(artId: ID!): Artist
+    users: [User]
+    user(username: String!): User
 
   }
 
