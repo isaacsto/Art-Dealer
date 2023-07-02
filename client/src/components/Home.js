@@ -1,11 +1,6 @@
 import React from 'react';
-
 import { Slide } from 'react-slideshow-image';
-
 import 'react-slideshow-image/dist/styles.css'
-
-/* import DisplayCard from '../../src/pages/DisplayCard' */
-
 
 const slideImages = [
   {
@@ -22,13 +17,9 @@ const slideImages = [
   },
   
 ];
-
 function Home() {
     return (
-    
-        <div className="home-body">
-          {/*   temporary placement of displaycard component until routes work */}
-      {/* <DisplayCard /> */}
+ <div className="home-body">
       <div className="slide-container">
       <Slide>
         {slideImages.map((slideImage, index) => (
@@ -36,12 +27,11 @@ function Home() {
             <img style={{ width: '100%' }} src={slideImage.url} />
             <h2>{slideImage.caption}</h2>
           </div>
-        ))}
       </Slide>
-    
     </div>
+
         </div>
     );
-  }
-  
-  export default Home;
+}
+
+export default Home;
