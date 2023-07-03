@@ -24,9 +24,9 @@ function Home() {
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <img style={{ width: '100%' }} src={slideImage.url} />
-            <h2>{slideImage.caption}</h2>
+            <img style={{ width: '80%', margin: '10px auto', display: 'block'}} src={slideImage.url} />
           </div>
+        ))}
       </Slide>
     </div>
 

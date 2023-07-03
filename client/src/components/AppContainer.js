@@ -3,9 +3,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
-import Home from "../components/Home"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import Home from "./Home"
+import Header from "./Header"
+import Footer from "./Footer"
 import DropdownMenu from '../pages/DropdownMenu';
 import Isabella from '../pages/IsabellaSaracini'
 import Kamryn from '../pages/KamrynHarmeling'
@@ -27,7 +27,7 @@ function AppContainer() {
         <div className="container">
           <DropdownMenu />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/IsabellaSaracini" element={<Isabella />} />
             <Route path="/KamrynHarmeling" element={<Kamryn />} />
             <Route path="/KrisDegirolamo" element={<Kris />} />
