@@ -17,7 +17,7 @@ const DropdownMenu = () => {
 
   return (
     <div className="dropdown" style={style}>
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
+      <button className="dropdown-toggle" onClick={toggleDropdown} style={style}>
         Artists
       </button>
       <div className='dropdown-menu'>
