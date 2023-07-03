@@ -1,0 +1,20 @@
+.art-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .art-cards-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .artist-info {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
