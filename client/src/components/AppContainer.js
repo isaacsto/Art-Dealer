@@ -6,12 +6,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
+import Contact from '../components/Contact'
 import DropdownMenu from '../pages/DropdownMenu';
 import MediumMenu from '../pages/MediumMenu'
 import Isabella from '../pages/IsabellaSaracini'
 import Kamryn from '../pages/KamrynHarmeling'
 import Kris from '../pages/KrisDegirolamo'
 import Nicholas from '../pages/NicholasRiley'
+
 
 const style = {
   dropDowns: {
@@ -40,6 +42,7 @@ function AppContainer() {
             <Route path="/KamrynHarmeling" element={<Kamryn />} />
             <Route path="/KrisDegirolamo" element={<Kris />} />
             <Route path="/NicholasRiley" element={<Nicholas />} />
+            <Route path="/Contact" element={<Contact />} />
           </Routes>
         </div>
         <Footer currentPage={currentPage} handlePageChange={handlePageChange} />

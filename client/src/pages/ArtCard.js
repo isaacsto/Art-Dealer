@@ -1,11 +1,24 @@
-import React from 'react';
 
-import "../ArtCard.css";  
+import React/* , { useState }  */from 'react';
+import "../../src/Styles/ArtCard.css";  
 
+const style = {
+  button: {
+    'font-family': 'Roboto Mono',
+    'textDecoration': 'none',
+    'padding': '10px',
+  }
+  
+}
 
 
 export default function ArtCard(props) {
 
+/*   const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+ */
   return (
     <div className="container">
       <div className="card">
@@ -21,12 +34,13 @@ export default function ArtCard(props) {
           <p className="card-text">{props.description}</p>
           <p className="card-text"> {props.year}</p>
           <p className="card-text"> {props.price}</p>
-         {/*  <a href="#"=">
-            Buy {props.title}
-          </a> */}
+          <button className="button" style={style.button} /* onClick={() => addToCart(props.item)} */>
+  Add to Cart
+</button>
           </div>
         </div>
       </div>
     </div>
   );
 }
+

@@ -9,18 +9,31 @@ const MediumMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const style = {
+const style = {
     'fontFamily': 'Roboto Mono',
     'textDecoration': 'none',
-  
+    'cursor': 'pointer',
 }
 
+const dropdownStyle = {
+  'position': 'relative',
+};
+
+const menuStyle = {
+  'position': 'absolute',
+  'top': '100%',
+  'left': 0,
+  'backgroundColor': 'white',
+  'zIndex': 1,
+  'width': '100%',
+};
+
   return (
-    <div className="dropdown" style={style}>
+    <div className="dropdown" style={dropdownStyle}>
       <button className="dropdown-toggle" onClick={toggleDropdown} style={style}>
         Mediums
       </button>
-      <div className='dropdown-menu'>
+      <div className='dropdown-menu' style={menuStyle}>
         {isOpen && (
           <ul>
             <Link to="/MediumPages">
