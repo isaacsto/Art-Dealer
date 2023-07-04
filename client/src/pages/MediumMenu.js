@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Dropdown.css'
 
-const DropdownMenu = () => {
+const MediumMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -18,22 +18,19 @@ const DropdownMenu = () => {
   return (
     <div className="dropdown" style={style}>
       <button className="dropdown-toggle" onClick={toggleDropdown} style={style}>
-        Artists
+        Mediums
       </button>
       <div className='dropdown-menu'>
         {isOpen && (
           <ul>
-            <Link to="/IsabellaSaracini">
-             <li>Isabella Saracini </li>
+            <Link to="/MediumPages">
+             <li>Sculpture </li>
             </Link>
-            <Link to="/KrisDegirolamo">
-            <li>Kris Degirolamo </li>
+            <Link to="/MediumPages">
+            <li>Painting</li>
             </Link>
-            <Link to="/KamrynHarmeling">
-            <li>Kamryn Harmeling </li>
-            </Link>
-            <Link to="/NicholasRiley">
-            <li>Nicholas Riley </li>
+            <Link to="/MediumPages">
+            <li>Digital Art</li>
             </Link>
           </ul>
         )}
@@ -45,4 +42,4 @@ const DropdownMenu = () => {
   );
 };
 
-export default DropdownMenu;
+export default MediumMenu;

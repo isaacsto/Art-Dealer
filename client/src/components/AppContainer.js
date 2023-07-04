@@ -7,11 +7,17 @@ import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
 import DropdownMenu from '../pages/DropdownMenu';
+import MediumMenu from '../pages/MediumMenu'
 import Isabella from '../pages/IsabellaSaracini'
 import Kamryn from '../pages/KamrynHarmeling'
 import Kris from '../pages/KrisDegirolamo'
 import Nicholas from '../pages/NicholasRiley'
 
+const style = {
+  dropDowns: {
+    display: 'flex'
+  }
+}
 
 
 function AppContainer() {
@@ -25,9 +31,11 @@ function AppContainer() {
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
         <div className="container">
-          <DropdownMenu />
+          <div className="toggles" style={style.dropDowns}>  <DropdownMenu />
+          <MediumMenu /></div>
+         
           <Routes>
-            <Route path="/Home" element={<Home />} />
+           <Route path="/" element={<Home />} />
             <Route path="/IsabellaSaracini" element={<Isabella />} />
             <Route path="/KamrynHarmeling" element={<Kamryn />} />
             <Route path="/KrisDegirolamo" element={<Kris />} />

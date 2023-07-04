@@ -7,8 +7,9 @@ const styles = {
   footerStyle: {
     display: 'flex',
     justifyContent: 'center',
-    /* position: 'fixed', */
-    /* bottom: 0, */
+    alignItems: 'center',
+    position: 'fixed',
+    bottom: 0,
   },
 };
 
@@ -16,7 +17,7 @@ function Footer({ currentPage, handlePageChange }) {
   return (
     <footer className="footer" style={styles.footerStyle}>
       <div>
-        <a href="https://www.instagram.com/isabellasaraceni_art/?hl=entarget="_target="blank">
+        <a href="https://www.instagram.com/isabellasaraceni_art/?hl=entarget="_target="blank" style={styles.footerStyle}>
         <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
