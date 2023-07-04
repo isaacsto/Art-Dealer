@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
-import Contact from '../components/Contact'
+import Contact from "./Contact"
 import DropdownMenu from '../pages/DropdownMenu';
 import MediumMenu from '../pages/MediumMenu'
 import Isabella from '../pages/IsabellaSaracini'
