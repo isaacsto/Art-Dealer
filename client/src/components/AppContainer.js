@@ -11,7 +11,7 @@ import Isabella from '../pages/IsabellaSaracini'
 import Kamryn from '../pages/KamrynHarmeling'
 import Kris from '../pages/KrisDegirolamo'
 import Nicholas from '../pages/NicholasRiley'
-
+import Login from '../pages/Login';
 
 
 function AppContainer() {
@@ -28,6 +28,7 @@ function AppContainer() {
           <DropdownMenu />
           <Routes>
             <Route path="/Home" element={<Home />} />
+            <Route path="/Login" element={<Login />} />
             <Route path="/IsabellaSaracini" element={<Isabella />} />
             <Route path="/KamrynHarmeling" element={<Kamryn />} />
             <Route path="/KrisDegirolamo" element={<Kris />} />
