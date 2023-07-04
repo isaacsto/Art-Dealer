@@ -47,7 +47,7 @@ function Contact() {
       height: "100vh",
     },
      para: {
-      fontSize: "30px"
+      fontSize: "30px",
     }, 
     input: {
       marginBottom: "1rem",
