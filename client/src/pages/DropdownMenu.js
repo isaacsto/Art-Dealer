@@ -12,8 +12,8 @@ const DropdownMenu = () => {
   const style = {
     'fontFamily': 'Roboto Mono',
     'textDecoration': 'none',
-  
-}
+
+  }
 
   return (
     <div className="dropdown" style={style}>
@@ -23,24 +23,24 @@ const DropdownMenu = () => {
       <div className='dropdown-menu'>
         {isOpen && (
           <ul>
-            <Link to="/IasbellaSaracini">
-             <li>Isabella Saracini </li>
+            <Link to="/IsabellaSaracini">
+              <li>Isabella Saracini </li>
             </Link>
             <Link to="/KrisDegirolamo">
-            <li>Kris Degirolamo </li>
+              <li>Kris Degirolamo </li>
             </Link>
             <Link to="/KamrynHarmeling">
-            <li>Kamryn Harmeling </li>
+              <li>Kamryn Harmeling </li>
             </Link>
             <Link to="/NicholasRiley">
-            <li>Nicholas Riley </li>
+              <li>Nicholas Riley </li>
             </Link>
           </ul>
         )}
       </div>
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500" rel="stylesheet"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500" rel="stylesheet"></link>
     </div>
   );
 };
