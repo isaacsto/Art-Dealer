@@ -39,17 +39,21 @@ const menuStyle = {
 
               <li>Isabella Saracini </li>
 
-             <li>Isabella Saracini </li>
-
             </Link>
             <Link to="/KrisDegirolamo">
               <li>Kris Degirolamo </li>
             </Link>
             <Link to="/KamrynHarmeling">
-              <li>Kamryn Harmeling </li>
+              <li>Kam Harmeling </li>
             </Link>
             <Link to="/NicholasRiley">
               <li>Nicholas Riley </li>
+            </Link>
+            <Link to="/Cooth">
+              <li>Cooth </li>
+            </Link>
+            <Link to="/AronDubois">
+              <li>Aron Dubois </li>
             </Link>
           </ul>
         )}

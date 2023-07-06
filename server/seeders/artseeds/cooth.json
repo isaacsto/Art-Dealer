@@ -1,0 +1,39 @@
+[
+    {
+        "id": 51,
+        "title": "“Dresser Tha Creep",
+        "year": "2023",
+        "description": "clay, oil paint",
+        "size": "5x5",
+        "price": "105.00",
+        "imageUrl": "https://i.imgur.com/4Ot6I3M.png"
+    },
+    {
+        "id": 52,
+        "title": "“Lazy Boy Creep",
+        "year": "2023",
+        "description": "clay, oil paint",
+        "size": "5x5",
+        "price": "105.00",
+        "imageUrl": "https://i.imgur.com/WZS7Mvr.png"
+    },
+    {
+        "id": 53,
+        "title": "“Nugget Creep",
+        "year": "2023",
+        "description": "clay, oil paint",
+        "size": "5x5",
+        "price": "105.00",
+        "imageUrl": "https://i.imgur.com/xiKefBw.png"
+    },
+    {
+        "id": 54,
+        "title": "Fuck yo Borders Creep",
+        "year": "2023",
+        "description": "clay, oil paint",
+        "size": "5x5",
+        "price": "105.00",
+        "imageUrl": "https://i.imgur.com/c0BK1el.png"
+    }
+
+]

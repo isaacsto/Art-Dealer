@@ -1,5 +1,6 @@
 import React from 'react';
 import DisplayCard from './DisplayCard'
+import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
 function KamrynHarmeling() {
@@ -31,9 +32,11 @@ function KamrynHarmeling() {
       <div className='art-cards-container'>
          <div className='artist-info'>
             <h2>{artistName}</h2>
-            <p>{artistDescription}</p>
+            <p>{artistDescription}</p> 
          </div>
          {createRows(3)}
+         <div> <Link link={"https://www.instagram.com/kam.ryn/"} /></div>
+        
       </div>
    );
 }
