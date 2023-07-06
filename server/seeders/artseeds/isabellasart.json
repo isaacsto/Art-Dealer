@@ -2,6 +2,7 @@
             {
                 "id": 1,
                 "title": "Pathways",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic and Soil on Wood Panel",
                 "size": "8x10",
@@ -11,6 +12,7 @@
             {
                 "id": 2,
                 "title": "Understory",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -20,6 +22,7 @@
             {
                 "id": 3,
                 "title": "Untitled",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic on Wood Panel",
                 "size": "8x10",
@@ -29,6 +32,7 @@
             {
                 "id": 4,
                 "title": "Daybreak",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -38,6 +42,7 @@
             {
                 "id": 5,
                 "title": "Switchback",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Shellac, Soil and Paper on Wood Panel",
                 "size": "9x12",
@@ -56,6 +61,7 @@
             {
                 "id": 7,
                 "title": "Interruption",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -65,6 +71,7 @@
             {
                 "id": 8,
                 "title": "Murmur",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, and Shellac on Wood Panel",
                 "size": "9x12",
@@ -74,6 +81,7 @@
             {
                 "id": 9,
                 "title": "Trust",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "9x12",
@@ -83,6 +91,7 @@
             {
                 "id": 10,
                 "title": "recieving time",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "9x12",
@@ -92,6 +101,7 @@
             {
                 "id": 11,
                 "title": "coming home",
+                "medium": "Painting",
                 "year": "2020",
                 "size": "9x12",
                 "price": "400.00",
@@ -101,6 +111,7 @@
             {
                 "id": 12,
                 "title": "pull",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "11x14",
@@ -110,6 +121,7 @@
             {
                 "id": 13,
                 "title": "the right edge",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "8x10",
@@ -128,6 +140,7 @@
             {
                 "id": 15,
                 "title": "Sifting",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "Acrylic and Paper on Wood Panel",
                 "size": "8x10",
@@ -137,6 +150,7 @@
             {
                 "id": 16,
                 "title": "The Edge of Becoming",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "oil and acrylic on canvas",
                 "size": "30x36",
@@ -146,6 +160,7 @@
             {
                 "id": 17,
                 "title": "home to life",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "oil and acrylic on canvas",
                 "size": "39x50",
