@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, default: mongoose  } = require('mongoose');
 const { artSchema } = require('./Art')
 const bcrypt = require('bcrypt');
 
@@ -25,15 +25,20 @@ const userSchema = new Schema({
   //     type: Schema.Types.ObjectId,
   //     ref: 'Thought',
   //   },
-    
+
   // ],
-  purchasedArt: [artSchema],
-  firstName:{
+  purchasedArt: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: artSchema
+    }
+  ],
+  firstName: {
     type: String,
     required: true,
     trim: true,
   },
-  lastName:{
+  lastName: {
     type: String,
     required: true,
     trim: true,

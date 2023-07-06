@@ -1,11 +1,13 @@
-const { Schema, model } = require('mongoose');
-const { Artist } = require('./Artist')
+const { Schema } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
 const artSchema = new Schema({
-    artist: [Artist],
     id: {
         type: Number,
+        required: true
+    },
+    artist: {
+        type: String,
         required: true
     },
     title: {
