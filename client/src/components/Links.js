@@ -5,24 +5,24 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const styles = {
   footerStyle: {
-    display: 'flex',
+   /*  display: 'flex', */
     justifyContent: 'center',
     alignItems: 'center',
-    position: 'fixed',
     bottom: 0,
+    textAlign: 'center',
   },
 };
 
-function Footer({ currentPage, handlePageChange }) {
+function Link({ currentPage, handlePageChange, link }) {
   return (
     <footer className="footer" style={styles.footerStyle}>
       <div>
-        <a href="https://www.instagram.com/isabellasaraceni_art/?hl=entarget="_target="blank" style={styles.footerStyle}>
-        <FontAwesomeIcon icon={faInstagram} />
+      <a href={link} target="_blank" rel="noopener noreferrer" style={styles.footerStyle}>
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
     </footer>
   );
 }
 
-export default Footer
+export default Link

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 55,
+        "title": "Ways of Clay",
+        "year": "2023",
+        "description": "Glazed Ceramic",
+        "size": "13'x 6'x 6'",
+        "price": "500.00",
+        "imageUrl": "https://i.imgur.com/doOqHNK.png"
+    },
+    {
+        "id": 56,
+        "title": "Sculpture II",
+        "year": "2023",
+        "description": "Glazed Ceramic",
+        "size": "13'x 6'x 6'",
+        "price": "500.00",
+        "imageUrl": "https://i.imgur.com/hL775cl.png"
+    }
+]
