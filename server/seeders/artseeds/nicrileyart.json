@@ -3,6 +3,7 @@
     {
         "id": 41,
         "title": "Untitled",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
@@ -11,6 +12,7 @@
     {
         "id": 42,
         "title": "Untitled 0001",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
@@ -19,6 +21,7 @@
     {
         "id": 43,
         "title": "Untitled 0002",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
@@ -27,6 +30,7 @@
     {
         "id": 44,
         "title": "Untitled 0003",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
@@ -35,6 +39,7 @@
     {
         "id": 45,
         "title": "Untitled 0004",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "200.00",
@@ -43,6 +48,7 @@
     {
         "id": 46,
         "title": "Untitled 0005",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "200.00",
@@ -51,6 +57,7 @@
     {
         "id": 47,
         "title": "Untitled 0006",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "200.00",
@@ -59,6 +66,7 @@
     {
         "id": 48,
         "title": "Untitled 0007",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "400.00",
@@ -67,6 +75,7 @@
     {
         "id": 49,
         "title": "Untitled 0008",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "250.00",
@@ -75,6 +84,7 @@
     {
         "id": 50,
         "title": "Untitled 0009",
+        "medium": "Digital art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",

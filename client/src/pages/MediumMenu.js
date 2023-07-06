@@ -36,10 +36,10 @@ const menuStyle = {
       <div className='dropdown-menu' style={menuStyle}>
         {isOpen && (
           <ul>
-            <Link to="/MediumPages">
+            <Link to="/SculptingPage">
              <li>Sculpture </li>
             </Link>
-            <Link to="/MediumPages">
+            <Link to="/PaintingPage">
             <li>Painting</li>
             </Link>
             <Link to="/DigitalArtPages">

@@ -3,6 +3,7 @@
     {
         "id": 18,
         "title": "4 ducks",
+        "medium": "Painting",
         "year": "2023",
         "description": "Acrylic on canvas",
         "size": "18x24",
@@ -12,6 +13,7 @@
     {
         "id": 19,
         "title": "i'll get there when i get there",
+        "medium": "Painting",
         "year": "2022",
         "description": "Acrylic on wood panel",
         "size": "8x10",
@@ -21,6 +23,7 @@
     {
         "id": 20,
         "title": "Untitled 00",
+        "medium": "Painting",
         "year": "2021",
         "description": "Acrylic on canvas",
         "size": "20x20",
@@ -30,6 +33,7 @@
     {
         "id": 21,
         "title": "California 1996",
+        "medium": "Painting",
         "year": "2022",
         "description": "Acrylic on panel",
         "size": "20x20",
@@ -39,6 +43,7 @@
     {
         "id": 22,
         "title": "Untitled 001",
+        "medium": "Painting",
         "year": "2018",
         "description": "Ink on paper",
         "size": "8x10",
@@ -48,6 +53,7 @@
     {
         "id": 23,
         "title": "Untitled 002",
+        "medium": "Painting",
         "year": "2018",
         "description": "Ink on paper",
         "size": "8x10",
@@ -57,6 +63,7 @@
     {
         "id": 24,
         "title": "Untitled 003",
+        "medium": "Painting",
         "year": "2017",
         "description": "Acrylic on paper",
         "size": "10x12",
@@ -66,6 +73,7 @@
     {
         "id": 25,
         "title": "I want my mother but i don't need her",
+        "medium": "Painting",
         "year": "2017",
         "description": "Acrylic on wood",
         "size": "8x10",
@@ -75,6 +83,7 @@
     {
         "id": 26,
         "title": "Detail",
+        "medium": "Painting",
         "year": "2017",
         "size": "8x10",
         "price": "75.00",
