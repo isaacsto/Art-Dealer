@@ -4,8 +4,8 @@ import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
 function AronDubois() {
-    const artistName = 'Cooth';
-   const artistDescription = 'This is a brief description of the artist Cooth.';
+    const artistName = 'Aaron Dubois';
+   const artistDescription = 'This is a brief description of the artist Aron Dubois.';
    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
    const createRows = (cardsPerRow) => {
