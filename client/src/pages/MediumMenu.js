@@ -42,7 +42,7 @@ const menuStyle = {
             <Link to="/MediumPages">
             <li>Painting</li>
             </Link>
-            <Link to="/MediumPages">
+            <Link to="/DigitalArtPages">
             <li>Digital Art</li>
             </Link>
           </ul>

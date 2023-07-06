@@ -34,3 +34,48 @@ export const showPurchaseHistory = () => {
     },
   });
 };
+
+export const getArtists = () => {
+  return fetch("/api/artists", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};
+
+export const getSingleArtist = () => {
+  return fetch("/api/:artistId", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};
+
+export const createArtist = (userData) => {
+  return fetch("/api/artists", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  });
+};
+
+export const addArt = (userData) => {
+  return fetch("/api/:artistId/art", {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  });
+};
+
+export const removeArt = () => {
+  return fetch("/api/:artistId/art/:artId", {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+};

@@ -7,10 +7,9 @@ const {
   removeArt,
 } = require("../../controllers/artistController");
 
-router.route("/").get(getArtists);
-router.route("/").get(getSingleArtist);
-router.route("/").post(createArtist);
-router.route("/").get(addArt);
-router.route("/").put(removeArt);
+router.route("/").get(getArtists).post(createArtist);
+router.route("/:artistId").get(getSingleArtist);
+router.route("/:artistId/art").put(addArt);
+router.route("/:artistId/art/:artId").delete(removeArt);
 
 module.exports = router;

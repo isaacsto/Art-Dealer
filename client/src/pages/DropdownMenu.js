@@ -14,7 +14,6 @@ const style = {
     'textDecoration': 'none',
     'cursor': 'pointer', 
 }
-
 const dropdownStyle = {
   'position': 'relative',
 };
@@ -37,7 +36,11 @@ const menuStyle = {
         {isOpen && (
           <ul>
             <Link to="/IsabellaSaracini">
+
+              <li>Isabella Saracini </li>
+
              <li>Isabella Saracini </li>
+
             </Link>
             <Link to="/KrisDegirolamo">
               <li>Kris Degirolamo </li>
@@ -51,6 +54,11 @@ const menuStyle = {
           </ul>
         )}
       </div>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500" rel="stylesheet"></link>
+
 
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
