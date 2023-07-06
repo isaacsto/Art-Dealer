@@ -3,9 +3,9 @@ import DisplayCard from './DisplayCard'
 import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
-function NicholasRiley() {
-   const artistName = 'Nicholas Riley';
-   const artistDescription = 'This is a brief description of the artist Nicholas Riley.';
+function Cooth() {
+    const artistName = 'Cooth';
+   const artistDescription = 'This is a brief description of the artist Cooth.';
    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
    const createRows = (cardsPerRow) => {
@@ -32,15 +32,18 @@ function NicholasRiley() {
       <div className='art-cards-container'>
          <div className='artist-info'>
             <h2>{artistName}</h2>
-            <div> <Link link={"https://www.instagram.com/nickrileyart/"} /></div>
+            <Link link={"https://www.instagram.com/havecooth/"} />
             <p>{artistDescription}</p>
            
          </div>
+         <div>
          {createRows(3)}
+         </div>
+        
          
         
       </div>
    );
 }
 
-export default NicholasRiley; 
+export default Cooth; 

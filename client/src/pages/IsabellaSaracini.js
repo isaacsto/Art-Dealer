@@ -1,5 +1,6 @@
 import React from 'react';
 import DisplayCard from './DisplayCard'
+import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
 function IsabellaSaracini() {
@@ -31,9 +32,16 @@ function IsabellaSaracini() {
       <div className='art-cards-container'>
          <div className='artist-info'>
             <h2>{artistName}</h2>
+            <Link link={"https://www.instagram.com/isabellasaraceni_art/?hl=en"} />
             <p>{artistDescription}</p>
+           
          </div>
+         <div>
          {createRows(3)}
+         </div>
+        
+         
+        
       </div>
    );
 }
