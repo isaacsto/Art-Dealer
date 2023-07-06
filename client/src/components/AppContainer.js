@@ -14,6 +14,9 @@ import Kamryn from '../pages/KamrynHarmeling'
 import Kris from '../pages/KrisDegirolamo'
 import Nicholas from '../pages/NicholasRiley'
 import Login from '../pages/Login';
+import DigitalArt from '../pages/DigitalArtPage'
+import Painting from '../pages/PaintingPage'
+import Sculpting from '../pages/SculptingPage'
 
 const style = {
   dropDowns: {
@@ -47,6 +50,9 @@ function AppContainer() {
             <Route path="/KrisDegirolamo" element={<Kris />} />
             <Route path="/NicholasRiley" element={<Nicholas />} />
             <Route path="/Contact" element={<Contact />} />
+            <Route path="/DigitalArtPages" element={<DigitalArt />} />
+            <Route path="/PantingPages" element={<Painting />} />
+            <Route path="/SculptingPage" element={<Sculpting />} />
           </Routes>
         </div>
         <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
