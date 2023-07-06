@@ -2,6 +2,7 @@
     {
         "id": 55,
         "title": "Ways of Clay",
+        "medium": "sculpture",
         "year": "2023",
         "description": "Glazed Ceramic",
         "size": "13'x 6'x 6'",
@@ -11,6 +12,7 @@
     {
         "id": 56,
         "title": "Sculpture II",
+        "medium": "sculpture",
         "year": "2023",
         "description": "Glazed Ceramic",
         "size": "13'x 6'x 6'",
