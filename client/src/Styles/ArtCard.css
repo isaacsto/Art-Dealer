@@ -26,3 +26,14 @@
     flex-direction: flex-start;
 }
 
+.button {
+    background-color:#112D3A;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+  }
+  
+  .button:hover {
+    background-color: #8AAD69;
+    border-color: none;
+  }

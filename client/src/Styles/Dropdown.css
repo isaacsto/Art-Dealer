@@ -5,16 +5,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 10px;
+  
     
 }
 
 .dropdown-menu {
     background-color: lightgrey;
     width: 150px;
-    border: 2px solid black;
     border-radius: 5px; 
     margin-top: 2px;
-    padding: 2px;
+    padding: 10px;
+    line-height: 50px;
+   
     
 }
 
@@ -25,6 +27,7 @@
     width: 157px;
     font-size: 20px;
     border-radius: 5px; 
+    border: none; 
   }
   
   .dropdown-toggle:active {
@@ -40,11 +43,13 @@
     justify-content: center;
     margin-left: 10px;
     font-size: larger;
+  
     
   }
   
   .dropdown-menu ul li {
     margin-right: 10px;
+   
   }
   
   .dropdown-menu ul li:last-child {
