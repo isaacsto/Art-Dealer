@@ -11,7 +11,13 @@ function Header({ currentPage, handlePageChange }) {
     return (
         <header>
             <div>
-             <Link to="/Home" style={style}>Artly</Link>   
+ 
+             <Link to="/" style={style}>Artly</Link>   
+             <Link to="/Contact" style={style}> Contact Us</Link>
+
+             
+             <Link to="/Login" style={style}>Login</Link>   
+
             </div>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
