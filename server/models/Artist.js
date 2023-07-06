@@ -13,22 +13,6 @@ const artistSchema = new Schema({
       ref: artSchema
     }
   ]
-  
-  // comments: [
-  //   {
-  //     commentText: {
-  //       type: String,
-  //       required: true,
-  //       minlength: 1,
-  //       maxlength: 280,
-  //     },
-  //     createdAt: {
-  //       type: Date,
-  //       default: Date.now,
-  //       get: (timestamp) => dateFormat(timestamp),
-  //     },
-  //   },
-  // ],
 });
 
 const Artist = model('Artist', artistSchema);
