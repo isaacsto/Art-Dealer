@@ -16,7 +16,9 @@ function Header({ currentPage, handlePageChange }) {
              <Link to="/Contact" style={style}> Contact Us</Link>
 
              
-             <Link to="/Login" style={style}>Login</Link>   
+             <Link to="/Login" style={style}>Login</Link>
+
+             <Link to="/Cart" style={style}>Cart</Link>
 
             </div>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
