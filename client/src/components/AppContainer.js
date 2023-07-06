@@ -51,7 +51,7 @@ function AppContainer() {
             <Route path="/NicholasRiley" element={<Nicholas />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/DigitalArtPages" element={<DigitalArt />} />
-            <Route path="/PantingPages" element={<Painting />} />
+            <Route path="/PaintingPage" element={<Painting />} />
             <Route path="/SculptingPage" element={<Sculpting />} />
           </Routes>
         </div>
