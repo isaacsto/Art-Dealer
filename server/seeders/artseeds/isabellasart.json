@@ -1,7 +1,7 @@
 [
             {
                 "id": 1,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Pathways",
                 "medium": "Painting",
                 "year": "2022",
@@ -12,7 +12,7 @@
             },
             {
                 "id": 2,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Understory",
                 "medium": "Painting",
                 "year": "2022",
@@ -23,7 +23,7 @@
             },
             {
                 "id": 3,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Untitled",
                 "medium": "Painting",
                 "year": "2022",
@@ -34,7 +34,7 @@
             },
             {
                 "id": 4,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Daybreak",
                 "medium": "Painting",
                 "year": "2022",
@@ -45,7 +45,7 @@
             },
             {
                 "id": 5,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Switchback",
                 "medium": "Painting",
                 "year": "2022",
@@ -56,7 +56,7 @@
             },
             {
                 "id": 6,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Understory 2",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -66,7 +66,7 @@
             },
             {
                 "id": 7,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Interruption",
                 "medium": "Painting",
                 "year": "2022",
@@ -77,7 +77,7 @@
             },
             {
                 "id": 8,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Murmur",
                 "medium": "Painting",
                 "year": "2022",
@@ -88,7 +88,7 @@
             },
             {
                 "id": 9,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Trust",
                 "medium": "Painting",
                 "year": "2020",
@@ -99,7 +99,7 @@
             },
             {
                 "id": 10,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "recieving time",
                 "medium": "Painting",
                 "year": "2020",
@@ -110,7 +110,7 @@
             },
             {
                 "id": 11,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "coming home",
                 "medium": "Painting",
                 "year": "2020",
@@ -121,7 +121,7 @@
             },
             {
                 "id": 12,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "pull",
                 "medium": "Painting",
                 "year": "2020",
@@ -132,7 +132,7 @@
             },
             {
                 "id": 13,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "the right edge",
                 "medium": "Painting",
                 "year": "2020",
@@ -143,7 +143,7 @@
             },
             {
                 "id": 14,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "the right edge",
                 "year": "2020",
                 "description": "mixed media on wood panel",
@@ -153,7 +153,7 @@
             },
             {
                 "id": 15,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "Sifting",
                 "medium": "Painting",
                 "year": "2020",
@@ -164,7 +164,7 @@
             },
             {
                 "id": 16,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "The Edge of Becoming",
                 "medium": "Painting",
                 "year": "2020",
@@ -175,7 +175,7 @@
             },
             {
                 "id": 17,
-                "artistName": "Isabella Saracini",
+                "artist": "Isabella Saracini",
                 "title": "home to life",
                 "medium": "Painting",
                 "year": "2020",

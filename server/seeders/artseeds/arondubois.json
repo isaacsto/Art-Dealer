@@ -1,7 +1,7 @@
 [
     {
         "id": 55,
-        "artistName": "Aron Dubois",
+        "artist": "Aron Dubois",
         "title": "Ways of Clay",
         "medium": "sculpture",
         "year": "2023",
@@ -12,7 +12,7 @@
     },
     {
         "id": 56,
-        "artistName": "Aron Dubois",
+        "artist": "Aron Dubois",
         "title": "Sculpture II",
         "medium": "sculpture",
         "year": "2023",

@@ -2,7 +2,7 @@
 
     {
         "id": 41,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled",
         "medium": "Digital art",
         "year": "2023",
@@ -12,7 +12,7 @@
     },
     {
         "id": 42,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0001",
         "medium": "Digital art",
         "year": "2023",
@@ -22,7 +22,7 @@
     },
     {
         "id": 43,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0002",
         "medium": "Digital art",
         "year": "2023",
@@ -32,7 +32,7 @@
     },
     {
         "id": 44,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0003",
         "medium": "Digital art",
         "year": "2023",
@@ -42,7 +42,7 @@
     },
     {
         "id": 45,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0004",
         "medium": "Digital art",
         "year": "2023",
@@ -52,7 +52,7 @@
     },
     {
         "id": 46,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0005",
         "medium": "Digital art",
         "year": "2023",
@@ -62,7 +62,7 @@
     },
     {
         "id": 47,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0006",
         "medium": "Digital art",
         "year": "2023",
@@ -72,7 +72,7 @@
     },
     {
         "id": 48,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0007",
         "medium": "Digital art",
         "year": "2023",
@@ -82,7 +82,7 @@
     },
     {
         "id": 49,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0008",
         "medium": "Digital art",
         "year": "2023",
@@ -92,7 +92,7 @@
     },
     {
         "id": 50,
-        "artistName": "Nicolas Riley",
+        "artist": "Nicolas Riley",
         "title": "Untitled 0009",
         "medium": "Digital art",
         "year": "2023",
