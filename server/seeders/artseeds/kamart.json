@@ -2,7 +2,7 @@
 [
     {
         "id": 18,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "4 ducks",
         "medium": "Painting",
         "year": "2023",
@@ -13,7 +13,7 @@
     },
     {
         "id": 19,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "i'll get there when i get there",
         "medium": "Painting",
         "year": "2022",
@@ -24,7 +24,7 @@
     },
     {
         "id": 20,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "Untitled 00",
         "medium": "Painting",
         "year": "2021",
@@ -35,7 +35,7 @@
     },
     {
         "id": 21,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "California 1996",
         "medium": "Painting",
         "year": "2022",
@@ -46,7 +46,7 @@
     },
     {
         "id": 22,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "Untitled 001",
         "medium": "Painting",
         "year": "2018",
@@ -57,7 +57,7 @@
     },
     {
         "id": 23,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "Untitled 002",
         "medium": "Painting",
         "year": "2018",
@@ -68,7 +68,7 @@
     },
     {
         "id": 24,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "Untitled 003",
         "medium": "Painting",
         "year": "2017",
@@ -79,7 +79,7 @@
     },
     {
         "id": 25,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "I want my mother but i don't need her",
         "medium": "Painting",
         "year": "2017",
@@ -90,7 +90,7 @@
     },
     {
         "id": 26,
-        "artistName": "Kamryn Harmeling",
+        "artist": "Kamryn Harmeling",
         "title": "Detail",
         "medium": "Painting",
         "year": "2017",
