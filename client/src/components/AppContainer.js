@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from "./Home"
 import Header from "./Header"
-import Footer from "./Footer"
+/* import Footer from "./Footer" */
 import Contact from "./Contact"
 import DropdownMenu from '../pages/DropdownMenu';
 import MediumMenu from '../pages/MediumMenu'
@@ -13,6 +13,8 @@ import Isabella from '../pages/IsabellaSaracini'
 import Kamryn from '../pages/KamrynHarmeling'
 import Kris from '../pages/KrisDegirolamo'
 import Nicholas from '../pages/NicholasRiley'
+import Cooth from '../pages/Cooth'
+import Aron from '../pages/AronDubois'
 import Login from '../pages/Login';
 import DigitalArt from '../pages/DigitalArtPage'
 import Painting from '../pages/PaintingPage'
@@ -49,13 +51,15 @@ function AppContainer() {
             <Route path="/KamrynHarmeling" element={<Kamryn />} />
             <Route path="/KrisDegirolamo" element={<Kris />} />
             <Route path="/NicholasRiley" element={<Nicholas />} />
+            <Route path="/Cooth" element={<Cooth />} />
+            <Route path="AronDubois" element={<Aron />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/DigitalArtPages" element={<DigitalArt />} />
             <Route path="/PaintingPage" element={<Painting />} />
             <Route path="/SculptingPage" element={<Sculpting />} />
           </Routes>
         </div>
-        <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+       {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}
         
       </div>
      

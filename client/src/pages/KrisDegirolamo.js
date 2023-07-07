@@ -1,5 +1,6 @@
 import React from 'react';
 import DisplayCard from './DisplayCard'
+import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
 function KrisDegirolamo() {
@@ -32,8 +33,11 @@ function KrisDegirolamo() {
          <div className='artist-info'>
             <h2>{artistName}</h2>
             <p>{artistDescription}</p>
+           
          </div>
          {createRows(3)}
+         <div>  <Link link={"https://www.instagram.com/titesqueez/"} /></div>
+       
       </div>
    );
 }

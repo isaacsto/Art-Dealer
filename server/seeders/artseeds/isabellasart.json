@@ -1,7 +1,9 @@
 [
             {
                 "id": 1,
+                "artist": "Isabella Saracini",
                 "title": "Pathways",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic and Soil on Wood Panel",
                 "size": "8x10",
@@ -10,7 +12,9 @@
             },
             {
                 "id": 2,
+                "artist": "Isabella Saracini",
                 "title": "Understory",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -19,7 +23,9 @@
             },
             {
                 "id": 3,
+                "artist": "Isabella Saracini",
                 "title": "Untitled",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic on Wood Panel",
                 "size": "8x10",
@@ -28,7 +34,9 @@
             },
             {
                 "id": 4,
+                "artist": "Isabella Saracini",
                 "title": "Daybreak",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -37,7 +45,9 @@
             },
             {
                 "id": 5,
+                "artist": "Isabella Saracini",
                 "title": "Switchback",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Shellac, Soil and Paper on Wood Panel",
                 "size": "9x12",
@@ -46,6 +56,7 @@
             },
             {
                 "id": 6,
+                "artist": "Isabella Saracini",
                 "title": "Understory 2",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
@@ -55,7 +66,9 @@
             },
             {
                 "id": 7,
+                "artist": "Isabella Saracini",
                 "title": "Interruption",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
                 "size": "8x10",
@@ -64,7 +77,9 @@
             },
             {
                 "id": 8,
+                "artist": "Isabella Saracini",
                 "title": "Murmur",
+                "medium": "Painting",
                 "year": "2022",
                 "description": "Acrylic, Soil, and Shellac on Wood Panel",
                 "size": "9x12",
@@ -73,7 +88,9 @@
             },
             {
                 "id": 9,
+                "artist": "Isabella Saracini",
                 "title": "Trust",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "9x12",
@@ -82,7 +99,9 @@
             },
             {
                 "id": 10,
+                "artist": "Isabella Saracini",
                 "title": "recieving time",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "9x12",
@@ -91,7 +110,9 @@
             },
             {
                 "id": 11,
+                "artist": "Isabella Saracini",
                 "title": "coming home",
+                "medium": "Painting",
                 "year": "2020",
                 "size": "9x12",
                 "price": "400.00",
@@ -100,7 +121,9 @@
             },
             {
                 "id": 12,
+                "artist": "Isabella Saracini",
                 "title": "pull",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "11x14",
@@ -109,7 +132,9 @@
             },
             {
                 "id": 13,
+                "artist": "Isabella Saracini",
                 "title": "the right edge",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "mixed media on wood panel",
                 "size": "8x10",
@@ -118,6 +143,7 @@
             },
             {
                 "id": 14,
+                "artist": "Isabella Saracini",
                 "title": "the right edge",
                 "year": "2020",
                 "description": "mixed media on wood panel",
@@ -127,7 +153,9 @@
             },
             {
                 "id": 15,
+                "artist": "Isabella Saracini",
                 "title": "Sifting",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "Acrylic and Paper on Wood Panel",
                 "size": "8x10",
@@ -136,7 +164,9 @@
             },
             {
                 "id": 16,
+                "artist": "Isabella Saracini",
                 "title": "The Edge of Becoming",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "oil and acrylic on canvas",
                 "size": "30x36",
@@ -145,7 +175,9 @@
             },
             {
                 "id": 17,
+                "artist": "Isabella Saracini",
                 "title": "home to life",
+                "medium": "Painting",
                 "year": "2020",
                 "description": "oil and acrylic on canvas",
                 "size": "39x50",

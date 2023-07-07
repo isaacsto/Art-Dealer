@@ -1,14 +1,14 @@
-const { Schema } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+const { Schema, model } = require("mongoose");
+const dateFormat = require("../utils/dateFormat");
 
 const artSchema = new Schema({
     id: {
         type: Number,
-        required: true
+        required: true,
     },
     artist: {
         type: String,
-        required: true
+        required: true,
     },
     title: {
         type: String,
@@ -20,7 +20,7 @@ const artSchema = new Schema({
     },
     description: {
         type: String,
-        required: 'You need to enter a description!',
+        required: "You need to enter a description!",
         minlength: 1,
         maxlength: 280,
         trim: true,
@@ -32,7 +32,7 @@ const artSchema = new Schema({
     },
     size: {
         type: String,
-        required: false, 
+        required: false,
     },
     price: {
         type: Number,
@@ -43,6 +43,8 @@ const artSchema = new Schema({
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
     },
-})
+});
 
-module.exports = artSchema;
+const Art = model('Art', artSchema);
+
+module.exports = Art;

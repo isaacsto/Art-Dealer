@@ -1,0 +1,24 @@
+[
+    {
+        "id": 55,
+        "artist": "Aron Dubois",
+        "title": "Ways of Clay",
+        "medium": "sculpture",
+        "year": "2023",
+        "description": "Glazed Ceramic",
+        "size": "13'x 6'x 6'",
+        "price": "500.00",
+        "imageUrl": "https://i.imgur.com/doOqHNK.png"
+    },
+    {
+        "id": 56,
+        "artist": "Aron Dubois",
+        "title": "Sculpture II",
+        "medium": "sculpture",
+        "year": "2023",
+        "description": "Glazed Ceramic",
+        "size": "13'x 6'x 6'",
+        "price": "500.00",
+        "imageUrl": "https://i.imgur.com/hL775cl.png"
+    }
+]
