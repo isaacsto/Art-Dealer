@@ -1,12 +1,12 @@
 const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
+
   type User {
     _id: ID!
     username: String!
     email: String!
     password: String!
-    purchasedArt: [Art]
     firstName: String!
     lastName: String!
   }
@@ -33,6 +33,7 @@ const typeDefs = gql`
     artist(artistId: ID!): Artist
     art: [Art]!
     singleArtwork(artId: ID!): Artist
+    me: User
     users: [User]
     user(username: String!): User
   }
@@ -49,7 +50,13 @@ const typeDefs = gql`
     ): Artist
     removeArtist(artistId: ID!): Artist
     removeArt(artistId: ID!, artId: ID!): Artist
-    addUser(username: String!, email: String!, password: String!): User
+    login(email: String!, password: String!): Auth
+    addUser(firstname: String!, lastname:String!, username: String!, email: String!, password: String!): Auth
+    
+  }
+  type Auth {
+    token: ID!
+    user: User
   }
 `;
 
