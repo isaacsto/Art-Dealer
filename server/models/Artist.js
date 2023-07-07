@@ -1,5 +1,5 @@
-const { Schema, model, default: mongoose } = require('mongoose');
-const { artSchema } = require('./Art')
+const { Schema, model } = require('mongoose');
+// const { Art } = require('./Art');
 
 const artistSchema = new Schema({
   artistName: {
@@ -9,8 +9,8 @@ const artistSchema = new Schema({
   },
   art: [
     {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: artSchema
+      type: Schema.Types.ObjectId,
+      ref: 'Art'
     }
   ]
 });

@@ -1,7 +1,7 @@
 [
     {
         "id": 51,
-        "artistName": "Cooth",
+        "artist": "Cooth",
         "title": "“Dresser Tha Creep",
         "medium": "sculpture",
         "year": "2023",
@@ -12,7 +12,7 @@
     },
     {
         "id": 52,
-        "artistName": "Cooth",
+        "artist": "Cooth",
         "title": "“Lazy Boy Creep",
         "medium": "sculpture",
         "year": "2023",
@@ -23,7 +23,7 @@
     },
     {
         "id": 53,
-        "artistName": "Cooth",
+        "artist": "Cooth",
         "title": "“Nugget Creep",
         "medium": "sculpture",
         "year": "2023",
@@ -34,7 +34,7 @@
     },
     {
         "id": 54,
-        "artistName": "Cooth",
+        "artist": "Cooth",
         "title": "Fuck yo Borders Creep",
         "medium": "sculpture",
         "year": "2023",
