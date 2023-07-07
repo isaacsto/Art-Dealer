@@ -57,12 +57,12 @@
 }
 
 .form-wrapper.is-active .switcher-login {
-	color: #fff;
+	color: black;
 	transform: translateX(90px);
 }
 
 .form-wrapper.is-active .switcher-signup {
-	color: #fff;
+	color: black;
 	transform: translateX(-90px);
 }
 
@@ -107,6 +107,8 @@
 	padding: 30px 25px;
   border-radius: 5px;
 	transform-origin: top;
+	background-color: #f2f2f2;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .form-login {
@@ -246,4 +248,23 @@
 	border-radius: 25px;
 	border: none;
 	transition: all .3s ease-out;
+}
+
+.form-wrapper.is-active .form [type='submit'] {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .4s ease-in;
+}
+
+.btn-login {
+	color: #fbfdff;
+	background: #112D3A;
+	transform: translateX(-30%);
+}
+
+.btn-signup {
+	color: #112D3A;
+	background: #fbfdff;
+	box-shadow: inset 0 0 0 2px #112D3A;
+	transform: translateX(30%);
 }
