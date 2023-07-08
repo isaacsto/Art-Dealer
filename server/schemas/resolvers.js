@@ -1,4 +1,5 @@
 const { Art, Artist, User } = require("../models");
+const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -24,6 +25,28 @@ const resolvers = {
   },
 
   Mutation: {
+    login: async (parent, { email, password }) => {
+      const user = await User.findOne({ email });
+
+      if (!user) {
+        throw new AuthenticationError("No user found with this email address");
+      }
+
+      const correctPassword = await user.isCorrectPassword(password);
+
+      if (!correctPassword) {
+        throw new AuthenticationError("Incorrect password");
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
+    // addUser: async (parent, { firstname, lastname, username, email, password }) => {
+    //   const user = await User.create({ firstname, lastname, username, email, password });
+    //   const token = signToken(user);
+    //   return { token, user };
+    // },
     addArtist: async (parent, { artistName }) => {
       return Thought.create({ artistName });
     },

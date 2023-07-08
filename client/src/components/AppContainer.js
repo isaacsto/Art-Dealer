@@ -1,5 +1,11 @@
  import React, { useState } from 'react';
-
+ import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from '@apollo/client';
+import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -20,18 +26,37 @@ import DigitalArt from '../pages/DigitalArtPage'
 import Painting from '../pages/PaintingPage'
 import Sculpting from '../pages/SculptingPage'
 
+const httpLink = createHttpLink({
+  uri: "/graphql",
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem("id_token");
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    },
+  };
+});
+
+
 const style = {
   dropDowns: {
     display: 'flex'
   }
 }
-
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 function AppContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <ApolloProvider client={client}>
     <div>
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
@@ -66,6 +91,7 @@ function AppContainer() {
     </Router>
   
      </div>
+     </ApolloProvider>
   );
 }
 
