@@ -49,25 +49,32 @@ function Login(props) {
     };
 
     // code for login
-    const [login, { error }] = useMutation(LOGIN_USER);
+    const [loginUser, ] = useMutation(LOGIN_USER);
+    // const [validated] = useState(false);
+    // const [showAlert, setShowAlert] = useState(false);
 
     const handleLoginSubmit = async (event) => {
         event.preventDefault();
+        console.log(event, userFormData);
         try {
-          const mutationResponse = await login({
+            
+          const mutationResponse = await loginUser({
             variables: {
               username: userFormData.username,
               password: userFormData.password,
             },
           });
+          console.log(mutationResponse);
           const token = mutationResponse.data.login.token;
           AuthService.login(token);
         } catch (e) {
           console.log(e);
+        //   setShowAlert(true);
         }
       };
       const handleLoginChange = (event) => {
         const { name, value } = event.target;
+        console.log({name,value});
         setUserFormData({
           ...userFormData,
           [name]: value,
@@ -191,14 +198,14 @@ function Login(props) {
                         </button>
                         <form className="form form-login" onSubmit={handleLoginSubmit}>
                             <fieldset>
-                                <legend>Please, enter your email and password for login.</legend>
+                                <legend>Please, enter your username and password for login.</legend>
                                 <div className="input-block">
-                                    <label htmlFor="login-email">E-mail</label>
-                                    <input id="login-email" type="email" placeholder='Your email' required onChange={handleLoginChange} />
+                                    <label htmlFor="login-username">E-mail</label>
+                                    <input id="login-username" type="username" placeholder='Your username' name="username" required onChange={handleLoginChange} />
                                 </div>
                                 <div className="input-block">
                                     <label htmlFor="login-password">Password</label>
-                                    <input id="login-password" type="password" placeholder='Your password' onChange={handleLoginChange} required />
+                                    <input id="login-password" type="password" placeholder='Your password' name="password" onChange={handleLoginChange} required />
                                 </div>
                             </fieldset>
                             <button type="submit" className="btn-login">
@@ -216,7 +223,7 @@ function Login(props) {
                                 <legend>Please, enter your email, password, and password confirmation for sign up.</legend>
                                 <div className="input-block">
                                     <label htmlFor="signup-firstname">First Name</label>
-                                    <input id="signup-firstname" type="text" name="firstName" //   value={formState.firstName}
+                                    <input id="signup-firstname" type="text" name="firstName" 
                                         placeholder="Your First Name" onChange={handleSignUpChange} required />
                                 </div>
                                 <div className="input-block">
