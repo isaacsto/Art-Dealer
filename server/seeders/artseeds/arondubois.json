@@ -1,6 +1,5 @@
 [
     {
-        "id": 55,
         "artist": "Aron Dubois",
         "title": "Ways of Clay",
         "medium": "sculpture",
@@ -11,7 +10,6 @@
         "imageUrl": "https://i.imgur.com/doOqHNK.png"
     },
     {
-        "id": 56,
         "artist": "Aron Dubois",
         "title": "Sculpture II",
         "medium": "sculpture",

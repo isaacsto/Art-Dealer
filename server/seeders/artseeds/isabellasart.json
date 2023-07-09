@@ -1,6 +1,6 @@
 [
             {
-                "id": 1,
+                
                 "artist": "Isabella Saracini",
                 "title": "Pathways",
                 "medium": "Painting",
@@ -11,7 +11,7 @@
                 "imageUrl": "https://i.imgur.com/AaZfrNc.png"
             },
             {
-                "id": 2,
+               
                 "artist": "Isabella Saracini",
                 "title": "Understory",
                 "medium": "Painting",
@@ -22,7 +22,7 @@
                 "imageUrl": "https://i.imgur.com/Qr48WxQ.png"
             },
             {
-                "id": 3,
+                
                 "artist": "Isabella Saracini",
                 "title": "Untitled",
                 "medium": "Painting",
@@ -33,7 +33,7 @@
                 "imageUrl": "https://i.imgur.com/eDRit0q.png"
             },
             {
-                "id": 4,
+                
                 "artist": "Isabella Saracini",
                 "title": "Daybreak",
                 "medium": "Painting",
@@ -44,7 +44,7 @@
                 "imageUrl": "https://i.imgur.com/QZqbCW8.png"
             },
             {
-                "id": 5,
+                
                 "artist": "Isabella Saracini",
                 "title": "Switchback",
                 "medium": "Painting",
@@ -55,7 +55,7 @@
                 "imageUrl": "https://i.imgur.com/JywjrUh.png"
             },
             {
-                "id": 6,
+                
                 "artist": "Isabella Saracini",
                 "title": "Understory 2",
                 "year": "2022",
@@ -65,7 +65,7 @@
                 "imageUrl": "https://i.imgur.com/4rsvggX.png"
             },
             {
-                "id": 7,
+                
                 "artist": "Isabella Saracini",
                 "title": "Interruption",
                 "medium": "Painting",
@@ -76,7 +76,7 @@
                 "imageUrl": "https://i.imgur.com/qk7NYFj.png"
             },
             {
-                "id": 8,
+                
                 "artist": "Isabella Saracini",
                 "title": "Murmur",
                 "medium": "Painting",
@@ -87,7 +87,7 @@
                 "imageUrl": "https://i.imgur.com/ocBapdT.png"
             },
             {
-                "id": 9,
+                
                 "artist": "Isabella Saracini",
                 "title": "Trust",
                 "medium": "Painting",
@@ -98,7 +98,7 @@
                 "imageUrl": "https://i.imgur.com/GcV6SKV.png"
             },
             {
-                "id": 10,
+                
                 "artist": "Isabella Saracini",
                 "title": "recieving time",
                 "medium": "Painting",
@@ -109,7 +109,7 @@
                 "imageUrl": "https://i.imgur.com/VmH5soa.jpg"
             },
             {
-                "id": 11,
+                
                 "artist": "Isabella Saracini",
                 "title": "coming home",
                 "medium": "Painting",
@@ -120,7 +120,7 @@
                 "imageUrl": "https://i.imgur.com/Wu39WsY.png"
             },
             {
-                "id": 12,
+                
                 "artist": "Isabella Saracini",
                 "title": "pull",
                 "medium": "Painting",
@@ -131,7 +131,7 @@
                 "imageUrl": "https://i.imgur.com/r0BsznM.png"
             },
             {
-                "id": 13,
+                
                 "artist": "Isabella Saracini",
                 "title": "the right edge",
                 "medium": "Painting",
@@ -142,7 +142,7 @@
                 "imageUrl": "https://i.imgur.com/ye5tgYR.png"
             },
             {
-                "id": 14,
+                
                 "artist": "Isabella Saracini",
                 "title": "the right edge",
                 "year": "2020",
@@ -152,7 +152,7 @@
                 "imageUrl": "https://i.imgur.com/ye5tgYR.png"
             },
             {
-                "id": 15,
+                
                 "artist": "Isabella Saracini",
                 "title": "Sifting",
                 "medium": "Painting",
@@ -163,7 +163,7 @@
                 "imageUrl": "https://i.imgur.com/pWmuxOA.png"
             },
             {
-                "id": 16,
+                
                 "artist": "Isabella Saracini",
                 "title": "The Edge of Becoming",
                 "medium": "Painting",
@@ -174,7 +174,7 @@
                 "imageUrl": "https://i.imgur.com/FJq8tuK.png"
             },
             {
-                "id": 17,
+                
                 "artist": "Isabella Saracini",
                 "title": "home to life",
                 "medium": "Painting",
