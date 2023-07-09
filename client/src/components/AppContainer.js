@@ -25,6 +25,7 @@ import Login from '../pages/Login';
 import DigitalArt from '../pages/DigitalArtPage'
 import Painting from '../pages/PaintingPage'
 import Sculpting from '../pages/SculptingPage'
+import Cart from '../pages/Cart'
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -82,6 +83,7 @@ function AppContainer() {
             <Route path="/DigitalArtPages" element={<DigitalArt />} />
             <Route path="/PaintingPage" element={<Painting />} />
             <Route path="/SculptingPage" element={<Sculpting />} />
+            <Route path="/Cart" element={<Cart />} />
           </Routes>
         </div>
        {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}

@@ -200,7 +200,7 @@ function Login(props) {
                             <fieldset>
                                 <legend>Please, enter your username and password for login.</legend>
                                 <div className="input-block">
-                                    <label htmlFor="login-username">E-mail</label>
+                                    <label htmlFor="login-username">Username</label>
                                     <input id="login-username" type="username" placeholder='Your username' name="username" required onChange={handleLoginChange} />
                                 </div>
                                 <div className="input-block">
