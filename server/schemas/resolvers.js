@@ -25,11 +25,11 @@ const resolvers = {
   },
 
   Mutation: {
-    login: async (parent, { email, password }) => {
-      const user = await User.findOne({ email });
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
 
       if (!user) {
-        throw new AuthenticationError("No user found with this email address");
+        throw new AuthenticationError("No user found with this username");
       }
 
       const correctPassword = await user.isCorrectPassword(password);

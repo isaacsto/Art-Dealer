@@ -50,7 +50,7 @@ const typeDefs = gql`
     ): Artist
     removeArtist(artistId: ID!): Artist
     removeArt(artistId: ID!, artId: ID!): Artist
-    login(email: String!, password: String!): Auth
+    login(username: String!, password: String!): Auth
     addUser(firstName: String!, lastName:String!, username: String!, email: String!, password: String!): Auth
     
   }
