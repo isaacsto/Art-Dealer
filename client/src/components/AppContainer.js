@@ -7,6 +7,7 @@
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import '../Styles/AppCont.css'
 
 
 import Home from "./Home"
@@ -58,7 +59,7 @@ function AppContainer() {
 
   return (
     <ApolloProvider client={client}>
-    <div>
+    <div className='page-outline'>
     <Router>
       <div className="flex-column justify-flex-start min-100-vh">
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
