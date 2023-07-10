@@ -5,16 +5,16 @@ const { signToken } = require("../utils/auth");
 const resolvers = {
   Query: {
     artists: async () => {
-      return Artist.find();
+      return Artist.find({}).populate('art');
     },
     art: async () => {
-      return await Art.find();
+      return await Art.find({});
     },
     artist: async (parent, { artistId }) => {
-      return Artist.findOne({ _id: artistId });
+      return Artist.findOne({ _id: artistId }).populate('art');
     },
     artistByName: async (parent, { artistName }) => {
-      return Artist.findOne({ artist: artistName });
+      return Artist.findOne({ artistName: artistName }).populate('art');
     },
     singleArtwork: async (parent, { artId }) => {
       return Art.findOne({ _id: artId });
