@@ -19,15 +19,11 @@ export default function ArtCard(props) {
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
  */
+console.log(props.imgUrl)
   return (
     <div className="container">
       <div className="card">
         <div className="extra-container">
-        <img
-          className="card-img-top"
-          src={`https://i.imgur.com/FJq8tuK.png`}
-          alt="Card cap"
-        />
         <div className="card-body">
           <img className="card-img" src={props.imgUrl} alt="Artwork" />
         <h5 className="card-title"> {props.title}</h5>

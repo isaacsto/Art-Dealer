@@ -37,7 +37,8 @@ function AronDubois() {
            
          </div>
          <div>
-         {createRows(3)}
+        {/*  {createRows(3)} */}
+         <DisplayCard/>
          </div>
         
          

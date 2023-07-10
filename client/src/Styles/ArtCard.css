@@ -3,6 +3,10 @@
     align-items: center; 
 }
 
+.card-img {
+    max-width: 25%
+}
+
 .extra-container {
     display: flex; 
     flex-direction: column;

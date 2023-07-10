@@ -8,10 +8,13 @@ const resolvers = {
       return Artist.find();
     },
     art: async () => {
-      return Art.find();
+      return await Art.find();
     },
     artist: async (parent, { artistId }) => {
       return Artist.findOne({ _id: artistId });
+    },
+    artistByName: async (parent, { artistName }) => {
+      return Artist.findOne({ artist: artistName });
     },
     singleArtwork: async (parent, { artId }) => {
       return Art.findOne({ _id: artId });
