@@ -13,19 +13,19 @@ const typeDefs = gql`
 
   type Art {
     _id: ID!
-    imageUrl: String!
+    artist: [Artist]
     title: String!
     year: String
     description: String!
+    imageUrl: String!
     size: String
     price: Int!
     createdAt: String
-    artist: [Artist]
   }
 
   type Artist {
     _id: ID!
-    artist: String!
+    artistName: String!
     art: [Art]
   }
 

@@ -1,5 +1,5 @@
- import React, { useState } from 'react';
- import {
+import React, { useState } from 'react';
+import {
   ApolloClient,
   InMemoryCache,
   ApolloProvider,
@@ -59,44 +59,44 @@ function AppContainer() {
 
   return (
     <ApolloProvider client={client}>
-    <div className='page-outline'>
-    <Router>
-      <div className="flex-column justify-flex-start min-100-vh">
-        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div className='page-outline'>
+        <Router>
+          <div className="flex-column justify-flex-start min-100-vh">
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
-        <div className="container">
-          <div className="toggles" style={style.dropDowns}>  <DropdownMenu />
-          <MediumMenu /></div>
-         
-          <Routes>
- 
-           <Route path="/" element={<Home />} />
+            <div className="container">
+              <div className="toggles" style={style.dropDowns}>  <DropdownMenu />
+                <MediumMenu /></div>
 
-            
-            <Route path="/Login" element={<Login />} />
-            <Route path="/IsabellaSaracini" element={<Isabella />} />
-            <Route path="/KamrynHarmeling" element={<Kamryn />} />
-            <Route path="/KrisDegirolamo" element={<Kris />} />
-            <Route path="/NicholasRiley" element={<Nicholas />} />
-            <Route path="/Cooth" element={<Cooth />} />
-            <Route path="AronDubois" element={<Aron />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/DigitalArtPages" element={<DigitalArt />} />
-            <Route path="/PaintingPage" element={<Painting />} />
-            <Route path="/SculptingPage" element={<Sculpting />} />
-            <Route path="/Cart" element={<Cart />} />
-          </Routes>
-        </div>
-       {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}
-        
+              <Routes>
+
+                <Route path="/" element={<Home />} />
+
+
+                <Route path="/Login" element={<Login />} />
+                <Route path="/IsabellaSaracini" element={<Isabella />} />
+                <Route path="/KamrynHarmeling" element={<Kamryn />} />
+                <Route path="/KrisDegirolamo" element={<Kris />} />
+                <Route path="/NicholasRiley" element={<Nicholas />} />
+                <Route path="/Cooth" element={<Cooth />} />
+                <Route path="AronDubois" element={<Aron />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/DigitalArtPages" element={<DigitalArt />} />
+                <Route path="/PaintingPage" element={<Painting />} />
+                <Route path="/SculptingPage" element={<Sculpting />} />
+                <Route path="/Cart" element={<Cart />} />
+              </Routes>
+            </div>
+            {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}
+
+          </div>
+
+        </Router>
+
       </div>
-     
-    </Router>
-  
-     </div>
-     </ApolloProvider>
+    </ApolloProvider>
   );
 }
 
 
-  export default AppContainer; 
+export default AppContainer; 
