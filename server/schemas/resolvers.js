@@ -47,7 +47,7 @@ const resolvers = {
     },
 
     addArtist: async (parent, { artistName }) => {
-      return Thought.create({ artistName });
+      return Artist.create({ artistName });
     },
     addArt: async (
       parent,
