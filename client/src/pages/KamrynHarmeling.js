@@ -32,10 +32,12 @@ function KamrynHarmeling() {
       <div className='art-cards-container'>
          <div className='artist-info'>
             <h2>{artistName}</h2>
+            <div> <Link link={"https://www.instagram.com/kam.ryn/"} /></div>
             <p>{artistDescription}</p> 
          </div>
-         {createRows(3)}
-         <div> <Link link={"https://www.instagram.com/kam.ryn/"} /></div>
+         {/* {createRows(3)} */}
+         <DisplayCard/>
+       
         
       </div>
    );

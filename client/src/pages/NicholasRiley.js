@@ -38,7 +38,8 @@ function NicholasRiley() {
         <p>{artistDescription}</p>
       </div>
 
-      <div className="art-cards">{createRows(3)}</div>
+     {/*  <div className="art-cards">{createRows(3)}</div> */}
+      <DisplayCard/>
     </div>
   );
 }

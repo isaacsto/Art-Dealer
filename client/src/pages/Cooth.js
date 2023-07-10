@@ -38,6 +38,7 @@ function Cooth() {
          </div>
          <div>
          {createRows(3)}
+         <DisplayCard/>
          </div>
         
          

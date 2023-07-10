@@ -6,7 +6,7 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String!
-    password: String!
+    
     firstName: String!
     lastName: String!
   }
@@ -17,6 +17,7 @@ const typeDefs = gql`
     title: String!
     year: String
     description: String!
+    size: String
     price: Int!
     createdAt: String
     artist: [Artist]
@@ -31,7 +32,8 @@ const typeDefs = gql`
   type Query {
     artists: [Artist]!
     artist(artistId: ID!): Artist
-    art: [Art]!
+    artistByName(artistName: String!): Artist
+    art: [Art]
     singleArtwork(artId: ID!): Artist
     me: User
     users: [User]

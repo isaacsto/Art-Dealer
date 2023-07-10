@@ -8,7 +8,7 @@ function IsabellaSaracini() {
    const artistDescription = 'This is a brief description of the artist Isabella Saracini.';
    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-   const createRows = (cardsPerRow) => {
+/*    const createRows = (cardsPerRow) => {
       const rows = [];
       let row = [];
 
@@ -26,7 +26,7 @@ function IsabellaSaracini() {
       });
 
       return rows;
-   };
+   }; */
 
    return (
       <div className='art-cards-container'>
@@ -37,7 +37,8 @@ function IsabellaSaracini() {
            
          </div>
          <div>
-         {createRows(3)}
+         {/* {createRows(3)} */}
+         <DisplayCard artist="Isabella Saracini"/>
          </div>
         
          

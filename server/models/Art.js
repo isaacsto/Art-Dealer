@@ -2,10 +2,7 @@ const { Schema, model } = require("mongoose");
 const dateFormat = require("../utils/dateFormat");
 
 const artSchema = new Schema({
-    id: {
-        type: Number,
-        required: true,
-    },
+ 
     artist: {
         type: String,
         required: true,
