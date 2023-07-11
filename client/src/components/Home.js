@@ -1,6 +1,8 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
+
 import 'react-slideshow-image/dist/styles.css'
+
 
 const slideImages = [
   {
@@ -21,6 +23,7 @@ function Home() {
     return (
  <div className="home-body">
       <div className="slide-container">
+      
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>

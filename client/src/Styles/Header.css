@@ -1,7 +1,10 @@
 .header {
-    border: 7px solid black;
-    padding: 20px;
-    margin: 2px;
+   /*  border-top: 7px solid black;  */
+    border-bottom: 7px solid black; 
+    width: 100%;
+    padding: 20px; 
+   /*  margin: 2px; */
+    background-image: url("https://i.imgur.com/wcjTCam.jpg");
 }
 
 .header-links {
@@ -25,10 +28,12 @@
     text-decoration: none;
     padding: 10px;
     margin-right: 20px;
+    color: white;
 }
 
 .header-link {
     font-family: "Roboto Mono";
     text-decoration: none;
     padding: 10px;
+    color: white; 
 }
