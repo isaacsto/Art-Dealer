@@ -36,7 +36,7 @@ function KamrynHarmeling() {
             <p>{artistDescription}</p> 
          </div>
          {/* {createRows(3)} */}
-         <DisplayCard/>
+         <DisplayCard artistName="Kamryn Harmeling"/>
        
         
       </div>

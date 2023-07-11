@@ -37,7 +37,7 @@ function KrisDegirolamo() {
            
          </div>
          {/* {createRows(3)} */}
-         <DisplayCard/>
+         <DisplayCard artistName="Kris Degirolamo"/>
         
        
       </div>
