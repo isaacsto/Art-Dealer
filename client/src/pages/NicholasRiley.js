@@ -39,7 +39,7 @@ function NicholasRiley() {
       </div>
 
      {/*  <div className="art-cards">{createRows(3)}</div> */}
-      <DisplayCard/>
+      <DisplayCard artistName="Nicholas Riley"/>
     </div>
   );
 }

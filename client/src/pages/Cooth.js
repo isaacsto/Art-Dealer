@@ -37,8 +37,8 @@ function Cooth() {
            
          </div>
          <div>
-         {createRows(3)}
-         <DisplayCard/>
+        {/*  {createRows(3)} */}
+         <DisplayCard artistName="Cooth"/>
          </div>
         
          

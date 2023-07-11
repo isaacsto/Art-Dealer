@@ -53,7 +53,6 @@
 
 // }
 
-
 import React from 'react';
 import ArtCard from './ArtCard';
 import { gql, useQuery } from '@apollo/client';

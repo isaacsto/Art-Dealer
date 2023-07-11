@@ -38,7 +38,7 @@ function AronDubois() {
          </div>
          <div>
         {/*  {createRows(3)} */}
-         <DisplayCard/>
+         <DisplayCard artistName="Aron Dubois"/>
          </div>
         
          
