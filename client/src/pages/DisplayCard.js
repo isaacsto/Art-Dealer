@@ -74,9 +74,9 @@ query ArtistByName($artistName: String!) {
 }
 `;
 
-export default function DisplayCard({ artistId }) {
+export default function DisplayCard({ artistName }) {
   const { loading, error, data } = useQuery(GET_ARTIST_ART, {
-    variables: { artistId },
+    variables: { artistName },
   });
 
   console.log(data);
@@ -89,10 +89,10 @@ export default function DisplayCard({ artistId }) {
     return <p>Error: {error.message}</p>;
   }
 
-  if (data && data.artist) {
+  if (data) {
     return (
       <div>
-        {data.artist.art.map((Art) => (
+        {data.artistByName?.art?.map((Art) => (
           <ArtCard
             key={Art._id}
             imgUrl={Art.imageUrl}
@@ -109,4 +109,3 @@ export default function DisplayCard({ artistId }) {
 
 return null; 
 }
- 
