@@ -1,13 +1,18 @@
 .header {
-    border: 7px solid black;
-    padding: 20px;
-    margin: 2px;
+   /*  border-top: 7px solid black;  */
+    border-bottom: 7px solid black; 
+    width: 100%;
+    padding: 20px; 
+   /*  margin: 2px; */
+    background-image: url("https://i.imgur.com/wcjTCam.jpg");
 }
 
 .header-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 20px; 
+    
 }
 
 .left-links {
@@ -25,10 +30,13 @@
     text-decoration: none;
     padding: 10px;
     margin-right: 20px;
+    color: white;
+   /*  padding-right: 20px;  */
 }
 
 .header-link {
     font-family: "Roboto Mono";
     text-decoration: none;
     padding: 10px;
+    color: white; 
 }

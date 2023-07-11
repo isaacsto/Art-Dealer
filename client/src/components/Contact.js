@@ -58,7 +58,7 @@ function Contact() {
       backgroundColor: "#fff",
       border: "1px solid #ced4da",
       borderRadius: "0.25rem",
-      width: "100%",
+      width: "95%",
     },
     label: {
     fontFamily: "Roboto Mono",
