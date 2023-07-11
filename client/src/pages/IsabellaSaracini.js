@@ -4,7 +4,7 @@ import Link from '../components/Links'
 import '../Styles/ArtistsPages.css'
 
 function IsabellaSaracini() {
-    const artistName = 'Isabella Saracini';
+   const artistName = 'Isabella Saracini';
    const artistDescription = 'This is a brief description of the artist Isabella Saracini.';
    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -38,7 +38,7 @@ function IsabellaSaracini() {
          </div>
          <div>
          {/* {createRows(3)} */}
-         <DisplayCard artist="Isabella Saracini"/>
+         <DisplayCard artistName="Isabella Saracini"/>
          </div>
         
          
