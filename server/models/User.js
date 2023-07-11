@@ -27,12 +27,12 @@ const userSchema = new Schema({
   //   },
 
   // ],
-  purchasedArt: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: artSchema
-    }
-  ],
+  // purchasedArt: [
+  //   {
+  //     type: mongoose.Schema.Types.ObjectId,
+  //     ref: artSchema
+  //   }
+  // ],
   firstName: {
     type: String,
     required: true,
@@ -44,6 +44,12 @@ const userSchema = new Schema({
     trim: true,
   },
   // artDetails: [artSchema],
+  orders: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Order'
+    }
+  ],
 });
 
 userSchema.pre('save', async function (next) {

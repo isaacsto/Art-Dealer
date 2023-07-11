@@ -6,7 +6,7 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String!
-    
+    orders: [Order]
     firstName: String!
     lastName: String!
   }
@@ -29,6 +29,14 @@ const typeDefs = gql`
     artistName: String!
     art: [Art]
   }
+  type Order {
+    _id: ID
+    purchaseDate: String
+    arts: [Art]
+  }
+  type Checkout {
+    session: ID
+  }
 
   type Query {
     artists: [Artist]!
@@ -39,6 +47,9 @@ const typeDefs = gql`
     me: User
     users: [User]
     user(username: String!): User
+    order(_id: ID!): Order
+  checkout(arts: [ID]!): Checkout
+  arts(artist: ID, title: String): [Art]
   }
 
   type Mutation {
@@ -55,7 +66,9 @@ const typeDefs = gql`
     removeArt(artistId: ID!, artId: ID!): Artist
     login(username: String!, password: String!): Auth
     addUser(firstName: String!, lastName:String!, username: String!, email: String!, password: String!): Auth
-    
+    addOrder(arts: [ID]!): Order
+  updateUser(firstName: String, lastName: String, email: String, password: String): User
+  updateArt(_id: ID!, quantity: Int!): Art
   }
   type Auth {
     token: ID!
