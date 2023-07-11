@@ -15,7 +15,7 @@ const typeDefs = gql`
     _id: ID!
     artist: [Artist]
     title: String!
-    medium: String
+   
     year: String
     description: String!
     imageUrl: String!

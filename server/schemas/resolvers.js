@@ -16,9 +16,6 @@ const resolvers = {
     artistByName: async (parent, { artistName }) => {
       return Artist.findOne({ artistName: artistName }).populate('art');
     },
-    artByMedium: async (parent, { medium }) => {
-      return Art.findAll({ medium: medium}).populate('art')
-    },
     singleArtwork: async (parent, { artId }) => {
       return Art.findOne({ _id: artId });
     },

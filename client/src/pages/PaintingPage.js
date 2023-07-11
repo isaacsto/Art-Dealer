@@ -1,11 +1,10 @@
 import React from 'react';
-/* import DisplayCard from './DisplayCard' */
-import DisplayMedium from './DisplayMedium'
+import DisplayCard from './DisplayCard'
 import '../Styles/ArtistsPages.css'
 
 function Painting() {
    const medium = 'Painting';
-/*    const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
    const createRows = (cardsPerRow) => {
       const rows = [];
@@ -25,15 +24,14 @@ function Painting() {
       });
 
       return rows;
-   }; */
+   };
 
    return (
       <div className='art-cards-container'>
          <div className='artist-info'>
             <h2>{medium}</h2>
          </div>
-       {/*   {createRows(3)} */}
-       <DisplayMedium medium="Painting"/>
+         {createRows(3)}
       </div>
    );
 }

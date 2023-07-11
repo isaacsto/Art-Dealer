@@ -31,8 +31,7 @@ function DigitalArt() {
          <div className='artist-info'>
             <h2>{medium}</h2>
          </div>
-       {/*   {createRows(3)} */}
-       <DisplayCard medium="Digital Art"/>
+         {createRows(3)}
       </div>
    );
 }
