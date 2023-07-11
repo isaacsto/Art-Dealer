@@ -27,6 +27,7 @@ import DigitalArt from '../pages/DigitalArtPage'
 import Painting from '../pages/PaintingPage'
 import Sculpting from '../pages/SculptingPage'
 import Cart from '../pages/Cart'
+import Footer from './Footer'
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -60,6 +61,7 @@ function AppContainer() {
   return (
     <ApolloProvider client={client}>
       <div className='page-outline'>
+    
         <Router>
           <div className="flex-column justify-flex-start min-100-vh">
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
@@ -91,6 +93,8 @@ function AppContainer() {
 
           </div>
 
+<script src="https://kit.fontawesome.com/1498603cf1.js" crossorigin="anonymous"></script>
+<Footer/>
         </Router>
 
       </div>
