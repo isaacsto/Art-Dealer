@@ -10,6 +10,10 @@
         "seed": "cd server && npm run seed",
         "build": "cd client && npm run build"
     },
+    "engines": {
+        "node": ">=16.18.0",
+        "npm": ">=9.6.6"
+    },
     "dependencies": {
         "@apollo/client": "^3.7.16",
         "@fortawesome/fontawesome-svg-core": "^6.4.0",
