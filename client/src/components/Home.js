@@ -33,7 +33,7 @@ function Home() {
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <img style={{ width: '40%', margin: '10px auto', marginTop: '50px',display: 'block'}} src={slideImage.url} alt='' />
+            <img style={{ width: '40%', margin: '10px auto', marginTop: '50px', marginBottom: '30px', display: 'block'}} src={slideImage.url} alt='' />
           </div>
         ))}
       </Slide>
