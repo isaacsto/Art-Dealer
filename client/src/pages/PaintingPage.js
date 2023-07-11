@@ -33,7 +33,7 @@ function Painting() {
             <h2>{medium}</h2>
          </div>
        {/*   {createRows(3)} */}
-       <DisplayMedium />
+       <DisplayMedium medium="Painting"/>
       </div>
    );
 }

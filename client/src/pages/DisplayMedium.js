@@ -2,7 +2,7 @@ import React from 'react';
 import ArtCard from './ArtCard';
 import { gql, useQuery } from '@apollo/client';
 
-const GET_ARTIST_ART = gql`
+const GET_MEDIUM = gql`
 query ArtByMedium($medium: String!) {
   artByMedium(medium: $medium) {
     art {
@@ -19,9 +19,9 @@ query ArtByMedium($medium: String!) {
 }
 `;
 
-export default function DisplayCard({ artistName }) {
-  const { loading, error, data } = useQuery(GET_ARTIST_ART, {
-    variables: { artistName },
+export default function DisplayCard({ medium}) {
+  const { loading, error, data } = useQuery(GET_MEDIUM, {
+    variables: { medium },
   });
 
   console.log(data);
@@ -37,7 +37,7 @@ export default function DisplayCard({ artistName }) {
   if (data) {
     return (
       <div>
-        {data.artistByName?.art?.map((Art) => (
+        {data.artByMedium?.art?.map((Art) => (
           <ArtCard
             key={Art._id}
             imgUrl={Art.imageUrl}
