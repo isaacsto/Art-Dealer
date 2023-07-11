@@ -1,6 +1,7 @@
 const { Art, Artist, User } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
+const stripe = require('stripe')('sk_test_51NPuysAtC4ANx7F50sgFnheOTtu0UUQVH4dlGG4T5DkxGTOPPhj15KgD2B8VYiaTDTdy0DA5rEAJv8eU3JaQRMjE00ZumnHbIu');
 
 const resolvers = {
   Query: {
@@ -9,6 +10,21 @@ const resolvers = {
     },
     art: async () => {
       return await Art.find({});
+    },
+     arts: async (parent, { artist, title }) => {
+      const params = {};
+
+      if (artist) {
+        params.artist = artist;
+      }
+
+      if (title) {
+        params.title = {
+          $regex: title
+        };
+      }
+
+      return await Art.find(params).populate('artist');
     },
     artist: async (parent, { artistId }) => {
       return Artist.findOne({ _id: artistId }).populate('art');
@@ -25,6 +41,55 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
+    order: async (parent, { _id }, context) => {
+      if (context.user) {
+        const user = await User.findById(context.user._id).populate({
+          path: 'orders.arts',
+          populate: 'artist'
+        });
+
+        return user.orders.id(_id);
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
+    checkout: async (parent, args, context) => {
+      const url = new URL(context.headers.referer).origin;
+      const order = new Order({ arts: args.arts });
+      const line_items = [];
+
+      const { arts } = await order.populate('arts');
+
+      for (let i = 0; i < arts.length; i++) {
+        const art = await stripe.arts.create({
+          artist: arts[i].artist,
+          title: arts[i].title,
+          description: arts[i].description,
+          images: [`${url}/images/${arts[i].imageUrl}`]
+        });
+
+        const price = await stripe.prices.create({
+          art: art.id,
+          unit_amount: arts[i].price * 100,
+          currency: 'usd',
+        });
+
+        line_items.push({
+          price: price.id,
+          quantity: 1
+        });
+      }
+
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ['card'],
+        line_items,
+        mode: 'payment',
+        success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${url}/`
+      });
+
+      return { session: session.id };
+    }
   },
 
   Mutation: {
@@ -93,7 +158,58 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+ 
+    addOrder: async (parent, { arts }, context) => {
+      console.log(context);
+      if (context.user) {
+        const order = new Order({ arts });
+
+        await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+        return order;
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
+    updateUser: async (parent, args, context) => {
+      if (context.user) {
+        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
+    updateArt: async (parent, { _id, quantity }) => {
+      const decrement = Math.abs(quantity) * -1;
+
+      return await Art.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
+    },
+
+    addOrder: async (parent, { arts }, context) => {
+    console.log(context);
+    if (context.user) {
+      const order = new Order({ arts });
+
+      await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+      return order;
+    }
+
+    throw new AuthenticationError('Not logged in');
+    },
+    updateUser: async (parent, args, context) => {
+      if (context.user) {
+      return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+    }
+
+    throw new AuthenticationError('Not logged in');
+    },
+    updateArt: async (parent, { _id, quantity }) => {
+    const decrement = Math.abs(quantity) * -1;
+
+    return await Art.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
+    },
   },
+  
 };
 
 module.exports = resolvers;
