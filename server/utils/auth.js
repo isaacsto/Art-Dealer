@@ -4,7 +4,9 @@ const secret = 'mysecretsshhhhh';
 const expiration = '2h';
 
 module.exports = {
-  authMiddleware: function (req, res, next) {
+  authMiddleware: function ({req, res, next}) {
+    // console.log(req.headers);
+    // console.log(req.rawHeaders);
     let token = req.query?.token || req.headers?.authorization;
 
     if (req.headers?.authorization) {

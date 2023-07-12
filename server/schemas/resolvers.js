@@ -54,22 +54,25 @@ const resolvers = {
       throw new AuthenticationError('Not logged in');
     },
     checkout: async (parent, args, context) => {
+      // console.log(context.headers);
       const url = new URL(context.headers.referer).origin;
       const order = new Order({ arts: args.arts });
+      console.log(args, order);
       const line_items = [];
 
       const { arts } = await order.populate('arts');
+      console.log(arts);
 
       for (let i = 0; i < arts.length; i++) {
-        const art = await stripe.arts.create({
-          artist: arts[i].artist,
-          title: arts[i].title,
+        const art = await stripe.products.create({
+          // artist: arts[i].artist,
+          name: arts[i].title,
           description: arts[i].description,
           images: [`${url}/images/${arts[i].imageUrl}`]
         });
 
         const price = await stripe.prices.create({
-          art: art.id,
+          product: art.id,
           unit_amount: arts[i].price * 100,
           currency: 'usd',
         });
