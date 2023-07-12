@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import auth from "../utils/auth";
 import '../Styles/Header.css';
+import logo from "../Styles/Logo.png";
 
 function Header({ currentPage, handlePageChange }) {
   return (
@@ -9,11 +10,11 @@ function Header({ currentPage, handlePageChange }) {
       <div className="header-links">
         <div className="left-links">
           <Link to="/" className="logo-link">
-            Artly
+            <img src={logo} alt="Artly Logo" width="300" height="350" />
           </Link>
         </div>
         <div className="right-links">
-        <Link to="/Contact" className="header-link">
+          <Link to="/Contact" className="header-link">
             Contact Us
           </Link>
           {auth.loggedIn() ? (
