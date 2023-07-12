@@ -6,7 +6,15 @@ export const GET_ME = gql`
       _id
       username
       email
-      }
+      
+    }
+  }
+`;
+
+export const QUERY_CHECKOUT = gql`
+  query getCheckout($arts: [ID]!) {
+    checkout(arts: $arts) {
+      session
     }
   }
 `;

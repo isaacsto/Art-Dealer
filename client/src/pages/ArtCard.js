@@ -1,6 +1,10 @@
 
-import React/* , { useState }  */from 'react';
+import React, { useState }/* , { useState }  */from 'react';
 import "../../src/Styles/ArtCard.css";  
+import { useStoreContext } from '../utils/GlobalState';
+import { useQuery } from '@apollo/client';
+import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../utils/actions';
+import { idbPromise } from '../utils/hlpers';
 
 const style = {
   button: {
@@ -13,12 +17,42 @@ const style = {
 
 
 export default function ArtCard(props) {
+  const {id, imageUrl, title, year, description, size, price} = props;
+  const [state, dispatch] = useStoreContext();
+  
 
-/*   const [cartItems, setCartItems] = useState([]);
+  // const [currentProduct, setCurrentProduct] = useState({});
 
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
- */
+  // const { loading, data } = useQuery(QUERY_PRODUCTS);
+
+  const { products, cart } = state;
+
+  // const [cartItems, setCartItems] = useState([]);
+
+  // const addToCart = (item) => {
+  //   setCartItems([...cartItems, item]);
+  console.log(props.id);
+  const addToCart = () => {
+    const itemInCart = cart.find((cartItem) => cartItem._id === id);
+    if (itemInCart) {
+      dispatch({
+        type: UPDATE_CART_QUANTITY,
+        _id: id,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
+      });
+      idbPromise('cart', 'put', {
+        ...itemInCart,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
+      });
+    } else {
+      dispatch({
+        type: ADD_TO_CART,
+        product: { ...props, purchaseQuantity: 1 },
+      });
+      idbPromise('cart', 'put', { ...props, purchaseQuantity: 1 });
+    }
+  };
+ 
 console.log(props.imgUrl)
   return (
     <div className="container">
@@ -31,7 +65,7 @@ console.log(props.imgUrl)
           <p className="card-text">{props.description}</p>
           <p className="card-text"> {props.size}</p>
           <p className="card-text"> {props.price}</p>
-          <button className="button" style={style.button} /* onClick={() => addToCart(props.item)} */>
+          <button className="button" style={style.button}  onClick={() => addToCart(props.item)}>
   Add to Cart
 </button>
           </div>

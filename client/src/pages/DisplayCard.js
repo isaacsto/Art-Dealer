@@ -93,6 +93,8 @@ export default function DisplayCard({ artistName }) {
       <div>
         {data.artistByName?.art?.map((Art) => (
           <ArtCard
+          _id={Art._id}
+          id={Art._id}
             key={Art._id}
             imgUrl={Art.imageUrl}
             title={Art.title}

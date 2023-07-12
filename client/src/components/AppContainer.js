@@ -7,6 +7,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import '../Styles/AppCont.css'
 
 
@@ -28,6 +29,7 @@ import Painting from '../pages/PaintingPage'
 import Sculpting from '../pages/SculptingPage'
 import Cart from '../pages/Cart'
 import Footer from './Footer'
+import Success from '../pages/Success';
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -59,7 +61,7 @@ function AppContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <ApolloProvider client={client}>
+
       <div className='page-outline'>
     
         <Router>
@@ -87,6 +89,7 @@ function AppContainer() {
                 <Route path="/PaintingPage" element={<Painting />} />
                 <Route path="/SculptingPage" element={<Sculpting />} />
                 <Route path="/Cart" element={<Cart />} />
+                <Route path="/Success" element={<Success />} />
               </Routes>
             </div>
             {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}
@@ -98,7 +101,7 @@ function AppContainer() {
         </Router>
 
       </div>
-    </ApolloProvider>
+
   );
 }
 
