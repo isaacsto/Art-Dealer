@@ -1,4 +1,4 @@
-const { Art, Artist, User } = require("../models");
+const { Art, Artist, User, Order } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
 const stripe = require('stripe')('sk_test_51NPuysAtC4ANx7F50sgFnheOTtu0UUQVH4dlGG4T5DkxGTOPPhj15KgD2B8VYiaTDTdy0DA5rEAJv8eU3JaQRMjE00ZumnHbIu');
