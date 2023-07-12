@@ -56,6 +56,7 @@
 import React from 'react';
 import ArtCard from './ArtCard';
 import { gql, useQuery } from '@apollo/client';
+import '../Styles/DisplayCard.css'
 
 const GET_ARTIST_ART = gql`
 query ArtistByName($artistName: String!) {
@@ -90,7 +91,7 @@ export default function DisplayCard({ artistName }) {
 
   if (data) {
     return (
-      <div>
+      <div className="card-grid">
         {data.artistByName?.art?.map((Art) => (
           <ArtCard
           _id={Art._id}
