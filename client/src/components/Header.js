@@ -26,7 +26,7 @@ function Header({ currentPage, handlePageChange }) {
               Login/Signup
             </Link>
           )}
-          <Link to="/Cart" className="header-link">
+          <Link to="/CartCont" className="header-link">
             Cart
           </Link>
         </div>
