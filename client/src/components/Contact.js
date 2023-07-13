@@ -6,7 +6,6 @@ import { validateEmail } from "../utils/hlpers";
 function Contact() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [message] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
@@ -133,9 +132,9 @@ function Contact() {
             </label>
           <input
             style={styles.input}
+            type="text"
             id="message"
             placeholder="Your Message"
-            value={message}
             name="message"
             onChange={handleInputChange}
           />
