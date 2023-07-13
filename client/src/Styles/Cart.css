@@ -1,7 +1,7 @@
 .cart {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     min-width: 20%;
     max-width: 30%;
     max-height: 60%;
@@ -23,8 +23,8 @@
   
   .cart .close {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     cursor: pointer;
     color: var(--tertiary);
   }
@@ -35,8 +35,8 @@
   
   .cart-closed {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     font-size: 2rem;
     cursor: pointer;
     background-color: var(--secondary);
