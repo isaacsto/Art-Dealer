@@ -9,9 +9,12 @@ import { useStoreContext } from '../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../utils/actions';
 import '../Styles/Cart.css';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
-
-
+const style = {
+  "color": "#080808"
+};
 
 const stripePromise = loadStripe(`${process.env.REACT_APP_PK_STRIPE}`);
 
@@ -68,10 +71,9 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">
-          🛒
-        </span>
-      </div>
+     <FontAwesomeIcon icon={faCartShopping} />
+   
+    </div>
     );
   }
 
@@ -101,9 +103,9 @@ const Cart = () => {
       ) : (
         <h3>
           <span role="img" aria-label="shocked">
-            😱
+            
           </span>
-          You haven't added anything to your cart yet!
+          💀 You haven't added anything to your cart yet!
         </h3>
       )}
     </div>
