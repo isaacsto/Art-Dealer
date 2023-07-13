@@ -6,10 +6,10 @@ import 'react-slideshow-image/dist/styles.css'
 
 const slideImages = [
   {
-    url: 'https://i.imgur.com/AaZfrNc.png',
+    url: 'https://i.imgur.com/90NR0Ve.png',
   },
   {
-    url: 'https://i.imgur.com/u90zFUU.jpg',
+    url: 'https://i.imgur.com/ER8lmu8.jpg',
   },
   {
     url: 'https://i.imgur.com/sAgUl83.png',
@@ -18,7 +18,7 @@ const slideImages = [
     url: 'https://i.imgur.com/62jjyL3.png',
   },
   {
-    url: "https://i.imgur.com/c0BK1el.png"
+    url: "https://i.imgur.com/xiKefBw.png"
   },
   {
     url: "https://i.imgur.com/hL775cl.png"
