@@ -1,6 +1,7 @@
 import React from 'react';
 import MediumCard from './MediumCard';
 import { gql, useQuery } from '@apollo/client';
+import '../Styles/DisplayCard.css'
 
 const GET_MEDIUMS = gql`
   query ArtByMedium($medium: String) {
@@ -32,7 +33,7 @@ export default function DisplayByMedium({ medium }) {
   }
   if (data) {
     return (
-      <div>
+      <div className="card-grid">
         {data.artByMedium?.map((Art) => (
           <MediumCard
             key={Art._id}
