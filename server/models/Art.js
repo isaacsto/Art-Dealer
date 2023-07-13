@@ -12,6 +12,9 @@ const artSchema = new Schema({
         required: true,
         trim: true,
     },
+    medium: {
+        type: String,
+    },
     year: {
         type: Date,
     },
