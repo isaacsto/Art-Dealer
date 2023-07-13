@@ -74,13 +74,13 @@ function Contact() {
       fontSize: "1rem",
       fontWeight: "bold",
       color: "#fff",
-      backgroundColor: "#112D3A",
+      backgroundColor: "black",
       border: "none",
       borderRadius: "0.25rem",
       cursor: "pointer",
     },
     buttonHover: {
-        backgroundColor: "#8AAD69",
+        backgroundColor: "#51624F",
       },
     errorText: {
       color: "red",
