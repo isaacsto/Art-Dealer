@@ -92,12 +92,12 @@ Usage
 Once the website is up and running, you can use it to browse and purchase art. Follow the UI links and prompts provided on the website to sign up, sign in, and browse art by artist or medium. Add art pieces to your shopping cart and proceed to checkout to make a payment using Stripe.
 
 ## Contributers
-Matthew Caschetto 
-Shane Davis
-Muhammad Jama
-Nestor Montanez
-Frank Olmsted 
-Issac Stofko
+[Matthew Caschetto](https://github.com/Cashew1337)
+[Shane Davis](https://github.com/Basil-NB)
+[Muhammad Jamal](https://github.com/jamalm06)
+[Nestor Montanez](https://github.com/Nuno0123)
+[Frank Olmsted](https://github.com/frankolms)
+[Issac Stofko](https://github.com/isaacsto)
 
 
 ## License
