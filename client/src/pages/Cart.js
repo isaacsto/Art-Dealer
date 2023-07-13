@@ -7,7 +7,11 @@ import CartItem from './CartItem';
 import Auth from '../utils/auth';
 import { useStoreContext } from '../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../utils/actions';
-// import './style.css';
+import '../Styles/Cart.css';
+
+
+
+
 
 const stripePromise = loadStripe(`${process.env.REACT_APP_PK_STRIPE}`);
 
@@ -73,6 +77,7 @@ const Cart = () => {
 
   return (
     <div className="cart">
+    
       <div className="close" onClick={toggleCart}>
         [close]
       </div>

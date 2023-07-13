@@ -27,7 +27,7 @@ import Login from '../pages/Login';
 import DigitalArt from '../pages/DigitalArtPage'
 import Painting from '../pages/PaintingPage'
 import Sculpting from '../pages/SculptingPage'
-import Cart from '../pages/Cart'
+import CartCont from './CartCont'
 import Footer from './Footer'
 import Success from '../pages/Success';
 
@@ -88,7 +88,7 @@ function AppContainer() {
                 <Route path="/DigitalArtPages" element={<DigitalArt />} />
                 <Route path="/PaintingPage" element={<Painting />} />
                 <Route path="/SculptingPage" element={<Sculpting />} />
-                <Route path="/Cart" element={<Cart />} />
+                <Route path="/CartCont" element={<CartCont />} />
                 <Route path="/Success" element={<Success />} />
               </Routes>
             </div>
