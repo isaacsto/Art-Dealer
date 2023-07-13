@@ -1,77 +1,75 @@
 .cart {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    min-width: 20%;
-    max-width: 30%;
-    max-height: 60%;
-    background-color: var(--light);
-    overflow: auto;
-    padding: .5rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-    border-bottom-left-radius: .5rem;
-    display: flex; 
-    float: right; 
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  min-width: 20%;
+  max-width: 30%;
+  max-height: 60%;
+  background-color: var(--light);
+  overflow: auto;
+  padding: .5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+  border-bottom-left-radius: .5rem;
+  display: flex;
+  flex-direction: column; /* Add this line */
+  align-items: flex-end; /* Add this line */
+}
+
+.cart .close {
+  position: absolute;
+  top: -10px; /* Change bottom to top */
+  right: -10px; /* Change right value */
+  cursor: pointer;
+  color: var(--tertiary);
+  background-color: var(--light); /* Add this line */
+  padding: 5px; /* Add this line */
+  border-radius: 50%; /* Add this line */
+}
+
+.cart .close:hover {
+  text-decoration: none; /* Remove underline */
+}
+
+.cart-closed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  padding: .25rem;
+  width: 50px;
+  height: 50px;
+}
+
+.cart-closed:hover {
+  transform: rotate(8deg);
+}
+
+.cart img {
+  width: 70px;
+  margin-right: 1rem;
+}
+
+.cart input {
+  width: 50px;
+  padding: 0;
+  margin: 0 .5rem 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    position: relative;
+    max-width: 100%;
+    max-height: auto;
+    box-shadow: none;
+    background-color: inherit;
+    align-items: flex-start; /* Add this line */
   }
-  
-  .cart h2 {
-    font-size: 1.5rem;
-    border-bottom: 1px solid var(--dark);
-    padding-bottom: .5rem;
-    margin: 1rem 0;
-  }
-  
-  .cart .close {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: var(--tertiary);
-  }
-  
-  .cart .close:hover {
-    text-decoration: underline;
-  }
-  
+
   .cart-closed {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 2rem;
-    cursor: pointer;
-    background-color: var(--secondary);
-    border-radius: 50%;
-    padding: .25rem;
-    width: 50px;
-    height: 50px;
+    position: relative;
+    margin: 0 auto;
   }
-  
-  .cart-closed:hover {
-    transform: rotate(8deg);
-  }
-  
-  .cart img {
-    width: 70px;
-    margin-right: 1rem;
-  }
-  
-  .cart input {
-    width: 50px;
-    padding: 0;
-    margin: 0 .5rem 1rem 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .cart {
-      position: relative;
-      max-width: 100%;
-      max-height: auto;
-      box-shadow: none;
-      background-color: inherit;
-    }
-  
-    .cart-closed {
-      position: relative;
-      margin: 0 auto;
-    }
-  }
+}
