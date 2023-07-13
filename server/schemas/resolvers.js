@@ -1,7 +1,7 @@
 const { Art, Artist, User, Order } = require("../models");
 const { AuthenticationError } = require("apollo-server-express");
 const { signToken } = require("../utils/auth");
-const stripe = require('stripe')(`${process.env.REACT_APP_PK_STRIPE}`);
+const stripe = require('stripe')(`${process.env.REACT_APP_SK_STRIPE}`);
 
 const resolvers = {
   Query: {
