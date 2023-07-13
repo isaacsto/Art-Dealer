@@ -8,6 +8,11 @@
     "watch": "nodemon",
     "seed": "node seeders/seed.js"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
