@@ -13,7 +13,7 @@ import '../Styles/Cart.css';
 
 
 
-const stripePromise = loadStripe(process.env.PK_STRIPE);
+const stripePromise = loadStripe(`${process.env.REACT_APP_PK_STRIPE}`);
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
