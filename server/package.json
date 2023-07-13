@@ -8,11 +8,17 @@
     "watch": "nodemon",
     "seed": "node seeders/seed.js"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@apollo/client": "^3.7.16",
+    "@stripe/stripe-js": "^1.54.1",
     "apollo-server-express": "^3.6.2",
     "bcrypt": "^5.0.0",
     "express": "^4.17.2",
