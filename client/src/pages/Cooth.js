@@ -1,19 +1,16 @@
 import React from 'react';
 import DisplayCard from './DisplayCard';
-import Link from '../components/Links';
+
 import '../Styles/ArtistsPages.css';
 
 function Cooth() {
   const artistName = 'Cooth';
-  const artistDescription = 'This is a brief description of the artist Cooth.';
+  const artistDescription = 'Cooth is an interdeisciplinary artist who has just started their artistic journey with clay. They have discovered a profound fascination in sculpting objects that challenges the perception of hardness by infusing it with a visually soft aesthetic . With each creation, they derive fulfillment, and are humbled by the opportunity to share their artistic expressions.';
 
   return (
     <div className='art-cards-container'>
       <div className='artist-info'>
-        <h2>{artistName}</h2>
-        <div>
-        <Link link={"https://www.instagram.com/havecooth/"} />
-        </div>
+        <h2>{artistName}  <a href="https://www.instagram.com/havecooth/" target="blank"><i class="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
       <DisplayCard artistName="Cooth" />

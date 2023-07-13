@@ -1,19 +1,16 @@
 import React from 'react';
 import DisplayCard from './DisplayCard';
-import Link from '../components/Links';
+
 import '../Styles/ArtistsPages.css';
 
 function IsabellaSaracini() {
   const artistName = 'Isabella Saracini';
-  const artistDescription = 'This is a brief description of the artist Kris Degirolamo.';
+  const artistDescription = 'Isabella Saracini, an artist from Connecticut, holds a BFA in Studio Art and is currently pursuing an MFA at The Ohio State University. Her work has been exhibited nationally and internationally, and she has curated multidisciplinary projects like Moss Creek Farm Open Studios';
 
   return (
     <div className='art-cards-container'>
       <div className='artist-info'>
-        <h2>{artistName}</h2>
-        <div>
-        <Link link={"https://www.instagram.com/isabellasaraceni_art/?hl=en"} />
-        </div>
+        <h2>{artistName}   <a href="https://www.instagram.com/isabellasaraceni_art/?hl=en" target="blank"><i class="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
       <DisplayCard artistName="Isabella Saracini" />
