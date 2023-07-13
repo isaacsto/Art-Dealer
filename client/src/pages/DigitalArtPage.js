@@ -6,13 +6,14 @@ function DigitalArt() {
    const medium = 'Digital Art';
  
    return (
-     <div className='art-cards-container'>
-       <div className='artist-info'>
-         <h2>{medium}</h2>
-       </div>
-       <DisplayByMedium medium={medium} />
-     </div>
+    <div className='art-cards-container'>
+    <div className='artist-info'>
+      <h2>{medium}</h2>
+    </div>
+    <DisplayByMedium medium={medium} />
+  </div>
    );
  }
  
  export default DigitalArt;
+ 
