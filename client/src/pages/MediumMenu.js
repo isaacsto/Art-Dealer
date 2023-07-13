@@ -10,7 +10,7 @@ const MediumMenu = () => {
   };
 
   const style = {
-    fontFamily: 'Roboto Mono',
+    fontFamily: 'Lobster',
     textDecoration: 'none',
     cursor: 'pointer',
   };
