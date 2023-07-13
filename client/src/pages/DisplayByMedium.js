@@ -33,7 +33,7 @@ export default function DisplayByMedium({ medium }) {
   if (data) {
     return (
       <div>
-        {data.artByMedium?.art?.map((Art) => (
+        {data.artByMedium?.map((Art) => (
           <MediumCard
             key={Art._id}
             imgUrl={Art.imageUrl}
