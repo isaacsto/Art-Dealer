@@ -1,39 +1,18 @@
 import React from 'react';
-import DisplayCard from './DisplayCard'
+import DisplayByMedium from './DisplayByMedium'
 import '../Styles/ArtistsPages.css'
 
-function Sculpting() {
-   const medium = 'Sculptings';
-   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-   const createRows = (cardsPerRow) => {
-      const rows = [];
-      let row = [];
-
-      cards.forEach((card, index) => {
-         row.push(<DisplayCard key={index} />);
-
-         if ((index + 1) % cardsPerRow === 0 || index === cards.length - 1) {
-            rows.push(
-               <div className='art-cards-row' key={index}>
-                  {row}
-               </div>
-            );
-            row = [];
-         }
-      });
-
-      return rows;
-   };
-
+function DigitalArt() {
+   const medium = 'Digital Art';
+ 
    return (
-      <div className='art-cards-container'>
-         <div className='artist-info'>
-            <h2>{medium}</h2>
-         </div>
-         {createRows(3)}
-      </div>
+     <div className='art-cards-container'>
+       <div className='artist-info'>
+         <h2>{medium}</h2>
+       </div>
+       <DisplayByMedium medium={medium} />
+     </div>
    );
-}
-
-export default Sculpting; 
+ }
+ 
+ export default DigitalArt;

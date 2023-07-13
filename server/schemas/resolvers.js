@@ -11,7 +11,7 @@ const resolvers = {
     art: async () => {
       return await Art.find({});
     },
-     arts: async (parent, { artist, title }) => {
+    arts: async (parent, { artist, title }) => {
       const params = {};
 
       if (artist) {
@@ -34,6 +34,10 @@ const resolvers = {
     },
     singleArtwork: async (parent, { artId }) => {
       return Art.findOne({ _id: artId });
+    },
+    artByMedium: async (parent, { medium }) => {
+      const arts = await Art.find({ medium });
+      return { art: arts };
     },
     users: async () => {
       return User.find();
@@ -161,7 +165,7 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
- 
+
     addOrder: async (parent, { arts }, context) => {
       console.log(context);
       if (context.user) {
@@ -188,31 +192,31 @@ const resolvers = {
     },
 
     addOrder: async (parent, { arts }, context) => {
-    console.log(context);
-    if (context.user) {
-      const order = new Order({ arts });
+      console.log(context);
+      if (context.user) {
+        const order = new Order({ arts });
 
-      await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+        await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
 
-      return order;
-    }
+        return order;
+      }
 
-    throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError('Not logged in');
     },
     updateUser: async (parent, args, context) => {
       if (context.user) {
-      return await User.findByIdAndUpdate(context.user._id, args, { new: true });
-    }
+        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+      }
 
-    throw new AuthenticationError('Not logged in');
+      throw new AuthenticationError('Not logged in');
     },
     updateArt: async (parent, { _id, quantity }) => {
-    const decrement = Math.abs(quantity) * -1;
+      const decrement = Math.abs(quantity) * -1;
 
-    return await Art.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
+      return await Art.findByIdAndUpdate(_id, { $inc: { quantity: decrement } }, { new: true });
     },
   },
-  
+
 };
 
 module.exports = resolvers;
