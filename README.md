@@ -30,6 +30,8 @@ Offres D'Art aims to create a platform that bridges the gap between art lovers a
 
 ## Installation 
 
+Please visit the published web app at : https://nameless-springs-87426-ab7084b2cd1d.herokuapp.com/ 
+
 To run the Offres D'Art ecommerce website locally, please follow the instructions below:
 
 Prerequisites
