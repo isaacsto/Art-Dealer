@@ -96,12 +96,12 @@ Once the website is up and running, you can use it to browse and purchase art. F
 https://nameless-springs-87426-ab7084b2cd1d.herokuapp.com
 
 ## Contributers
-Matthew Caschetto 
-Shane Davis
-Muhammad Jama
-Nestor Montanez
-Frank Olmsted 
-Issac Stofko
+[Matthew Caschetto](https://github.com/Cashew1337)
+[Shane Davis](https://github.com/Basil-NB)
+[Muhammad Jamal](https://github.com/jamalm06)
+[Nestor Montanez](https://github.com/Nuno0123)
+[Frank Olmsted](https://github.com/frankolms)
+[Issac Stofko](https://github.com/isaacsto)
 
 
 ## License
