@@ -50,6 +50,7 @@ const typeDefs = gql`
     order(_id: ID!): Order
   checkout(arts: [ID]!): Checkout
   arts(artist: ID, title: String): [Art]
+  artByMedium(medium: String): [Art]
   }
 
   type Mutation {

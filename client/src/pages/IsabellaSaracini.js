@@ -1,50 +1,24 @@
 import React from 'react';
-import DisplayCard from './DisplayCard'
-import Link from '../components/Links'
-import '../Styles/ArtistsPages.css'
+import DisplayCard from './DisplayCard';
+import Link from '../components/Links';
+import '../Styles/ArtistsPages.css';
 
 function IsabellaSaracini() {
-   const artistName = 'Isabella Saracini';
-   const artistDescription = 'This is a brief description of the artist Isabella Saracini.';
-   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const artistName = 'Isabella Saracini';
+  const artistDescription = 'This is a brief description of the artist Kris Degirolamo.';
 
-/*    const createRows = (cardsPerRow) => {
-      const rows = [];
-      let row = [];
-
-      cards.forEach((card, index) => {
-         row.push(<DisplayCard key={index} />);
-
-         if ((index + 1) % cardsPerRow === 0 || index === cards.length - 1) {
-            rows.push(
-               <div className='art-cards-row' key={index}>
-                  {row}
-               </div>
-            );
-            row = [];
-         }
-      });
-
-      return rows;
-   }; */
-
-   return (
-      <div className='art-cards-container'>
-         <div className='artist-info'>
-            <h2>{artistName}</h2>
-            <Link link={"https://www.instagram.com/isabellasaraceni_art/?hl=en"} />
-            <p>{artistDescription}</p>
-           
-         </div>
-         <div>
-         {/* {createRows(3)} */}
-         <DisplayCard artistName="Isabella Saracini"/>
-         </div>
-        
-         
-        
+  return (
+    <div className='art-cards-container'>
+      <div className='artist-info'>
+        <h2>{artistName}</h2>
+        <div>
+        <Link link={"https://www.instagram.com/isabellasaraceni_art/?hl=en"} />
+        </div>
+        <p>{artistDescription}</p>
       </div>
-   );
+      <DisplayCard artistName="Isabella Saracini" />
+    </div>
+  );
 }
 
-export default IsabellaSaracini; 
+export default IsabellaSaracini;
