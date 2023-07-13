@@ -68,7 +68,7 @@ query ArtistByName($artistName: String!) {
       size
       price
       title
-      year
+      
     }
   }
 }
