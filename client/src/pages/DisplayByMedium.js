@@ -1,11 +1,11 @@
- import React from 'react';
+import React from 'react';
 import MediumCard from './MediumCard';
 import { gql, useQuery } from '@apollo/client';
 
 const GET_MEDIUMS = gql`
   query ArtByMedium($medium: String) {
     artByMedium(medium: $medium) {
-      art {
+     
         _id
         description
         imageUrl
@@ -14,7 +14,7 @@ const GET_MEDIUMS = gql`
         price
         title
         year
-      }
+      
     }
   }
 `;

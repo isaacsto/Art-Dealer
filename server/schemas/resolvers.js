@@ -36,8 +36,7 @@ const resolvers = {
       return Art.findOne({ _id: artId });
     },
     artByMedium: async (parent, { medium }) => {
-      const arts = await Art.find({ medium });
-      return { art: arts };
+      return Art.find({ medium });
     },
     users: async () => {
       return User.find();
