@@ -12,9 +12,7 @@ import '../Styles/Cart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
-const style = {
-  "color": "#080808"
-};
+
 
 const stripePromise = loadStripe(`${process.env.REACT_APP_PK_STRIPE}`);
 

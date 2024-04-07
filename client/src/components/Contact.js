@@ -41,12 +41,21 @@ function Contact() {
 
   const styles = {
     formContainer: {
-      padding: "35px",
-      width: "50%",
-      height: "100vh",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column", 
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    formStyle: {
+        width: "45%",
+        background: "hsl(0, 0%, 90%)",
+        padding: "35px",
+        borderRadius: "5px"
     },
      para: {
       fontSize: "30px",
+      padding: "20px 40px", 
     }, 
     input: {
       marginBottom: "1rem",
@@ -65,10 +74,15 @@ function Contact() {
       fontSize: "1rem",
       fontWeight: "bold",
     },
+    btnWrap: {
+        width: "100%", 
+        display: "flex", 
+        justifyContent: "center",
+    }, 
     button: {
      fontFamily: "Roboto Mono",
       display: "block",
-      width: "100%",
+      width: "50%",
       padding: "0.5rem",
       fontSize: "1rem",
       fontWeight: "bold",
@@ -87,17 +101,22 @@ function Contact() {
     successText: {
       color: "green",
     },
+ 
+
   };
 
   //html markup
 
   return (
-    <div style={styles.formContainer}>
-      <p style={styles.para}>
-        Please fill out this form and we'll get back to you as soon as
+    <div>
+         <p style={styles.para}>
+       Please fill out this form and we'll get back to you as soon as
         possible
       </p>
-      <form className="form" style={styles.formStyle}>
+     
+    <div style={styles.formContainer}>
+
+      <form className="contact-form" style={styles.formStyle}>
         <div>
             <label style={styles.label} htmlFor="email">Email address</label>
           <input
@@ -108,8 +127,6 @@ function Contact() {
             value={email}
             name="email"
             onChange={handleInputChange}
-            /*  type="email"
-          placeholder="email" */
           />
         </div>
 
@@ -139,7 +156,7 @@ function Contact() {
             onChange={handleInputChange}
           />
         </div>
-
+<div className="button-wrap" style={styles.btnWrap}>
         <button
   type="button"
   style={{
@@ -152,13 +169,14 @@ function Contact() {
 >
           Submit
         </button>
-
+</div>
           
         {errorMessage && <p className="error-text">{errorMessage}</p>}
           {successMessage && <p className="success-text">{successMessage}</p>}
       </form>
-      
-    </div>
+      </div>
+      </div>
+   
   );
 }
 

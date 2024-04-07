@@ -10,7 +10,6 @@ const DropdownMenu = () => {
   };
 
   const style = {
-    'fontFamily': 'Lobster',
     'textDecoration': 'none',
     'cursor': 'pointer', 
   };
