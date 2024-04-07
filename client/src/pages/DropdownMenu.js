@@ -24,7 +24,7 @@ const DropdownMenu = () => {
     'left': 0,
     'backgroundColor': 'white',
     'zIndex': 1,
-    'width': '100%',
+    'width': '200px',
     'display': isOpen ? 'block' : 'none',
   };
 
