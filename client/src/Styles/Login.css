@@ -121,7 +121,7 @@
 
 @keyframes showLogin {
 	0% {
-		background: #d7e7f1;
+		background: #d7f1d8;
 		transform: translate(40%, 10px);
 	}
 	50% {
@@ -142,7 +142,7 @@
 		transform: translate(0, 0);
 	}
 	100% {
-		background: #d7e7f1;
+		background: #9fcca3;
 		transform: translate(40%, 10px);
 	}
 }
@@ -157,7 +157,7 @@
 
 @keyframes showSignup {
 	0% {
-		background: #d7e7f1;
+		background: #d7f1d9;
 		transform: translate(-40%, 10px) scaleY(.8);
 	}
 	50% {
@@ -178,7 +178,7 @@
 		transform: translate(0, 0) scaleY(.8);
 	}
 	100% {
-		background: #d7e7f1;
+		background: #9fcca3;; 
 		transform: translate(-40%, 10px) scaleY(.8);
 	}
 }
@@ -233,8 +233,8 @@
 	font-size: 16px;
 	line-height: 40px;
 	color: #3b4465;
-  background: #eef9fe;
-  border: 1px solid #cddbef;
+  background: #ebf7eb;
+  border: 1px solid #092e10;
   border-radius: 2px;
 }
 
@@ -258,13 +258,22 @@
 
 .btn-login {
 	color: #fbfdff;
-	background: #112D3A;
+	background: #033011;
 	transform: translateX(-30%);
+	cursor: pointer; 
 }
 
 .btn-signup {
-	color: #112D3A;
-	background: #fbfdff;
-	box-shadow: inset 0 0 0 2px #112D3A;
+	color: #fbfdff;
+	background: #033713;
 	transform: translateX(30%);
+	cursor: pointer; 
+}
+
+.btn-login:hover, .btn-signup:hover {
+	background:rgb(21, 102, 21); 
+}
+
+form:not(:focus){
+	background-color: rgb(21, 102, 21); 
 }
