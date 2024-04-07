@@ -1,6 +1,7 @@
-/* .page-outline {
-    border: 7px solid black;
-    padding: 20px;
-    margin: 2px;
-    height: 100%;
-} */
+.container {
+    position: absolute; 
+    z-index: -1;  
+}
+div.toggles {
+    position: relative; 
+}

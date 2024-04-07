@@ -4,11 +4,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import auth from "../utils/auth";
 import '../Styles/Header.css';
-import logo from "../Styles/Logo.png";
 import Popup from "./Popup"; 
 
-// import DropdownMedium 
-// import DropdownMedium 
+
 
 function Header({ currentPage, handlePageChange }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -39,7 +37,7 @@ function Header({ currentPage, handlePageChange }) {
         </div>
       </div>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
       <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
       
       {showPopup && (

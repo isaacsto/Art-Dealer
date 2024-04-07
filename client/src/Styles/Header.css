@@ -2,39 +2,31 @@
 
 .header-links {
     display: flex;
-    justify-content: space-between;
+    width: 100%; 
+    justify-content: flex-end;
     align-items: center;
     padding-right: 20px;
     position: absolute; 
+    z-index: 999; 
+    top: 10%; 
 
-}
 
-.left-links {
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-.right-links {
-    display: flex;
-    align-items: center;
-}
-
-.logo-link {
-    position: absolute; 
-    margin-bottom: -20px; 
-    margin-right: 20px;
-    color: white;
 }
 
 .header-link {
     font-family: "Roboto Mono", monospace;
     text-decoration: none;
-    padding: 0 30px;
-    color: black;
+    margin-right: 30px; 
+    padding: 10px;
+    color: #ffffff;
+    border: none; 
+    background: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 22px; 
 }
 .header-link:hover {
-    color: #026e17; 
+    background-color: rgba(0, 0, 0, 0.5); 
     font-weight: 600;
 }
 /* Home slider */

@@ -19,8 +19,8 @@ const styles = {
     return(
   <footer className="footer" style={styles.footerStyle}>
     <div >
-  <a href="https://github.com/Cashew1337/Art-Dealer" target="blank"><i class="fab fa-github" style={styles.linkStyle}></i></a>
-  <a href="https://www.linkedin.com/school/uconn-boot-camps/about/" target="blank" style={styles.linkStyle}><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Cashew1337/Art-Dealer" target="blank"><i className="fab fa-github" style={styles.linkStyle}></i></a>
+  <a href="https://www.linkedin.com/school/uconn-boot-camps/about/" target="blank" style={styles.linkStyle}><i className="fab fa-linkedin"></i></a>
  
   </div>
   </footer>

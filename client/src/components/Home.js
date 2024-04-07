@@ -11,8 +11,7 @@ import '../Styles/Header.css'
 function Home() {
     return (
       <div className="home-body">
-   <Slider/>
-          <Header/> 
+          <Slider/>
       </div>
 
 );
