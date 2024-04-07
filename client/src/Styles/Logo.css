@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Custom';
+    src: url('../assets/Syne-Mono.ttf') format('truetype');
+  }
+
+.logo-wrap {
+    border: solid 2px #ffffff; 
+    left: 3%; 
+    top: 2.4%; 
+    position: absolute; 
+    z-index: 2002; 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.logo-wrap a {
+    font-family: Custom;
+    color: white; 
+    letter-spacing: 5px;
+    font-weight: 600; 
+    text-decoration: none; 
+    cursor: pointer;  
+    z-index: 2002; 
+}
+
+.logo-link {
+    color: #ffffff; /* Default color for the home page */
+}
+
+.logo-link-else {
+    color: #000000; /* Color for other pages */
+}

@@ -17,6 +17,7 @@ import CartCont from './CartCont';
 import Footer from './Footer';
 import Success from '../pages/Success';
 import Home from './Home'; 
+import Header from '../components/Header'; 
 
 import '../Styles/AppCont.css'
 
@@ -30,9 +31,9 @@ function AppContainer() {
   return (
     <div className="page-outline">
       <Router>
-        <Home currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
         <Routes>
-        
+        <Route path="/" element={<Home />}/>
           <Route path="/Login" element={<Login />} />
           <Route path="/IsabellaSaracini" element={<Isabella />} />
           <Route path="/KamrynHarmeling" element={<Kamryn />} />

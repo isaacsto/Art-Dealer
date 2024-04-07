@@ -1,37 +1,44 @@
-
-
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import auth from "../utils/auth";
 import '../Styles/Header.css';
-import Popup from "./Popup"; 
+import Popup from "./Popup.js"; 
 
-
+import '../Styles/Logo.css'
 
 function Header({ currentPage, handlePageChange }) {
   const [showPopup, setShowPopup] = useState(false);
+  const location = useLocation();
 
   const togglePopup = () => {
     setShowPopup(!showPopup);
   }
 
+  const isHomePage = location.pathname === "/";
+
   return (
     <header className="header">
+            <div className="logo-wrap"  style={{ border: isHomePage ? 'solid 2px #ffffff' : 'solid 2px #000000' }}>
+            <Link to="/" style={{ color: isHomePage ? '#ffffff' : '#000000' }}>ARTLY</Link>
+        </div>
       <div className="header-links">
+        <div className="right-link">
+     
+        </div>
         <div className="right-links">
-          <Link to="/Contact" className="header-link">
+          <Link to="/Contact" className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
             Contact Us
           </Link>
           {auth.loggedIn() ? (
-            <Link to="/" onClick={auth.logout} className="header-link">
+            <Link to="/" onClick={auth.logout} className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
               Logout
             </Link>
           ) : (
-            <button onClick={togglePopup} className="header-link">
+            <button onClick={togglePopup} className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
               Login/Signup
             </button>
           )}
-          <Link to="/CartCont" className="header-link">
+          <Link to="/CartCont" className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
             Cart
           </Link>
         </div>
@@ -43,7 +50,6 @@ function Header({ currentPage, handlePageChange }) {
       {showPopup && (
         <div className="popup">
           <Popup/>
-        
         </div>
       )}
     </header>

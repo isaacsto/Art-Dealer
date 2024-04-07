@@ -9,8 +9,6 @@
     position: absolute; 
     z-index: 999; 
     top: 10%; 
-
-
 }
 
 .header-link {
@@ -25,6 +23,11 @@
     cursor: pointer; 
     font-size: 22px; 
 }
+
+.header-link-else {
+  color: #000000; 
+}
+
 .header-link:hover {
     background-color: rgba(0, 0, 0, 0.5); 
     font-weight: 600;
@@ -94,5 +97,5 @@
     justify-content: center;
 }
 div.react-slideshow-container button.nav.default-nav svg path {
-    fill: white !important; 
+    display: none; 
 }

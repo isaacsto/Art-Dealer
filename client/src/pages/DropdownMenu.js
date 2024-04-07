@@ -6,9 +6,6 @@ const DropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [leaveTimeout, setLeaveTimeout] = useState(null);
 
-  // const toggleDropdown = () => {
-  //   setIsOpen(!isOpen);
-  // };
   const handleMouseEnter = () => {
     clearTimeout(leaveTimeout);
     setIsOpen(true);
@@ -16,7 +13,7 @@ const DropdownMenu = () => {
   const handleMouseLeave = () => {
     const timeout = setTimeout(() => {
       setIsOpen(false);
-    }, 500); // Adjust the delay time as needed
+    }, 200); 
     setLeaveTimeout(timeout);
   };
 
@@ -32,20 +29,18 @@ const DropdownMenu = () => {
 
   const menuStyle = {
     'position': 'absolute',
-    'top': '100%',
-    'left': 0,
-    'backgroundColor': 'white',
+    'backgroundColor': 'rgba(0, 0, 0, 0.5)',
     'zIndex': 999,
-    'width': '200px',
+    'width': 'fit-content',
     'display': isOpen ? 'block' : 'none',
+    padding: '10px',
+    borderRadius: '5px'
   };
 
   return (
     <div
       className="dropdown"
       style={dropdownStyle}
-      // onMouseEnter={toggleDropdown}
-      // onMouseLeave={toggleDropdown}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

@@ -1,6 +1,6 @@
 .drop-down-slider-wrap {
   position: absolute; 
-  z-index: 100; 
+  z-index: 2000; 
   width: 100%; 
   top: 5%; 
 }
@@ -25,12 +25,34 @@ button.dropdown-toggle{
   cursor: pointer;
 }
 .dropdown-toggle:hover{
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 5px; 
+  font-size: 21px;
   border-radius: 5px; 
+}
+
+.drop-down-menu {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 .dropdown-menu a {
   text-decoration: none; 
   list-style-type: none;
+  z-index: 2000; 
+  color: #ffffff; 
+}
+
+.dropdown-menu ul {
+  padding: 5px 10px; 
+  list-style-type: none;
+  margin: 0; 
+}
+
+.dropdown-menu ul li {
+  margin-right: 10px;
+  margin-bottom: 5px; 
+}
+
+.dropdown-menu ul li:last-child {
+  margin-right: 0;
 }
