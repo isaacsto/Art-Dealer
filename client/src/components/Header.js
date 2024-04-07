@@ -7,7 +7,8 @@ import '../Styles/Header.css';
 import logo from "../Styles/Logo.png";
 import Popup from "./Popup"; 
 
-import Home from "./Home"; 
+// import DropdownMedium 
+// import DropdownMedium 
 
 function Header({ currentPage, handlePageChange }) {
   const [showPopup, setShowPopup] = useState(false);
@@ -18,7 +19,6 @@ function Header({ currentPage, handlePageChange }) {
 
   return (
     <header className="header">
-      <Home/>
       <div className="header-links">
         <div className="right-links">
           <Link to="/Contact" className="header-link">
