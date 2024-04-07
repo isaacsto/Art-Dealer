@@ -29,7 +29,7 @@
 
 .logo-link {
     position: absolute; 
-    padding: 20px;
+    margin-bottom: -20px; 
     margin-right: 20px;
     color: white;
 }
