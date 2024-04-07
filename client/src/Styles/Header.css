@@ -40,7 +40,9 @@
     padding: 0 30px;
     color: black;
 }
-
+.header-link:hover {
+    color: #026e17
+}
 /* Home slider */
 
 .tinted {
