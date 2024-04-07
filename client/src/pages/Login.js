@@ -11,6 +11,11 @@ function Login(props) {
     const handleSwitchForm = (form) => {
         setActiveForm(form);
     };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const togglePopup = () => {
+      setShowPopup(!showPopup);
+    }
 
     //for signup
     const [addUser] = useMutation(ADD_USER);
@@ -83,10 +88,12 @@ function Login(props) {
                     <div className={`form-wrapper ${activeForm === 'login' ? 'is-active' : ''}`}>
                     <button type="button" className="switcher switcher-login" onClick={() => handleSwitchForm('login')}>
                             Login
-                            <span className="underline"></span>
+                       
                         </button>
+                       <div className="form-wrap">
+                       <button  class="close login" onClick={togglePopup}>close</button>
                         <form className="form form-login" onSubmit={handleLoginSubmit}>
-                        
+                      
                             <fieldset>
                                 <legend>Please, enter your username and password for login.</legend>
                                 <div className="input-block">
@@ -102,16 +109,19 @@ function Login(props) {
                                 Login
                             </button>
                         </form>
+                        </div>
                     </div>
                     <div className={`form-wrapper ${activeForm === 'signup' ? 'is-active' : ''}`}>
                     <button type="button" className="switcher switcher-signup" onClick={() => handleSwitchForm('signup')}>
                             Sign Up
-                            <span className="underline"></span>
+                          
                         </button>
+                        <div className="form-wrap">
+                        <button  class="close signup" onClick={togglePopup}>close</button>
                         <form className="form form-signup" onSubmit={handleSignUpSubmit}>
-                      
+                        
                             <fieldset>
-                                <legend>Please, enter your email, password, and password confirmation for sign up.</legend>
+                           
                                 <div className="input-block">
                                     <label htmlFor="signup-firstname">First Name</label>
                                     <input id="signup-firstname" type="text" name="firstName" 
@@ -138,6 +148,7 @@ function Login(props) {
                                 Continue
                             </button>
                         </form>
+                        </div>
                     </div>
                 </div>
             </section>
