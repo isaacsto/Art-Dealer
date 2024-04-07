@@ -43,6 +43,7 @@ function Home() {
               ))}
              
           </Slide>
+          
       </div>
   </div>
 );

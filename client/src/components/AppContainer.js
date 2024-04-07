@@ -11,9 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../Styles/AppCont.css'
 
 
-import Home from "./Home"
 import Header from "./Header"
-/* import Footer from "./Footer" */
 import Contact from "./Contact"
 import DropdownMenu from '../pages/DropdownMenu';
 import MediumMenu from '../pages/MediumMenu'
@@ -61,7 +59,7 @@ function AppContainer() {
   const toggleLogin = () => {
     setIsLoginOpen(!isLoginOpen);
   };
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('Header');
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
@@ -78,7 +76,7 @@ function AppContainer() {
 
               <Routes>
 
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Header/>} />
 
 
                 <Route path="/Login" element={<Login />} />
@@ -96,7 +94,6 @@ function AppContainer() {
                 <Route path="/Success" element={<Success />} />
               </Routes>
             </div>
-            {/*  <Footer currentPage={currentPage} handlePageChange={handlePageChange} /> */}
 
           </div>
 

@@ -20,11 +20,6 @@ function Header({ currentPage, handlePageChange }) {
     <header className="header">
       <Home/>
       <div className="header-links">
-        <div className="left-links">
-          <Link to="/" className="logo-link">
-            <img src={logo} alt="Artly Logo" width="300" height="350" />
-          </Link>
-        </div>
         <div className="right-links">
           <Link to="/Contact" className="header-link">
             Contact Us
