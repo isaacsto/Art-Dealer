@@ -77,15 +77,16 @@ function Login(props) {
       };
 
     return (
-        <div className="container">
+        <div className="container login">
             <section className="forms-section">
                 <div className="forms">
                     <div className={`form-wrapper ${activeForm === 'login' ? 'is-active' : ''}`}>
-                        <button type="button" className="switcher switcher-login" onClick={() => handleSwitchForm('login')}>
+                    <button type="button" className="switcher switcher-login" onClick={() => handleSwitchForm('login')}>
                             Login
                             <span className="underline"></span>
                         </button>
                         <form className="form form-login" onSubmit={handleLoginSubmit}>
+                        
                             <fieldset>
                                 <legend>Please, enter your username and password for login.</legend>
                                 <div className="input-block">
@@ -103,11 +104,12 @@ function Login(props) {
                         </form>
                     </div>
                     <div className={`form-wrapper ${activeForm === 'signup' ? 'is-active' : ''}`}>
-                        <button type="button" className="switcher switcher-signup" onClick={() => handleSwitchForm('signup')}>
+                    <button type="button" className="switcher switcher-signup" onClick={() => handleSwitchForm('signup')}>
                             Sign Up
                             <span className="underline"></span>
                         </button>
                         <form className="form form-signup" onSubmit={handleSignUpSubmit}>
+                      
                             <fieldset>
                                 <legend>Please, enter your email, password, and password confirmation for sign up.</legend>
                                 <div className="input-block">

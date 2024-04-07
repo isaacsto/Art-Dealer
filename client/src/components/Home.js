@@ -24,13 +24,16 @@ const slideImages = [
   {
     url: 'https://i.imgur.com/noqowdL.jpg',
   },
+  {
+    url: 'https://i.imgur.com/zCMhagJ.jpg',
+  }
 
 ];
 function Home() {
     return (
       <div className="home-body">
       <div className="slide-container">
-          <div className="tagline">Discover New Art</div>
+          <div className="tagline">Discover New Artists</div>
           <Slide>
               {slideImages.map((slideImage, index) => (
                   <div key={index}>

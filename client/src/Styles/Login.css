@@ -1,8 +1,13 @@
+.container.login {
+	z-index: 3; 
+	position: absolute; 
+} 
 .forms-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 2000; 
 }
 
 .forms {

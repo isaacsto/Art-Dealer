@@ -57,6 +57,10 @@ const client = new ApolloClient({
 });
 
 function AppContainer() {
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const toggleLogin = () => {
+    setIsLoginOpen(!isLoginOpen);
+  };
   const [currentPage, setCurrentPage] = useState('Home');
   const handlePageChange = (page) => setCurrentPage(page);
 
@@ -66,7 +70,7 @@ function AppContainer() {
     
         <Router>
           <div className="flex-column justify-flex-start min-100-vh">
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange}  toggleLogin={toggleLogin}/>
 
             <div className="container">
               <div className="toggles" style={style.dropDowns}>  <DropdownMenu />

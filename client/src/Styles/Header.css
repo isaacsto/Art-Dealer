@@ -41,7 +41,8 @@
     color: black;
 }
 .header-link:hover {
-    color: #026e17
+    color: #026e17; 
+    font-weight: 600;
 }
 /* Home slider */
 
