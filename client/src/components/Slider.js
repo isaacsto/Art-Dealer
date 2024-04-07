@@ -1,9 +1,10 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 
-import 'react-slideshow-image/dist/styles.css'
-import '../Styles/Header.css'
-import Header from './Header.js'
+import 'react-slideshow-image/dist/styles.css';
+import '../Styles/Header.css';
+import Header from './Header.js';
+import DropDowns from './DropDowns.js';
 
 
 const slideImages = [
@@ -35,8 +36,13 @@ function Slider() {
     
       <div className="slide-container">
       
-          <div className="tagline">Discover New Artists</div>
+          <div className="tagline"><strong>Artly </strong>
+          Discover New Artists</div>
           <Header/> 
+          <div className="drop-down-slider-wrap">
+          <DropDowns/>
+          </div>
+     
           <Slide>
               {slideImages.map((slideImage, index) => (
                   <div key={index}>

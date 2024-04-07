@@ -1,10 +1,8 @@
-// export default AppContainer;
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../Styles/AppCont.css';
 import Contact from './Contact';
-import DropdownMenu from '../pages/DropdownMenu';
-import MediumMenu from '../pages/MediumMenu';
+
 import Isabella from '../pages/IsabellaSaracini';
 import Kamryn from '../pages/KamrynHarmeling';
 import Kris from '../pages/KrisDegirolamo';
@@ -18,8 +16,8 @@ import Sculpting from '../pages/SculptingPage';
 import CartCont from './CartCont';
 import Footer from './Footer';
 import Success from '../pages/Success';
-import Home from './Home'; // Import Home component
-import DropDowns from './DropDowns'; 
+import Home from './Home'; 
+
 import '../Styles/AppCont.css'
 
 
@@ -50,7 +48,7 @@ function AppContainer() {
           <Route path="/Success" element={<Success />} />
           {/* Render other routes here */}
         </Routes>
-     <DropDowns/>
+  
       </Router>
       <script src="https://kit.fontawesome.com/1498603cf1.js" crossorigin="anonymous"></script>
       <Footer />

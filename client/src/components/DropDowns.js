@@ -1,27 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import '../Styles/Dropdown.css'
 
 
-import DropdownMenu from '../pages/DropdownMenu'
-import DisplayByMedium from '../pages/DisplayByMedium';
+import DropdownMenu from '../pages/DropdownMenu.js'
+import MediumMenu from '../pages/MediumMenu.js'
 
 
-const style = {
-    dropDowns: {
-      display: 'flex',
-    },
-  };
 
 function DropDowns (){
 
   return (
-    <div className="container">
-    <div className="toggles" style={style.dropDowns}>
+    <div className="drop-downs-wrap">
       <DropdownMenu />
-      <DisplayByMedium />
+      <MediumMenu />
     </div>
-  </div>
+  
   );
 };
 

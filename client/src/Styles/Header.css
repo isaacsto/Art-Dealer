@@ -71,7 +71,14 @@
     left: 10%; 
     right: 90%; 
     color: white; 
-    font-size: 70px; 
+    font-size: 50px; 
+    font-family: sans-serif; 
+  }
+  .tagline strong {
+    font-size: 85px; 
+   
+    letter-spacing: 15px;
+    font-family: "Noto Serif", serif;
   }
 
   .react-slideshow-container .default-nav {

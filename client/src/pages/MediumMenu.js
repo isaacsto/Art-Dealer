@@ -4,9 +4,21 @@ import '../Styles/Dropdown.css';
 
 const MediumMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [leaveTimeout, setLeaveTimeout] = useState(null);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+  // const toggleDropdown = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
+  const handleMouseEnter = () => {
+    clearTimeout(leaveTimeout);
+    setIsOpen(true);
+  };
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsOpen(false);
+    }, 500); // Adjust the delay time as needed
+    setLeaveTimeout(timeout);
   };
 
   const style = {
@@ -25,15 +37,17 @@ const MediumMenu = () => {
     backgroundColor: 'white',
     zIndex: 1,
     width: '100%',
-    display: isOpen ? 'block' : 'none', // Show the menu if isOpen is true
+    display: isOpen ? 'block' : 'none', 
   };
 
   return (
     <div
       className="dropdown"
       style={dropdownStyle}
-      onMouseEnter={toggleDropdown}
-      onMouseLeave={toggleDropdown}
+      // onMouseEnter={toggleDropdown}
+      // onMouseLeave={toggleDropdown}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <button className="dropdown-toggle" style={style}>
         Mediums
