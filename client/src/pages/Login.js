@@ -8,8 +8,13 @@ import AuthService from '../utils/auth';
 function Login() {
     const [activeForm, setActiveForm] = useState('login');
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });
+    // const handleSwitchForm = (form) => {
+    //     setActiveForm(form === 'login' ? 'signup' : 'login');
+    // };
     const handleSwitchForm = (form) => {
-        setActiveForm(form === 'login' ? 'signup' : 'login');
+        if (form !== activeForm) { // Only switch form if the clicked form is not active
+            setActiveForm(form);
+        }
     };
     const [showPopup, setShowPopup] = useState(false);
 
