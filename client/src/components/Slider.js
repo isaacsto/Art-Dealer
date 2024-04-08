@@ -36,10 +36,6 @@ function Slider() {
       
           <div className="tagline"><strong>Artly </strong>
           Discover New Artists</div>
-    
-          <div className="drop-down-slider-wrap">
-          <DropDowns/>
-          </div>
      
           <Slide>
               {slideImages.map((slideImage, index) => (

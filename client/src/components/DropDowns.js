@@ -1,22 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import DropdownMenu from '../pages/DropdownMenu.js';
+import MediumMenu from '../pages/MediumMenu.js';
+import '../Styles/Dropdown.css';
 
-import '../Styles/Dropdown.css'
-
-
-import DropdownMenu from '../pages/DropdownMenu.js'
-import MediumMenu from '../pages/MediumMenu.js'
-
-
-
-function DropDowns (){
+function DropDowns({ currentPage }) {
+  const isHomePage = currentPage === '/';
 
   return (
-    <div className="drop-downs-wrap">
+    <div className={`dropdowns-wrap ${isHomePage ? 'dropdowns-wrap-toggle' : 'other-page-toggle'}`}>
       <DropdownMenu />
       <MediumMenu />
     </div>
-  
   );
-};
+}
 
-export default DropDowns;
+export default DropDowns; 

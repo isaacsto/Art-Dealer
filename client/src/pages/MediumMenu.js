@@ -6,10 +6,6 @@ const MediumMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [leaveTimeout, setLeaveTimeout] = useState(null);
 
-  // const toggleDropdown = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
   const handleMouseEnter = () => {
     clearTimeout(leaveTimeout);
     setIsOpen(true);
@@ -44,8 +40,6 @@ const MediumMenu = () => {
     <div
       className="dropdown"
       style={dropdownStyle}
-      // onMouseEnter={toggleDropdown}
-      // onMouseLeave={toggleDropdown}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
