@@ -5,13 +5,16 @@ function MediumButtons() {
     return (
         <div className="med-wrap">
             <div className="item">
-                <img src={require("../assets/bluecrop.jpg")} />
+                <div class="text-overlay one">Painting</div>
+                <img src={require("../assets/bluish.jpg")} />
             </div>
             <div className="item">
-            <img src={require("../assets/clayspike.jpg")} />
+            <div class="text-overlay two">Sculpture</div>
+            <img src={require("../assets/marineclay.jpg")} />
             </div>
             <div className="item">
-            <img src={require("../assets/archcrop.jpg")} />
+            <div class="text-overlay three">Digital Art</div>
+            <img src={require("../assets/reeds.jpg")} />
             </div>
 
         </div>
