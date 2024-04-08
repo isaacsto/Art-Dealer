@@ -3,13 +3,12 @@ import { Slide } from 'react-slideshow-image';
 
 import 'react-slideshow-image/dist/styles.css';
 import '../Styles/Header.css';
-import Header from './Header.js';
 import DropDowns from './DropDowns.js';
 
 
 const slideImages = [
   {
-    url: 'https://i.imgur.com/WcTMY35.jpg',
+    url: 'https://i.imgur.com/zCMhagJ.jpg',
   },
   {
     url: 'https://i.imgur.com/fedNpXu.jpg',
@@ -18,17 +17,16 @@ const slideImages = [
     url: 'https://i.imgur.com/sAgUl83.png',
   },
   {
-    url: 'https://i.imgur.com/4wR7TxC.jpg',
-  },
-  {
     url: 'https://i.imgur.com/0kcqorc.jpg',
   },
   {
+    url: 'https://i.imgur.com/4wR7TxC.jpg',
+  },
+
+  {
     url: 'https://i.imgur.com/noqowdL.jpg',
   },
-  {
-    url: 'https://i.imgur.com/zCMhagJ.jpg',
-  }
+
 
 ];
 function Slider() {
@@ -38,7 +36,7 @@ function Slider() {
       
           <div className="tagline"><strong>Artly </strong>
           Discover New Artists</div>
-          
+    
           <div className="drop-down-slider-wrap">
           <DropDowns/>
           </div>

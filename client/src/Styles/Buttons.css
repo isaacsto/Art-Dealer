@@ -2,17 +2,19 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 70px; 
 }
 
 .item {
     position: relative;
     margin: 15px 40px; 
-    width: 400px; 
+    width: 440px; 
     text-align: center; 
+ 
 }
 
 .item:hover {
-    width: 401px; 
+    width: 444px; 
 }
 
 .med-wrap img {
