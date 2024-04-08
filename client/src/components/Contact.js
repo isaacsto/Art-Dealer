@@ -126,7 +126,7 @@ function Contact() {
          <h4 style={styles.para}>
        reach out...
       </h4>
-      <p>If you're interested in selling your work on Artly.com or if you just want to learn more reach out below</p>
+      <p>If you're interested in selling your work on Artly.com or if you just want to learn more contact us below</p>
      
     <div style={styles.formContainer}>
 
@@ -137,7 +137,7 @@ function Contact() {
           style={styles.input}
             type="email"
             id="email"
-            placeholder="name@example.com"
+            placeholder="email@example.com"
             value={email}
             name="email"
             onChange={handleInputChange}
