@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/hlpers";
 
+import '../Styles/Contact.css'
+
 //function to alert user when they enter an invalid email
 
 function Contact() {
@@ -68,6 +70,18 @@ function Contact() {
       borderRadius: "0.25rem",
       width: "95%",
     },
+    inputMessage: {
+      marginBottom: "1rem",
+      padding: "0.375rem 0.75rem",
+      fontSize: "1rem",
+      lineHeight: "1.5",
+      color: "#495057",
+      backgroundColor: "#fff",
+      border: "1px solid #ced4da",
+      borderRadius: "0.25rem",
+      width: "95%",
+      height: "100px",
+    },
     label: {
     fontFamily: "Roboto Mono",
       marginBottom: "0.5rem",
@@ -108,11 +122,11 @@ function Contact() {
   //html markup
 
   return (
-    <div>
-         <p style={styles.para}>
-       Please fill out this form and we'll get back to you as soon as
-        possible
-      </p>
+    <div className="contact-page-wrap">
+         <h4 style={styles.para}>
+       reach out...
+      </h4>
+      <p>If you're interested in selling your work on Artly.com or if you just want to learn more reach out below</p>
      
     <div style={styles.formContainer}>
 
@@ -136,7 +150,6 @@ function Contact() {
             style={styles.input}
             type="text"
             id="name"
-            placeholder="Your Name"
             value={name}
             name="name"
             onChange={handleInputChange}
@@ -148,10 +161,9 @@ function Contact() {
             <label style={styles.label}> Your Message
             </label>
           <input
-            style={styles.input}
+            style={styles.inputMessage}
             type="text"
             id="message"
-            placeholder="Your Message"
             name="message"
             onChange={handleInputChange}
           />
