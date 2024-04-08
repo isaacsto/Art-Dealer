@@ -1,6 +1,6 @@
 .drop-down-slider-wrap {
   position: absolute; 
-  z-index: 2000; 
+  z-index: 1000; 
   width: 100%; 
   top: 5%; 
 }
@@ -38,7 +38,7 @@ button.dropdown-toggle{
 .dropdown-menu a {
   text-decoration: none; 
   list-style-type: none;
-  z-index: 2000; 
+  z-index: 1000; 
   color: #ffffff; 
 }
 

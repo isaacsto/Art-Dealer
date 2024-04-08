@@ -13,6 +13,11 @@ function Header({ currentPage, handlePageChange }) {
   const togglePopup = () => {
     setShowPopup(!showPopup);
   }
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+      setIsPopupOpen(true);
+  };
 
   const isHomePage = location.pathname === "/";
 
@@ -34,9 +39,11 @@ function Header({ currentPage, handlePageChange }) {
               Logout
             </Link>
           ) : (
+          
             <button onClick={togglePopup} className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
               Login/Signup
             </button>
+            
           )}
           <Link to="/CartCont" className={`header-link ${isHomePage ? 'header-link' : 'header-link-else'}`}>
             Cart

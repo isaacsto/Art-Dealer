@@ -3,12 +3,12 @@ import Login from '../pages/Login';
 import "../Styles/popup.css"
 
 
-function Popup() {
+function Popup(closePopup) {
   
     return (
   
         <div className="popup">
-            <Login/> 
+              <Login closePopup={closePopup} />
             </div>
             
          
@@ -16,3 +16,4 @@ function Popup() {
 }
 
 export default Popup;
+

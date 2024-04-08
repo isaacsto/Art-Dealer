@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Login.css';
 import { useMutation } from "@apollo/client";
 import { LOGIN_USER, ADD_USER } from "../utils/mutations";
 import AuthService from '../utils/auth';
 
-function Login(props) {
+function Login() {
     const [activeForm, setActiveForm] = useState('login');
     const [userFormData, setUserFormData] = useState({ email: '', password: '' });
     const handleSwitchForm = (form) => {
-        setActiveForm(form);
+        setActiveForm(form === 'login' ? 'signup' : 'login');
     };
     const [showPopup, setShowPopup] = useState(false);
 
@@ -50,9 +50,6 @@ function Login(props) {
 
     // code for login
     const [loginUser, ] = useMutation(LOGIN_USER);
-    // const [validated] = useState(false);
-    // const [showAlert, setShowAlert] = useState(false);
-
     const handleLoginSubmit = async (event) => {
         event.preventDefault();
         console.log(event, userFormData);
@@ -69,7 +66,6 @@ function Login(props) {
           AuthService.login(token);
         } catch (e) {
           console.log(e);
-        //   setShowAlert(true);
         }
       };
       const handleLoginChange = (event) => {
@@ -81,6 +77,7 @@ function Login(props) {
         });
       };
 
+
     return (
         <div className="container login">
             <section className="forms-section">
@@ -91,7 +88,7 @@ function Login(props) {
                        
                         </button>
                        <div className="form-wrap">
-                       <button  class="close login" onClick={togglePopup}>close</button>
+                  
                         <form className="form form-login" onSubmit={handleLoginSubmit}>
                       
                             <fieldset>
@@ -117,9 +114,9 @@ function Login(props) {
                           
                         </button>
                         <div className="form-wrap">
-                        <button  class="close signup" onClick={togglePopup}>close</button>
+                    
                         <form className="form form-signup" onSubmit={handleSignUpSubmit}>
-                        
+                    
                             <fieldset>
                            
                                 <div className="input-block">
@@ -156,3 +153,4 @@ function Login(props) {
     );
     }
 export default Login;
+
