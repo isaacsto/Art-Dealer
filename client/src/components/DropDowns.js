@@ -4,10 +4,9 @@ import MediumMenu from '../pages/MediumMenu.js';
 import '../Styles/Dropdown.css';
 
 function DropDowns({ currentPage }) {
-  const isHomePage = currentPage === '/';
 
   return (
-    <div className={`dropdowns-wrap ${isHomePage ? 'dropdowns-wrap-toggle' : 'other-page-toggle'}`}>
+    <div className="dropdowns-wrap">
       <DropdownMenu />
       <MediumMenu />
     </div>

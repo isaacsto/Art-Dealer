@@ -33,7 +33,7 @@ function Slider() {
     return (
     
       <div className="slide-container">
-      
+              <DropDowns/>
           <div className="tagline"><strong>Artly </strong>
           Discover New Artists</div>
      

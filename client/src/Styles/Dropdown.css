@@ -12,16 +12,12 @@
   gap: 4rem; 
 }
 
-.dropdowns-wrap-toggle.dropdown.button.dropdown-toggle{
+.dropdown-toggle{
   color: #ffffff; 
   font-size: 20px; 
   font-weight: 600; 
 }
-.other-page-toggle.dropdown.button.dropdown-toggle {
-  color: #000000; 
-  font-size: 22px; 
-  font-weight: 600; 
-}
+
 .dropdown-toggle {
   border: none;
   background: none; 

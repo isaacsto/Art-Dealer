@@ -19,8 +19,7 @@ import Success from '../pages/Success';
 import Home from './Home'; 
 import Header from '../components/Header'; 
 
-import '../Styles/AppCont.css'
-import DropDowns from './DropDowns';
+import '../Styles/AppCont.css';
 
 
 
@@ -33,7 +32,7 @@ function AppContainer() {
     <div className="page-outline">
       <Router>
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        <DropDowns currentPage={currentPage} handlePageChange={handlePageChange} />
+
         <Routes>
         <Route path="/" element={<Home />}/>
           <Route path="/Login" element={<Login />} />
