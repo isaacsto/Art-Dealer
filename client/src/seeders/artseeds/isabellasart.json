@@ -1,15 +1,5 @@
 [
-            {
-                
-                "artist": "Isabella Saracini",
-                "title": "Pathways",
-                "medium": "Painting",
-                "year": "2022",
-                "description": "Acrylic and Soil on Wood Panel",
-                "size": "8x10",
-                "price": "400.00",
-                "imageUrl": "https://i.imgur.com/AaZfrNc.png"
-            },
+            
             {
                 
                 "artist": "Isabella Saracini",
@@ -21,17 +11,7 @@
                 "price": "400.00",
                 "imageUrl": "https://i.imgur.com/Qr48WxQ.png"
             },
-            {
-                
-                "artist": "Isabella Saracini",
-                "title": "Untitled",
-                "medium": "Painting",
-                "year": "2022",
-                "description": "Acrylic on Wood Panel",
-                "size": "8x10",
-                "price": "400.00",
-                "imageUrl": "https://i.imgur.com/eDRit0q.png"
-            },
+         
             {
                 
                 "artist": "Isabella Saracini",
@@ -64,28 +44,7 @@
                 "price": "400.00",
                 "imageUrl": "https://i.imgur.com/4rsvggX.png"
             },
-            {
-                
-                "artist": "Isabella Saracini",
-                "title": "Interruption",
-                "medium": "Painting",
-                "year": "2022",
-                "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
-                "size": "8x10",
-                "price": "450.00",
-                "imageUrl": "https://i.imgur.com/qk7NYFj.png"
-            },
-            {
-                
-                "artist": "Isabella Saracini",
-                "title": "Murmur",
-                "medium": "Painting",
-                "year": "2022",
-                "description": "Acrylic, Soil, and Shellac on Wood Panel",
-                "size": "9x12",
-                "price": "450.00",
-                "imageUrl": "https://i.imgur.com/ocBapdT.png"
-            },
+        
             {
                 
                 "artist": "Isabella Saracini",
@@ -173,5 +132,39 @@
                 "size": "39x50",
                 "price": "1050.00",
                 "imageUrl": "https://i.imgur.com/eWI3d5Q.png"
+            },
+            {
+                
+                "artist": "Isabella Saracini",
+                "title": "Pathways",
+                "medium": "Painting",
+                "year": "2022",
+                "description": "Acrylic and Soil on Wood Panel",
+                "size": "8x10",
+                "price": "400.00",
+                "imageUrl": "https://i.imgur.com/AaZfrNc.png"
+            },
+            {
+                
+                "artist": "Isabella Saracini",
+                "title": "Untitled",
+                "medium": "Painting",
+                "year": "2022",
+                "description": "Acrylic on Wood Panel",
+                "size": "8x10",
+                "price": "400.00",
+                "imageUrl": "https://i.imgur.com/eDRit0q.png"
+            },
+            {
+                
+                "artist": "Isabella Saracini",
+                "title": "Interruption",
+                "medium": "Painting",
+                "year": "2022",
+                "description": "Acrylic, Soil, Shellac and Rope on Wood Panel",
+                "size": "8x10",
+                "price": "450.00",
+                "imageUrl": "https://i.imgur.com/qk7NYFj.png"
             }
+            
 ]
