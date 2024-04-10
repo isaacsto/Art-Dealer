@@ -1,36 +1,23 @@
-
-import React, { useState }/* , { useState }  */from 'react';
-import "../../src/Styles/ArtCard.css";  
-import { useStoreContext } from '../utils/GlobalState';
-import { useQuery } from '@apollo/client';
-import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../utils/actions';
-import { idbPromise } from '../utils/hlpers';
+import React from "react";
+import "../../src/Styles/ArtCard.css";
+import { useStoreContext } from "../utils/GlobalState";
+import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../utils/actions";
+import { idbPromise } from "../utils/hlpers";
 
 const style = {
   button: {
-    'font-family': 'Roboto Mono',
-    'textDecoration': 'none',
-    'padding': '10px',
-  }
-  
-}
-
+    "font-family": "Roboto Mono",
+    textDecoration: "none",
+    padding: "10px",
+  },
+};
 
 export default function ArtCard(props) {
-  const {id, imageUrl, title, year, description, size, price} = props;
+  const { id, imageUrl, title, year, description, size, price } = props;
   const [state, dispatch] = useStoreContext();
-  
-
-  // const [currentProduct, setCurrentProduct] = useState({});
-
-  // const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const { products, cart } = state;
 
-  // const [cartItems, setCartItems] = useState([]);
-
-  // const addToCart = (item) => {
-  //   setCartItems([...cartItems, item]);
   console.log(props.id);
   const addToCart = () => {
     const itemInCart = cart.find((cartItem) => cartItem._id === id);
@@ -40,7 +27,7 @@ export default function ArtCard(props) {
         _id: id,
         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
       });
-      idbPromise('cart', 'put', {
+      idbPromise("cart", "put", {
         ...itemInCart,
         purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1,
       });
@@ -49,29 +36,32 @@ export default function ArtCard(props) {
         type: ADD_TO_CART,
         product: { ...props, purchaseQuantity: 1 },
       });
-      idbPromise('cart', 'put', { ...props, purchaseQuantity: 1 });
+      idbPromise("cart", "put", { ...props, purchaseQuantity: 1 });
     }
   };
- 
-console.log(props.imgUrl)
+
+  console.log(props.imgUrl);
   return (
-    <div className="container">
+ 
       <div className="card">
         <div className="extra-container">
-        <div className="card-body">
-          <img className="card-img" src={props.imgUrl} alt="Artwork" />
-        <h5 className="card-title"> {props.title}</h5>
-        <p className="card-text">{props.year}</p>
-          <p className="card-text">{props.description}</p>
-          <p className="card-text"> {props.size}</p>
-          <p className="card-text"> {props.price}</p>
-          <button className="button" style={style.button}  onClick={() => addToCart(props.item)}>
-  Add to Cart
-</button>
+          <div className="card-body">
+            <img className="card-img" src={props.imgUrl} alt="Artwork" />
+            <h5 className="card-title"> {props.title}</h5>
+            <p className="card-text">{props.year}</p>
+            <p className="card-text">{props.description}</p>
+            <p className="card-text"> {props.size}</p>
+            <p className="card-text"> {props.price}</p>
+            <button
+              className="button"
+              style={style.button}
+              onClick={() => addToCart(props.item)}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>
-    </div>
+
   );
 }
-

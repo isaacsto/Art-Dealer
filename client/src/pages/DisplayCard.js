@@ -1,58 +1,26 @@
 import React from 'react';
 import ArtCard from './ArtCard';
-import { gql, useQuery } from '@apollo/client';
 import '../Styles/DisplayCard.css'
+import seeders from '../seeders/artseeds/isabellasart.json'; 
 
-const GET_ARTIST_ART = gql`
-query ArtistByName($artistName: String!) {
-  artistByName(artistName: $artistName) {
-    art {
-      _id
-      description
-      imageUrl
-      size
-      price
-      title
-      
-    }
-  }
-}
-`;
-
-export default function DisplayCard({ artistName }) {
-  const { loading, error, data } = useQuery(GET_ARTIST_ART, {
-    variables: { artistName },
-  });
-
-  console.log(data);
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-
-  if (error) {
-    return <p>Error: {error.message}</p>;
-  }
-
-  if (data) {
-    return (
-      <div className="card-grid">
-        {data.artistByName?.art?.map((Art) => (
+function DisplayCard() {
+  return (
+    <div className='card-grid'>
+      {seeders.map((seeder, index) => (
+        <div key={index} className="grid-item">
           <ArtCard
-          _id={Art._id}
-          id={Art._id}
-            key={Art._id}
-            imgUrl={Art.imageUrl}
-            title={Art.title}
-            year={Art.year}
-            description={Art.description}
-            size={Art.size}
-            price={Art.price}
+            id={index} // Assuming each seeder has a unique ID
+            imgUrl={seeder.imageUrl}
+            title={seeder.title}
+            year={seeder.year}
+            description={seeder.description}
+            size={seeder.size}
+            price={seeder.price}
           />
-        ))}
-      </div>
-    );
-  }
-
-return null; 
+        </div>
+      ))}
+    </div>
+  );
 }
+
+export default DisplayCard;
