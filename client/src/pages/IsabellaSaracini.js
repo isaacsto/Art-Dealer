@@ -13,7 +13,7 @@ function IsabellaSaracini() {
         <h2>{artistName}   <a href="https://www.instagram.com/isabellasaraceni_art/?hl=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
-      <DisplayCard />
+      <DisplayCard  artistName="Isabella Saracini"/>
     </div>
   );
 }

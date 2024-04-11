@@ -44,7 +44,7 @@ export default function ArtCard(props) {
   return (
  
       <div className="card">
-        <div className="extra-container">
+     
           <div className="card-body">
             <img className="card-img" src={props.imgUrl} alt="Artwork" />
             <h5 className="card-title"> {props.title}</h5>
@@ -61,7 +61,7 @@ export default function ArtCard(props) {
             </button>
           </div>
         </div>
-      </div>
+
 
   );
 }
