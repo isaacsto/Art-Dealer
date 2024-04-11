@@ -5,7 +5,7 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
-    margin-top: 100px; 
+    margin-top: 60px; 
 }
 
 @font-face {
@@ -15,6 +15,11 @@
 .contact-page-wrap h4 {
   font-size: 40px!important; 
   font-weight: 400; 
-    font-family: customOne;
+  font-family: customOne;
+  margin-bottom: 20px!important; 
+}
+
+div.contact-page-wrap p {
+  max-width: 70%; 
 }
 
