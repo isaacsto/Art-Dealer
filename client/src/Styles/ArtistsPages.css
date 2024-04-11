@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  top: 25%; 
 }
 
 .art-cards-row {
@@ -17,8 +17,8 @@
   text-align: center;
   margin-bottom: 20px;
   position: relative;
-  max-width: 50%;
-
+  max-width: 100%; 
+  margin-top: 10%; 
 }
 
 i {

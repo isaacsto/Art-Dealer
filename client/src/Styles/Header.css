@@ -99,3 +99,7 @@
 div.react-slideshow-container button.nav.default-nav svg path {
     display: none; 
 }
+
+div.images-wrap.horizontal {
+  height: 500px; 
+}
