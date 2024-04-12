@@ -12,8 +12,8 @@ const style = {
   },
 };
 
-export default function ArtCard(props) {
-  const { id, imageUrl, title, year, description, size, price } = props;
+const ArtCard = (props) => {
+  const { id, imageUrl, title, year, description, size, price, onClick } = props;
   const [state, dispatch] = useStoreContext();
 
   const { products, cart } = state;
@@ -43,8 +43,7 @@ export default function ArtCard(props) {
   console.log(props.imgUrl);
   return (
  
-      <div className="card">
-     
+    <div className="card" onClick={onClick}>
           <div className="card-body">
             <div className="art-wrap">
             <img className="card-img" src={props.imgUrl} alt="Artwork" />
@@ -70,3 +69,5 @@ export default function ArtCard(props) {
 
   );
 }
+
+export default ArtCard;
