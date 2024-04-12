@@ -24,7 +24,7 @@ const DropdownMenu = () => {
 
   const menuStyle = {
     'position': 'absolute',
-    'backgroundColor': 'rgba(0, 0, 0, 0.5)',
+    'backgroundColor': '#ffffff',
     'zIndex': 999,
     'width': 'fit-content',
     'display': isOpen ? 'block' : 'none',

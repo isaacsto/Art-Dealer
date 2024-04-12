@@ -28,7 +28,7 @@ const MediumMenu = () => {
 
   const menuStyle = {
     position: 'absolute',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: '#ffffff',
     zIndex: 1,
     width: 'fit-content',
     display: isOpen ? 'block' : 'none', 
