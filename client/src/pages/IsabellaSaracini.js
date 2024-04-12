@@ -14,7 +14,7 @@ function IsabellaSaracini() {
        
       </div>
       <DisplayCard  artistName="Isabella Saracini"/>
-      <div>
+      <div className="artist-description">
        <p>{artistDescription}</p>
     </div>
     </div>

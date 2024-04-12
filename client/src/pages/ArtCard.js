@@ -46,20 +46,25 @@ export default function ArtCard(props) {
       <div className="card">
      
           <div className="card-body">
+            <div className="art-wrap">
             <img className="card-img" src={props.imgUrl} alt="Artwork" />
+            </div>
             <h5 className="card-title"> {props.title}</h5>
-            <p className="card-text">{props.year}</p>
-            <p className="card-text">{props.description}</p>
-            <p className="card-text"> {props.size}</p>
-            <p className="card-text"> {props.price}</p>
-            <button
+            <p className="card-text price"> $ {props.price}.00</p>
+            <p className="card-text size"> {props.size}</p>
+            <div className="description-wrap">
+            <p className="card-text description">{props.description}</p>
+            </div>
+         
+          </div>
+             
+          <button
               className="button"
               style={style.button}
               onClick={() => addToCart(props.item)}
             >
               Add to Cart
             </button>
-          </div>
         </div>
 
 

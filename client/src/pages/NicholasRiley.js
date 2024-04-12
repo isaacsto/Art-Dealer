@@ -13,7 +13,9 @@ function NicholasRiley() {
         <h2>{artistName}   <a href="https://www.instagram.com/nickrileyart/" target="blank"><i class="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
+      <div className="artist-description">
       <DisplayCard artistName="Nicholas Riley" />
+      </div>
     </div>
   );
 }

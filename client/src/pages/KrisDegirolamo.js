@@ -13,7 +13,9 @@ function KrisDegirolamo() {
         <h2>{artistName}  <a href="https://www.instagram.com/titesqueez/" target="blank"><i class="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
+      <div className="artist-description">
       <DisplayCard artistName="Kris Degirolamo" />
+      </div>
     </div>
   );
 }

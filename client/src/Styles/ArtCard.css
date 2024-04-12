@@ -5,17 +5,48 @@
   grid-gap: 20px;
 }
 
+.art-wrap {
+  height: 150px; 
+}
+
 .card {
   border-radius: 5px;
   overflow: hidden;
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .card-body {
   padding: 20px;
+  text-align: left; 
+  height: 235px; 
 }
 
 .card-img {
-  width: 200px; 
+  width: 100px; 
+}
+
+h5.card-title {
+  margin: 0; 
+}
+p.card-text {
+  margin: 0; 
+}
+
+.card-text.size {
+  font-size: 10px; 
+}
+
+.card-text.description {
+  font-size: 12px;
+  width: 100px; 
+  text-align: left; 
+}
+
+.card-title.price {
+  margin-top: 10px; 
 }
 
 .card-title {
@@ -23,21 +54,19 @@
   font-weight: bold;
 }
 
-.card-text {
-  margin-bottom: 10px;
-}
-
 .button {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 5px!important;
+  background-color: #033011;
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 12px!important; 
   cursor: pointer;
+  margin-top: 10px; 
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: rgb(21, 102, 21);
 }

@@ -13,7 +13,9 @@ function KamrynHarmeling() {
         <h2>{artistName}  <a href="https://www.instagram.com/kam.ryn/" target="blank"><i class="fab fa-instagram"></i></a></h2>
         <p>{artistDescription}</p>
       </div>
+      <div className="artist-description">
       <DisplayCard artistName="Kamryn Harmeling" />
+      </div>
     </div>
   );
 }
