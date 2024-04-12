@@ -26,7 +26,7 @@ function Header({ currentPage, handlePageChange }) {
             <div className="logo-wrap"  style={{ border: isHomePage ? 'solid 2px #ffffff' : 'solid 2px #000000' }}>
             <Link to="/" style={{ color: isHomePage ? '#ffffff' : '#000000' }}>ARTLY</Link>
         </div>
-      <div className="header-links">
+      <div className={`header-links ${isHomePage ? 'headers-link' : 'header-links-else'}`}>
         <div className="right-link">
      
         </div>
