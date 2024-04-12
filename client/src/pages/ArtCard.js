@@ -58,13 +58,13 @@ export default function ArtCard(props) {
          
           </div>
              
-          <button
+          {/* <button
               className="button"
               style={style.button}
               onClick={() => addToCart(props.item)}
             >
               Add to Cart
-            </button>
+            </button> */}
         </div>
 
 

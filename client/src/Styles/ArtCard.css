@@ -30,6 +30,7 @@
 
 h5.card-title {
   margin: 0; 
+  width: 150px; 
 }
 p.card-text {
   margin: 0; 
