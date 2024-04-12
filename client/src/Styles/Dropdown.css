@@ -59,6 +59,10 @@ div.dropdowns-wrap-else div.dropdown button.dropdown-toggle {
   color: #ffffff; 
 }
 
+.dropdown-menu a li:hover {
+  font-weight: 600; 
+}
+
 .dropdown-menu ul {
   padding: 5px 10px; 
   list-style-type: none;
