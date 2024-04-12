@@ -18,11 +18,6 @@ const DropdownMenu = () => {
   };
 
 
-  const style = {
-    'textDecoration': 'none',
-    'cursor': 'pointer', 
-  };
-
   const dropdownStyle = {
     'position': 'relative',
   };
@@ -37,6 +32,7 @@ const DropdownMenu = () => {
     borderRadius: '5px'
   };
 
+
   return (
     <div
       className="dropdown"
@@ -44,7 +40,7 @@ const DropdownMenu = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <button className="dropdown-toggle" style={style}>
+      <button className="dropdown-toggle">
         Artists
       </button>
       <div className='dropdown-menu' style={menuStyle}>

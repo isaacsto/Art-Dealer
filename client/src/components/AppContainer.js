@@ -18,6 +18,8 @@ import Footer from './Footer';
 import Success from '../pages/Success';
 import Home from './Home'; 
 import Header from '../components/Header'; 
+import DropDowns from '../components/DropDowns'; 
+
 
 import '../Styles/AppCont.css';
 
@@ -28,9 +30,12 @@ function AppContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
+
+
   return (
     <div className="page-outline">
       <Router>
+      <DropDowns currentPage={currentPage} handlePageChange={handlePageChange} />
         <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
         <Routes>

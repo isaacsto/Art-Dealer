@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Slide } from 'react-slideshow-image';
+
 
 import 'react-slideshow-image/dist/styles.css';
 import '../Styles/Header.css';
+import '../Styles/Dropdown.css'
 import DropDowns from './DropDowns.js';
 
 
@@ -30,10 +32,14 @@ const slideImages = [
 
 ];
 function Slider() {
+  const [currentPage, setCurrentPage] = useState('Header');
+
+  const handlePageChange = (page) => setCurrentPage(page);
+  
     return (
     
       <div className="slide-container">
-              <DropDowns/>
+       
           <div className="tagline"><strong>Artly </strong>
           Discover New Artists</div>
      

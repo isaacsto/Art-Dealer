@@ -12,17 +12,35 @@
   gap: 4rem; 
 }
 
-.dropdown-toggle{
+div.dropdowns-wrap div.dropdown button.dropdown-toggle{
   color: #ffffff; 
   font-size: 20px; 
   font-weight: 600; 
-}
-
-.dropdown-toggle {
   border: none;
   background: none; 
   cursor: pointer;
 }
+.dropdowns-wrap-else {
+  position: absolute; 
+  z-index: 1000; 
+  width: 100%; 
+  top: 5%; 
+  display: flex; 
+  flex-direction: row; 
+  width: 100%; 
+  justify-content: center; 
+  align-items: center;
+  gap: 4rem; 
+}
+div.dropdowns-wrap-else div.dropdown button.dropdown-toggle {
+  color: #000000;  
+  font-size: 20px; 
+  font-weight: 600; 
+  border: none;
+  background: none; 
+  cursor: pointer;
+}
+
 .dropdown-toggle:hover{
   font-size: 21px;
   border-radius: 5px; 
