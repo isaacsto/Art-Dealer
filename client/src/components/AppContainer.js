@@ -14,7 +14,6 @@ import DigitalArt from '../pages/DigitalArtPage';
 import Painting from '../pages/PaintingPage';
 import Sculpting from '../pages/SculptingPage';
 import CartCont from './CartCont';
-import Footer from './Footer';
 import Success from '../pages/Success';
 import Home from './Home'; 
 import Header from '../components/Header'; 
@@ -58,7 +57,6 @@ function AppContainer() {
   
       </Router>
       <script src="https://kit.fontawesome.com/1498603cf1.js" crossOrigin="anonymous"></script>
-      <Footer />
     </div>
   );
 }
