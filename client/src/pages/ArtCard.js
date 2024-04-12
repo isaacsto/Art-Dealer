@@ -6,7 +6,7 @@ import { idbPromise } from "../utils/hlpers";
 
 const style = {
   button: {
-    "font-family": "Roboto Mono",
+    "fontFamily": "Roboto Mono",
     textDecoration: "none",
     padding: "10px",
   },

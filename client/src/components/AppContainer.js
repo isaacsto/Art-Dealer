@@ -52,7 +52,7 @@ function AppContainer() {
         </Routes>
   
       </Router>
-      <script src="https://kit.fontawesome.com/1498603cf1.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/1498603cf1.js" crossOrigin="anonymous"></script>
       <Footer />
     </div>
   );

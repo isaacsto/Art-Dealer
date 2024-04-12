@@ -11,10 +11,10 @@ function Cooth() {
     <div className='artist-page-container'>
       <div className='artist-info'>
         <h2>{artistName}  <a href="https://www.instagram.com/havecooth/" target="blank"><i class="fab fa-instagram"></i></a></h2>
-        <p>{artistDescription}</p>
       </div>
-      <div className="artist-description">
       <DisplayCard artistName="Cooth" />
+      <div className="artist-description">
+      <p>{artistDescription}</p>
       </div>
     </div>
   );

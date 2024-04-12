@@ -11,7 +11,6 @@ function IsabellaSaracini() {
     <div className='artist-page-container'>
       <div className='artist-info'>
         <h2>{artistName}   <a href="https://www.instagram.com/isabellasaraceni_art/?hl=en" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></h2>
-       
       </div>
       <DisplayCard  artistName="Isabella Saracini"/>
       <div className="artist-description">
