@@ -5,7 +5,6 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../Styles/Header.css';
 import '../Styles/Dropdown.css'
-import DropDowns from './DropDowns.js';
 
 
 const slideImages = [

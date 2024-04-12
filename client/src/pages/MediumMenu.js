@@ -59,12 +59,12 @@ const MediumMenu = () => {
           </Link>
         </ul>
       </div>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500"
         rel="stylesheet"
-      ></link>
+      ></link> */}
     </div>
   );
 };

@@ -1,16 +1,6 @@
 import React /* , { useState }   */from 'react';
 import "../../src/Styles/ArtCard.css";  
 
-const style = {
-  button: {
-    'font-family': 'Roboto Mono',
-    'textDecoration': 'none',
-    'padding': '10px',
-  }
-  
-}
-
-
 export default function MediumCard(props) {
 
 /*   const [cartItems, setCartItems] = useState([]);
@@ -20,9 +10,8 @@ export default function MediumCard(props) {
 
 console.log(props.imgUrl)
   return (
-    <div className="container">
+
       <div className="card">
-        <div className="extra-container">
         <div className="card-body">
           <img className="card-img" src={props.imgUrl} alt="Artwork" />
         <h5 className="card-title"> {props.title}</h5>
@@ -34,7 +23,6 @@ console.log(props.imgUrl)
 </button> */}
           </div>
         </div>
-      </div>
-    </div>
+   
   );
 } 

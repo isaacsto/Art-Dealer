@@ -278,22 +278,16 @@
 	transition: all .4s ease-in;
 }
 
-.btn-login {
-	color: #fbfdff;
-	background: #033011;
-	transform: translateX(-30%);
-	cursor: pointer; 
-}
 
-.btn-signup {
+.btn-signup , .btn-login {
 	color: #fbfdff;
-	background: #033713;
+	background:rgb(21, 102, 21); 
 	transform: translateX(30%);
 	cursor: pointer; 
 }
 
 .btn-login:hover, .btn-signup:hover {
-	background:rgb(21, 102, 21); 
+	background: #033713;
 }
 
 form:not(:focus){

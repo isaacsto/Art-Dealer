@@ -6,7 +6,7 @@ import '../Styles/DisplayCard.css'
 const GET_MEDIUMS = gql`
   query ArtByMedium($medium: String) {
     artByMedium(medium: $medium) {
-     
+     art {
         _id
         description
         imageUrl
@@ -15,7 +15,7 @@ const GET_MEDIUMS = gql`
         price
         title
         year
-      
+     }
     }
   }
 `;

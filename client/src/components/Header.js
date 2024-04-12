@@ -50,9 +50,9 @@ function Header({ currentPage, handlePageChange }) {
           </Link>
         </div>
       </div>
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-      <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/> */}
       
       {showPopup && (
         <div className="popup">
