@@ -6,7 +6,7 @@
         "medium": "Digital Art",
         "year": "2020",
         "description": "Digital artwork featuring mannequins",
-        "price": "50",
+        "price": "50.00",
         "imageUrl": "https://i.imgur.com/WD8D1ZI.png"
     },
     {
@@ -16,7 +16,7 @@
         "medium": "Digital Art",
         "year": "2021",
         "description": "Digital Art",
-        "price": "65",
+        "price": "65.00",
         "imageUrl": "https://i.imgur.com/PiRSTPH.png"
     },
     {
@@ -36,7 +36,7 @@
         "medium": "Digital Art",
         "year": "2021",
         "description": "Digital Art",
-        "price": "80",
+        "price": "80.00",
         "imageUrl": "https://i.imgur.com/ya45Vsn.png"
     },
     {
@@ -46,7 +46,7 @@
         "medium": "Digital Art",
         "year": "2021",
         "description": "Digital Art",
-        "price": "50",
+        "price": "50.00",
         "imageUrl": "https://i.imgur.com/tT8gopb.png"
     },
     {
@@ -56,7 +56,7 @@
         "medium": "Digital Art",
         "year": "2022",
         "description": "Digital Art",
-        "price": "80",
+        "price": "80.00",
         "imageUrl": "https://i.imgur.com/90NR0Ve.png"
     },
     {
@@ -66,7 +66,7 @@
         "medium": "Digital Art",
         "year": "2022",
         "description": "Digital Art",
-        "price": "70",
+        "price": "70.00",
         "imageUrl": "https://i.imgur.com/AjyuS7G.png"
     },
     {
@@ -76,7 +76,7 @@
         "medium": "Digital Art",
         "year": "2022",
         "description": "Digital Art",
-        "price": "60",
+        "price": "60.00",
         "imageUrl": "https://i.imgur.com/62jjyL3.png"
     },
     {
@@ -85,7 +85,7 @@
         "medium": "Digital Art",
         "year": "2022",
         "description": "Digital Art",
-        "price": "60",
+        "price": "60.00",
         "imageUrl": "https://i.imgur.com/BX1NZB4.png"
     }
     

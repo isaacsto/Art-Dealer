@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-// const { Art } = require('./Art');
+const { Art } = require('./Art');
 
 const artistSchema = new Schema({
   artistName: {

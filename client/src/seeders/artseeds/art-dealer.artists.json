@@ -1,0 +1,176 @@
+[{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d0"
+  },
+  "artistName": "Isabella Saracini",
+  "art": [
+    {
+      "$oid": "64b04812ef97de94b3f11097"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f11098"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f11099"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109a"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109b"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109c"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109d"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109e"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f1109f"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a0"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a1"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a2"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a3"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a4"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a5"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a6"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d1"
+  },
+  "artistName": "Kris Degirolamo",
+  "art": [
+    {
+      "$oid": "64b04812ef97de94b3f110b2"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b3"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b4"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b5"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b6"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b7"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b8"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b9"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ba"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110bb"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d2"
+  },
+  "artistName": "Kamryn Harmeling",
+  "art": [
+    {
+      "$oid": "64b04812ef97de94b3f110a8"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110a9"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110aa"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ab"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ac"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ad"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ae"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110af"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110b0"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d3"
+  },
+  "artistName": "Nicholas Riley",
+  "art": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d4"
+  },
+  "artistName": "Aron Dubois",
+  "art": [
+    {
+      "$oid": "64b04812ef97de94b3f110c8"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110c9"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64b04812ef97de94b3f110d5"
+  },
+  "artistName": "Cooth",
+  "art": [
+    {
+      "$oid": "64b04812ef97de94b3f110cb"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110cc"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110cd"
+    },
+    {
+      "$oid": "64b04812ef97de94b3f110ce"
+    }
+  ],
+  "__v": 0
+}]
