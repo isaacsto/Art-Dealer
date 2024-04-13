@@ -4,18 +4,12 @@ import { useStoreContext } from "../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../utils/actions";
 import { idbPromise } from "../utils/hlpers";
 
-const style = {
-  button: {
-    "fontFamily": "Roboto Mono",
-    textDecoration: "none",
-    padding: "10px",
-  },
-};
 
 const ArtCard = (props) => {
-  const { id, imageUrl, title, year, description, size, price, onClick } = props;
+  const { id, imageUrl, title, year, description, size, price } = props;
   const [state, dispatch] = useStoreContext();
 
+  
   const { products, cart } = state;
 
   console.log(props.id);
@@ -46,7 +40,7 @@ const ArtCard = (props) => {
     <div className="card">
           <div className="card-body">
             <div className="art-wrap">
-            <img className="card-img"  onClick={onClick} src={props.imgUrl} alt="Artwork" />
+            <img className="card-img" src={props.imgUrl} alt="Artwork" />
             </div>
             <h5 className="card-title"> {props.title}</h5>
             <p className="card-text price"> $ {props.price}.00</p>
