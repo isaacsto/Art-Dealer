@@ -43,10 +43,10 @@ const ArtCard = (props) => {
   console.log(props.imgUrl);
   return (
  
-    <div className="card" onClick={onClick}>
+    <div className="card">
           <div className="card-body">
             <div className="art-wrap">
-            <img className="card-img" src={props.imgUrl} alt="Artwork" />
+            <img className="card-img"  onClick={onClick} src={props.imgUrl} alt="Artwork" />
             </div>
             <h5 className="card-title"> {props.title}</h5>
             <p className="card-text price"> $ {props.price}.00</p>
@@ -54,16 +54,15 @@ const ArtCard = (props) => {
             <div className="description-wrap">
             <p className="card-text description">{props.description}</p>
             </div>
-         
-          </div>
-             
-          {/* <button
+              
+            <button
               className="button"
-              style={style.button}
               onClick={() => addToCart(props.item)}
             >
               Add to Cart
-            </button> */}
+            </button>
+          </div>
+        
         </div>
 
 

@@ -21,7 +21,7 @@
 .card-body {
   padding: 20px;
   text-align: left; 
-  height: 235px; 
+  height: fit-content;  
 }
 
 .card-img {
@@ -59,8 +59,7 @@ p.card-text {
   font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   padding: 5px!important;
-  background-color: #033011;
-  color: #fff;
+  background-color: #ffffff; 
   border: none;
   border-radius: 5px;
   font-size: 12px!important; 
@@ -69,5 +68,5 @@ p.card-text {
 }
 
 .button:hover {
-  background-color: rgb(21, 102, 21);
+  font-weight: 600; 
 }

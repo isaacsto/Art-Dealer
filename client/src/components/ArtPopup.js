@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../Styles/ArtPopup.css';
+import '../Styles/ArtPopup.css';
 
 const ArtPopup = ({ art, onClose }) => {
   const { imageUrl, title, year, description, size, price } = art;
