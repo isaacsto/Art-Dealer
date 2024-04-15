@@ -10,7 +10,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 15%; 
+	margin-top: 10%; 
 }
 
 .forms {
@@ -58,8 +58,8 @@
 	font-family: inherit;
 	font-size: 16px;
 	letter-spacing: .5px;
-	color: #ffffff; 
-	background-color: rgb(0, 0, 0, 0.3);
+	color: #000000;  
+	background-color: #ffffff;
 	padding: 5px; 
 	border-radius: 5px; 
 	border: none;
@@ -71,7 +71,7 @@
 }
 
 .form-wrapper.is-active .switcher-login {
-	color: #ffffff;
+	color: #000000;
 	transform: translateX(90px);
 	z-index: 1001; 
 }
