@@ -22,4 +22,6 @@
 div.contact-page-wrap p {
   max-width: 70%; 
 }
-
+input[type="text"], input[type="email"] {
+  vertical-align: top;
+}

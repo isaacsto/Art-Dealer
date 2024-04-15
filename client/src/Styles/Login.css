@@ -10,13 +10,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	z-index: 1001; 
+	margin-top: 15%; 
 }
 
 .forms {
 	display: flex;
 	align-items: flex-start;
 	margin-top: 20px;
+	z-index: 1001; 
 }
 
 
@@ -276,18 +277,19 @@
 	opacity: 1;
 	transform: translateX(0);
 	transition: all .4s ease-in;
+
 }
 
 
 .btn-signup , .btn-login {
 	color: #fbfdff;
-	background:rgb(21, 102, 21); 
+	background:rgb(0, 120, 92); 
 	transform: translateX(30%);
 	cursor: pointer; 
 }
 
 .btn-login:hover, .btn-signup:hover {
-	background: #033713;
+	background: #123524;
 }
 
 form:not(:focus){

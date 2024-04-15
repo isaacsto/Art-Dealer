@@ -60,8 +60,6 @@ function Contact() {
       padding: "20px 40px", 
     }, 
     input: {
-      marginBottom: "1rem",
-      padding: "0.375rem 0.75rem",
       fontSize: "1rem",
       lineHeight: "1.5",
       color: "#495057",
@@ -81,6 +79,7 @@ function Contact() {
       borderRadius: "0.25rem",
       width: "95%",
       height: "100px",
+     
     },
     label: {
     fontFamily: "Roboto Mono",
@@ -101,13 +100,13 @@ function Contact() {
       fontSize: "1rem",
       fontWeight: "bold",
       color: "#fff",
-      backgroundColor: "rgb(21, 102, 21)",
+      backgroundColor: "rgb(0, 120, 92)",
       border: "none",
       borderRadius: "0.25rem",
       cursor: "pointer",
     },
     buttonHover: {
-      backgroundColor: "#033011",
+      backgroundColor: "#123524",
       },
     errorText: {
       color: "red",

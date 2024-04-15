@@ -10,7 +10,7 @@ function KamrynHarmeling() {
   return (
     <div className='artist-page-container'>
       <div className='artist-info'>
-        <h2>{artistName}  <a href="https://www.instagram.com/kam.ryn/" target="blank"><i class="fab fa-instagram"></i></a></h2>
+        <h2>{artistName}  <a href="https://www.instagram.com/kam.ryn/" target="blank"><i className="fab fa-instagram"></i></a></h2>
       
       </div>
      

@@ -12,8 +12,8 @@
 }
 
 .header-links-else {
-  border-top: solid 0.5px; 
-  box-shadow: 0 1px 0.25px rgba(0, 0, 0, 0.25);
+  border-top: double 3.5px; 
+  box-shadow: 0 1px 0.25px rgba(0, 0, 0, 0.1);
 }
 
 .header-link {
