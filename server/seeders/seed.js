@@ -1,5 +1,5 @@
-const db = require('../../../server/config/connection');
-const { Artist, Art } = require('../../../server/models');
+const db = require('../config/connection');
+const { Artist, Art } = require('../models');
 const artistSeeds = require('./artseeds/artists.json');
 const isabellaSeed = require('./artseeds/isabellasart.json');
 const kamSeed = require('./artseeds/kamart.json');
