@@ -35,7 +35,7 @@ db.once('open', async () => {
     }
 
     for (let i = 0; i < kamArray.length; i++) {
-      const isabellaArt = await Artist.findOneAndUpdate(
+      const kamArt = await Artist.findOneAndUpdate(
         { artistName: "Kamryn Harmeling" },
         {
           $addToSet: {
@@ -46,7 +46,7 @@ db.once('open', async () => {
     }
 
     for (let i = 0; i < krisArray.length; i++) {
-      const isabellaArt = await Artist.findOneAndUpdate(
+      const krisArt = await Artist.findOneAndUpdate(
         { artistName: "Kris Degirolamo" },
         {
           $addToSet: {
@@ -57,8 +57,8 @@ db.once('open', async () => {
     }
 
     for (let i = 0; i < nicArray.length; i++) {
-      const isabellaArt = await Artist.findOneAndUpdate(
-        { artistName: "Nicolas Riley" },
+      const nicArt = await Artist.findOneAndUpdate(
+        { artistName: "Nicholas Riley" },
         {
           $addToSet: {
             art: nicArray[i]._id,
@@ -68,7 +68,7 @@ db.once('open', async () => {
     }
 
     for (let i = 0; i < aronArray.length; i++) {
-      const isabellaArt = await Artist.findOneAndUpdate(
+      const AaronArt = await Artist.findOneAndUpdate(
         { artistName: "Aron Dubois" },
         {
           $addToSet: {
@@ -79,7 +79,7 @@ db.once('open', async () => {
     }
 
     for (let i = 0; i < coothArray.length; i++) {
-      const isabellaArt = await Artist.findOneAndUpdate(
+      const CoothArt = await Artist.findOneAndUpdate(
         { artistName: "Cooth" },
         {
           $addToSet: {

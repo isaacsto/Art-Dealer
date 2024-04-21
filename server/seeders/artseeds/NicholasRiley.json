@@ -13,12 +13,21 @@
     {
         
         "artist": "Nicholas Riley",
-        "title": "Untitled 0001",
+        "title": "Untitled 0009",
         "medium": "Digital Art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
-        "imageUrl": "https://i.imgur.com/34NJM7V.png"
+        "imageUrl": "https://i.imgur.com/GIKzVlL.png"
+    },
+    {
+         "artist": "Nicholas Riley",
+        "title": "Untitled 0007",
+        "medium": "Digital Art",
+        "year": "2023",
+        "description": "Digital",
+        "price": "400.00",
+        "imageUrl": "https://i.imgur.com/8Gn2Bmf.png"
     },
     {
         
@@ -33,12 +42,12 @@
     {
         
         "artist": "Nicholas Riley",
-        "title": "Untitled 0003",
+        "title": "Untitled 0001",
         "medium": "Digital Art",
         "year": "2023",
         "description": "Digital",
         "price": "300.00",
-        "imageUrl": "https://i.imgur.com/76pJEAZ.png"
+        "imageUrl": "https://i.imgur.com/34NJM7V.png"
     },
     {
         
@@ -50,6 +59,17 @@
         "price": "200.00",
         "imageUrl": "https://i.imgur.com/sAgUl83.png"
     },
+    {
+        
+        "artist": "Nicholas Riley",
+        "title": "Untitled 0003",
+        "medium": "Digital Art",
+        "year": "2023",
+        "description": "Digital",
+        "price": "300.00",
+        "imageUrl": "https://i.imgur.com/76pJEAZ.png"
+    },
+
     {
         
         "artist": "Nicholas Riley",
@@ -70,16 +90,7 @@
         "price": "200.00",
         "imageUrl": "https://i.imgur.com/eVS47t3.png"
     },
-    {
-        
-        "artist": "Nicholas Riley",
-        "title": "Untitled 0007",
-        "medium": "Digital Art",
-        "year": "2023",
-        "description": "Digital",
-        "price": "400.00",
-        "imageUrl": "https://i.imgur.com/8Gn2Bmf.png"
-    },
+
     {
         
         "artist": "Nicholas Riley",
@@ -89,16 +100,6 @@
         "description": "Digital",
         "price": "250.00",
         "imageUrl": "https://i.imgur.com/qtuOsX0.png"
-    },
-    {
-        
-        "artist": "Nicholas Riley",
-        "title": "Untitled 0009",
-        "medium": "Digital Art",
-        "year": "2023",
-        "description": "Digital",
-        "price": "300.00",
-        "imageUrl": "https://i.imgur.com/GIKzVlL.png"
     }
     
 ]
