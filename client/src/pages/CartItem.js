@@ -65,7 +65,7 @@ Icon Family
 
 Classic
 Select an Icon Style
-<i class="fa-solid fa-trash"></i>
+<i class="fa-solid fa-trash"> </i>
           </span>
         </div>
       </div>
