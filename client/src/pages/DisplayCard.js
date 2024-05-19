@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ArtCard from './ArtCard';
 import { gql, useQuery } from '@apollo/client';
 import '../Styles/DisplayCard.css';
-import ArtPopup from '../components/ArtPopup';
+// import ArtPopup from '../components/ArtPopup';
 
 const GET_ARTIST_ART = gql`
   query ArtistByName($artistName: String!) {
@@ -26,10 +26,10 @@ export default function DisplayCard({ artistName }) {
 
   console.log(data);
 
-  const [selectedArt, setSelectedArt] = useState(null);
-  const openPopup = (art) => {
-    setSelectedArt(art); 
-  };
+  // const [selectedArt, setSelectedArt] = useState(null);
+  // const openPopup = (art) => {
+  //   setSelectedArt(art); 
+  // };
 
   if (loading) {
     return <p>Loading...</p>;
@@ -53,10 +53,10 @@ export default function DisplayCard({ artistName }) {
             description={Art.description}
             size={Art.size}
             price={Art.price}
-            onClick={() => openPopup(Art)}
+            // onClick={() => openPopup(Art)}
           />
         ))}
-         {selectedArt && <ArtPopup art={selectedArt} onClose={() => setSelectedArt(null)} />}
+         {/* {selectedArt && <ArtPopup art={selectedArt} onClose={() => setSelectedArt(null)} />} */}
       </div>
     );
   }
